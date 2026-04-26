@@ -128,11 +128,11 @@ El Sprint Planning Meeting marcó el inicio formal del desarrollo del código de
 | **Sprint #** | Sprint 1 |
 | :--- | :--- |
 | **Sprint Planning Background** | |
-| **Date** | 2026-04-20 |
+| **Date** | 2026-04-21 |
 | **Time** | 19:00 PM |
 | **Location** | Reunión virtual (Microsoft Teams) |
-| **Prepared By** | Huaman Oscco, Aldo Jesus |
-| **Attendees (to planning meeting)** | Peñaranda Caldas, Gabriel Augusto / Bottger Salazar, Johan Karl / Huaman Oscco, Aldo Jesus / Limache Coronel, Imanol Fabricio / Ayllon Pauccar, Juan David |
+| **Prepared By** | Limache Coronel, Imanol Fabrizio|
+| **Attendees (to planning meeting)** | Peñaranda Caldas, Gabriel Augusto / Bottger Salazar, Johan Karl / Limache Coronel, Imanol Fabrizio / Ayllon Pauccar, Juan David |
 | **Sprint n – 1 Review Summary** | Al ser el primer Sprint de desarrollo, la revisión anterior corresponde a la fase de ideación. Resultados alcanzados: arquitectura C4 finalizada, bases de datos diseñadas y repositorios GitHub configurados. El Product Owner brindó el feedback necesario para iniciar la codificación orientada al dominio. |
 | **Sprint n – 1 Retrospective Summary** | Como retrospectiva inicial de la forma de trabajo, el equipo identificó como acierto el uso de diagramas compartidos, pero reconoció como oportunidad de mejora establecer reglas más estrictas de GitFlow para evitar colisiones en los Pull Requests futuros. |
 | **Sprint Goal & User Stories** | |
@@ -148,8 +148,7 @@ Para asegurar la eficiencia durante este primer Sprint, el alcance funcional se 
 | :--- | :--- | :--- | :--- | :--- |
 | Peñaranda Caldas, Gabriel Augusto | gapc2124 | C | L | C |
 | Bottger Salazar, Johan Karl | Deskjobo | C | C | L |
-| Huaman Oscco, Aldo Jesus | aldo-huaman | L | C | C |
-| Limache Coronel, Imanol Fabricio | imanol-limache | C | C | C |
+| Limache Coronel, Imanol Fabricio | imanol-limache | L | C | C |
 | Ayllon Pauccar, Juan David | juan-ayllon | C | C | C |
 ### Aspect Leaders and Collaborators
 
@@ -160,8 +159,7 @@ La organización de líderes y colaboradores está directamente relacionada con 
 | Team Member | GitHub Username | Arquitectura & DDD (L/C) | Desarrollo Backend & API (L/C) | Simulacion IoT & Hardware (L/C) | Frontend & UI/UX (L/C) | QA & Testing (L/C) |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
 | Ayllon Pauccar, Juan David | JuanDPAUC | C | C | C | C | L |
-| Limache Coronel, Imanol Fabricio | ImaLi06 | C | C | L | C | C |
-| Huaman Oscco Aldo Jesus | Jesusho22 | C | C | C | L | C |
+| Limache Coronel, Imanol Fabricio | ImaLi06 | C | C | L | L | C |
 | Bottger Salazar Johan Karl | Deskjobo | C | L | C | C | C |
 | Peñaranda Caldas Gabriel Augusto | gapc2124 | L | C | C | C | C |
 ---
@@ -188,8 +186,8 @@ La organización de líderes y colaboradores está directamente relacionada con 
 | SMAR-34 | Datos en tránsito | T-34-2 | Redirección Segura | Hacer que si alguien entra por "http", la web lo mande automáticamente a "https". | 2 | Gabriel | To-Do |
 | SMAR-45 | Data Isolation | T-45-1 | Campo de Empresa | Agregar una columna "Empresa_Id" en todas las tablas para separar los datos de cada cliente. | 6 | Imanol | To-Do |
 | SMAR-45 | Data Isolation | T-45-2 | Filtro de Consultas | Programar la lógica para que un usuario solo pueda ver los registros que coincidan con su "Empresa_Id". | 8 | Imanol | To-Do |
-| SMAR-01 | Login estándar | T-01-1 | Maquetado de Login | Crear la página visual (HTML/CSS) con el formulario de correo y contraseña que sea responsive. | 5 | Aldo | To-Do |
-| SMAR-01 | Login estándar | T-01-2 | Conexión Backend | Programar el endpoint que recibe los datos del formulario y valida si el usuario existe. | 6 | Aldo | To-Do |
+| SMAR-01 | Login estándar | T-01-1 | Maquetado de Login | Crear la página visual (HTML/CSS) con el formulario de correo y contraseña que sea responsive. | 5 | Imanol | To-Do |
+| SMAR-01 | Login estándar | T-01-2 | Conexión Backend | Programar el endpoint que recibe los datos del formulario y valida si el usuario existe. | 6 | Imanol | To-Do |
 | SMAR-03 | Creación usuarios | T-03-1 | Formulario Registro | Diseñar la interfaz para que el Admin pueda escribir los datos de nuevos empleados. | 5 | Gabriel | To-Do |
 | SMAR-03 | Creación usuarios | T-03-2 | Guardado de Usuario | Crear la función que inserta al nuevo usuario en la base de datos validando que el correo no esté repetido. | 5 | Gabriel | To-Do |
 | SMAR-04 | Asignación roles | T-04-1 | Tabla de Roles | Crear en la base de datos los niveles (Admin, Staff, Monitor) y asignarlos a los usuarios. | 4 | Juan | To-Do |
@@ -202,8 +200,8 @@ La organización de líderes y colaboradores está directamente relacionada con 
 | SMAR-44 | Anti-Brute Force | T-44-2 | Bloqueo por tiempo | Hacer que el sistema impida el acceso a esa cuenta por 15 minutos tras los fallos detectados. | 4 | Johan | To-Do |
 | SMAR-51 | Complejidad clave | T-51-1 | Reglas de Clave | Crear las validaciones para que la clave sea difícil (mínimo 8 letras, un número y un símbolo). | 3 | Juan | To-Do |
 | SMAR-51 | Complejidad clave | T-51-2 | Mensajes de Error | Mostrar mensajes en rojo al usuario si su clave es muy débil mientras la está escribiendo. | 3 | Juan | To-Do |
-| SMAR-81 | Manejo Errores | T-81-1 | Pantalla de Error | Crear una página o alerta amigable para cuando el servidor falle, sin mostrar código técnico. | 5 | Aldo | To-Do |
-| SMAR-81 | Manejo Errores | T-81-2 | Auditoría Interna | Configurar que el sistema guarde un archivo (log) con los errores reales para que el programador los revise. | 4 | Aldo | To-Do |
+| SMAR-81 | Manejo Errores | T-81-1 | Pantalla de Error | Crear una página o alerta amigable para cuando el servidor falle, sin mostrar código técnico. | 5 | Juan | To-Do |
+| SMAR-81 | Manejo Errores | T-81-2 | Auditoría Interna | Configurar que el sistema guarde un archivo (log) con los errores reales para que el programador los revise. | 4 | Johan | To-Do |
 | SMAR-82 | CORS Policy | T-82-1 | Permisos de Dominio | Configurar el sistema para que solo acepte peticiones que vengan de tu propia web oficial. | 3 | Gabriel | To-Do |
 | SMAR-82 | CORS Policy | T-82-2 | Seguridad de Cabeceras | Definir qué acciones (leer, escribir, borrar) están permitidas desde el navegador. | 3 | Gabriel | To-Do |
 | **TOTAL HORAS** | | | | | **106** | | |
