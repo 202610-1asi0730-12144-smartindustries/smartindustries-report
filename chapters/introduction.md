@@ -26,7 +26,7 @@
 |---------------------------------|------------|
 | Imanol Fabrizio Limache Coronel | u202410382 |
 | Peñaranda Caldas Gabriel Augusto| u202210836 |
-| |  |
+| Johan Karl Bottger Salazar      | u202210735 |
 | Ayllon Pauccar Juan David       | u20241a860 |
 
 </div>
@@ -60,6 +60,7 @@
 | 4\.0        | 22/04/2026 |                    | Se agregó el diagrama de Clases tanto para Frontend como para Backend.                                                                          |
 | 4\.1        | 23/04/2026 | Juan David Ayllon Pauccar                          | Se elaboró la sección 4.3 del documento técnico.                                                                                                |
 | 4\.2        | 24/04/2026 | Juan David Ayllon Pauccar                          | Se completó la sección 4.4 cerrando los requerimientos asignados.                                                                               |
+
 
 </div><br><br>
 
@@ -191,8 +192,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
  <b>AV1:</b><p>Expuso el modelo de negocio, el proceso de User Personas y la propuesta de valor de SmartLock frente a la clase.</p>
 <h4>Ayllon Pauccar Juan David</h4>
  <b>AV1:</b><p>Explicó las secciones introductorias y la justificación de la solución propuesta en el pitch inicial del proyecto.</p>
-<h4>Nombre</h4>
- <b>AV1:</b><p>Descripción</p>
+<h4>Johan Karl Bottger Salazar</h4>
+ <b>AV1:</b><p>Durante el desarrollo del proyecto, demostré la capacidad de comunicar ideas y resultados de manera clara, objetiva y adaptada al contexto técnico del equipo.</p>
 </td>
 <td colspan="3" align="justify">
 <h4>Limache Coronel Imanol Fabricio</h4>
@@ -201,8 +202,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 <b>AV1:</b> Logró captar la atención de la audiencia al articular claramente los beneficios del sistema sin depender de tecnicismos.<br><br>
 <h4>Ayllon Pauccar Juan David</h4>
 <b>AV1:</b> Comunicó eficazmente el problema inicial y cómo la solución se alinea con los objetivos del cliente.<br><br>
-<h4>Nombre</h4>
-<b>AV1:</b> Descripcion
+<h4>Johan Karl Bottger Salazar</h4>
+<b>AV1:</b> <p> Durante el desarrollo del proyecto, demostré la capacidad de comunicar ideas y resultados de manera clara, objetiva y adaptada al contexto técnico del equipo.</p>
 </td>
 </tr>
 <tr>
@@ -214,8 +215,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
  <b>AV1:</b><p>Elaboró los perfiles de usuario, el análisis Lean UX y documentó los capítulos iniciales de la propuesta.</p>
 <h4>Ayllon Pauccar Juan David</h4>
  <b>AV1:</b><p>Estructuró y redactó la problemática, los antecedentes y los requerimientos funcionales del sistema.</p>
-<h4>Nombre</h4>
- <b>AV1:</b><p>Descripcion</p>
+<h4>Johan Karl Bottger Salazar</h4>
+ <b>AV1:</b><p>Durante el desarrollo del proyecto, demostré la capacidad de comunicar ideas y resultados de manera clara, objetiva y adaptada al contexto técnico del equipo.</p>
 </td>
 <td colspan="3" align="justify">
 <h4>Limache Coronel Imanol Fabricio</h4>
@@ -224,8 +225,8 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 <b>AV1:</b> Redactó los artefactos de UX y negocio con un nivel de detalle excelente, estructura lógica y ortografía impecable.<br><br>
 <h4>Ayllon Pauccar Juan David</h4>
 <b>AV1:</b> Consolidó los antecedentes y requisitos en un texto claro, formal y académicamente riguroso.<br><br>
-<h4>Nombre</h4>
-<b>AV1:</b> Descripcion
+<h4>Johan Karl Bottger Salazar</h4>
+ <b>AV1:</b><p>Durante el desarrollo del proyecto, demostré la capacidad de comunicar ideas y resultados de manera clara, objetiva y adaptada al contexto técnico del equipo.</p>
 </td>
 </tr>
 </tbody>
