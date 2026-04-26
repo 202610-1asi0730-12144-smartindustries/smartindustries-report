@@ -132,7 +132,7 @@ El Sprint Planning Meeting marcó el inicio formal del desarrollo del código de
 | **Time** | 19:00 PM |
 | **Location** | Reunión virtual (Microsoft Teams) |
 | **Prepared By** | Huaman Oscco, Aldo Jesus |
-| **Attendees (to planning meeting)** | Peñaranda Caldas, Gabriel Augusto / Palacios Tinoco, Adrian Fernando / Huaman Oscco, Aldo Jesus / Limache Coronel, Imanol Fabricio / Ayllon Pauccar, Juan David |
+| **Attendees (to planning meeting)** | Peñaranda Caldas, Gabriel Augusto / Bottger Salazar, Johan Karl / Huaman Oscco, Aldo Jesus / Limache Coronel, Imanol Fabricio / Ayllon Pauccar, Juan David |
 | **Sprint n – 1 Review Summary** | Al ser el primer Sprint de desarrollo, la revisión anterior corresponde a la fase de ideación. Resultados alcanzados: arquitectura C4 finalizada, bases de datos diseñadas y repositorios GitHub configurados. El Product Owner brindó el feedback necesario para iniciar la codificación orientada al dominio. |
 | **Sprint n – 1 Retrospective Summary** | Como retrospectiva inicial de la forma de trabajo, el equipo identificó como acierto el uso de diagramas compartidos, pero reconoció como oportunidad de mejora establecer reglas más estrictas de GitFlow para evitar colisiones en los Pull Requests futuros. |
 | **Sprint Goal & User Stories** | |
@@ -147,7 +147,7 @@ Para asegurar la eficiencia durante este primer Sprint, el alcance funcional se 
 | Team Member (Last Name, First Name) | GitHub Username | Landing Page (UI/UX & Frontend) | Identity & Auth (Backend API) | Security Configuration (AWS & DB) |
 | :--- | :--- | :--- | :--- | :--- |
 | Peñaranda Caldas, Gabriel Augusto | gapc2124 | C | L | C |
-| Palacios Tinoco, Adrian Fernando | adrian-palacios | C | C | L |
+| Bottger Salazar, Johan Karl | Deskjobo | C | C | L |
 | Huaman Oscco, Aldo Jesus | aldo-huaman | L | C | C |
 | Limache Coronel, Imanol Fabricio | imanol-limache | C | C | C |
 | Ayllon Pauccar, Juan David | juan-ayllon | C | C | C |
@@ -162,7 +162,7 @@ La organización de líderes y colaboradores está directamente relacionada con 
 | Ayllon Pauccar, Juan David | JuanDPAUC | C | C | C | C | L |
 | Limache Coronel, Imanol Fabricio | ImaLi06 | C | C | L | C | C |
 | Huaman Oscco Aldo Jesus | Jesusho22 | C | C | C | L | C |
-| Palacios Tinoco Adrian Fernando | AdranP3107 | C | L | C | C | C |
+| Bottger Salazar Johan Karl | Deskjobo | C | L | C | C | C |
 | Peñaranda Caldas Gabriel Augusto | gapc2124 | L | C | C | C | C |
 ---
 
@@ -182,8 +182,8 @@ La organización de líderes y colaboradores está directamente relacionada con 
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **User Story** | **Work-Item / Task** | | | | | |
 | **Id** | **Título** | **Id** | **Título** | **Descripción** | **Est. (Hrs)** | **Asignado** | **Status** |
-| SMAR-33 | Encriptación | T-33-1 | Hash de claves | Programar la función para que las contraseñas se guarden "encriptadas" en la base de datos usando la librería Bcrypt. | 4 | Adrian | To-Do |
-| SMAR-33 | Encriptación | T-33-2 | Pruebas de Login | Verificar que al loguearse, el sistema compare correctamente la clave escrita con la encriptada en la DB. | 3 | Adrian | To-Do |
+| SMAR-33 | Encriptación | T-33-1 | Hash de claves | Programar la función para que las contraseñas se guarden "encriptadas" en la base de datos usando la librería Bcrypt. | 4 | Johan | To-Do |
+| SMAR-33 | Encriptación | T-33-2 | Pruebas de Login | Verificar que al loguearse, el sistema compare correctamente la clave escrita con la encriptada en la DB. | 3 | Johan | To-Do |
 | SMAR-34 | Datos en tránsito | T-34-1 | Configuración HTTPS | Configurar el servidor (o el entorno local) para que la URL use el candadito de seguridad (SSL). | 4 | Gabriel | To-Do |
 | SMAR-34 | Datos en tránsito | T-34-2 | Redirección Segura | Hacer que si alguien entra por "http", la web lo mande automáticamente a "https". | 2 | Gabriel | To-Do |
 | SMAR-45 | Data Isolation | T-45-1 | Campo de Empresa | Agregar una columna "Empresa_Id" en todas las tablas para separar los datos de cada cliente. | 6 | Imanol | To-Do |
@@ -198,8 +198,8 @@ La organización de líderes y colaboradores está directamente relacionada con 
 | SMAR-23 | Reset de clave | T-23-2 | Link Temporal | Crear una página donde el usuario escriba su nueva clave usando un enlace que expire en 1 hora. | 5 | Imanol | To-Do |
 | SMAR-26 | Cierre de sesión | T-26-1 | Botón de Salir | Programar la acción de "Cerrar sesión" que borre los datos guardados en el navegador. | 2 | Imanol | To-Do |
 | SMAR-26 | Cierre de sesión | T-26-2 | Limpieza de Token | Asegurar que el servidor ya no acepte el token anterior una vez que el usuario salió. | 4 | Imanol | To-Do |
-| SMAR-44 | Anti-Brute Force | T-44-1 | Contador de Fallos | Programar un contador que identifique si una misma persona falla su clave más de 5 veces. | 5 | Adrian | To-Do |
-| SMAR-44 | Anti-Brute Force | T-44-2 | Bloqueo por tiempo | Hacer que el sistema impida el acceso a esa cuenta por 15 minutos tras los fallos detectados. | 4 | Adrian | To-Do |
+| SMAR-44 | Anti-Brute Force | T-44-1 | Contador de Fallos | Programar un contador que identifique si una misma persona falla su clave más de 5 veces. | 5 | Johan | To-Do |
+| SMAR-44 | Anti-Brute Force | T-44-2 | Bloqueo por tiempo | Hacer que el sistema impida el acceso a esa cuenta por 15 minutos tras los fallos detectados. | 4 | Johan | To-Do |
 | SMAR-51 | Complejidad clave | T-51-1 | Reglas de Clave | Crear las validaciones para que la clave sea difícil (mínimo 8 letras, un número y un símbolo). | 3 | Juan | To-Do |
 | SMAR-51 | Complejidad clave | T-51-2 | Mensajes de Error | Mostrar mensajes en rojo al usuario si su clave es muy débil mientras la está escribiendo. | 3 | Juan | To-Do |
 | SMAR-81 | Manejo Errores | T-81-1 | Pantalla de Error | Crear una página o alerta amigable para cuando el servidor falle, sin mostrar código técnico. | 5 | Aldo | To-Do |
