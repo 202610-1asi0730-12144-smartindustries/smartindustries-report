@@ -24,11 +24,11 @@
 
 | Integrante                      | Código     |
 |---------------------------------|------------|
-| Palacios Tinoco Adrian Fernando | u202410817 |
+| Ayllon Pauccar  Juan David      | U20241a860 |
 | Bottger Salazar, Johan Karl     | U202210735 |
 | Peñaranda Caldas Gabriel Augusto| u202210836 |
-| Huaman Oscco Aldo Jesus         | u20231h067 |
-|                                 |            |
+|          |  |
+
 
 </div>
 
