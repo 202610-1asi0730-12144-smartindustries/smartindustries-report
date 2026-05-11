@@ -132,7 +132,7 @@ El Sprint Planning Meeting marcó el inicio formal del desarrollo del código de
 | **Sprint #** | Sprint 1 |
 | :--- | :--- |
 | **Sprint Planning Background** | |
-| **Date** | 2026-04-20 |
+| **Date** | 2026-04-21 |
 | **Time** | 19:00 PM |
 | **Location** | Reunión virtual (Microsoft Teams) |
 | **Prepared By** | Peñaranda Caldas, Gabriel Augusto |
