@@ -1,8 +1,8 @@
+
 # Capítulo IV: Product Design
 
 ## 4.1. Style Guidelines.
-Se describen las directrices que aseguran la uniformidad
-estética del proyecto.<br>
+Se describen las directrices que aseguran la uniformidad estética del proyecto.<br>
 
 ### 4.1.1. General Style Guidelines.
 **Colors:**
@@ -14,13 +14,12 @@ Elegimos una paleta que grite **seguridad y tecnología**, pero sin cansar la vi
 * **Gris Neutro (#E0E1DD):** Este va de fondo en las secciones. Es limpio y hace que los demás elementos resalten sin esfuerzo.
 * **Azul Eléctrico (#3E92CC):** Este es nuestro "call to action". Si hay algo que el usuario tiene que clickear sí o sí (como el botón de "Abrir Puerta" o "Guardar Configuración"), va en este color.
 
-<img src="/Resources/Chapter4/Style-Guidelines/Paleta-de-colores/Paleta-de-colores.PNG">
-
+<img src="/Resources/Chapter4/Style-Guidelines/Paleta-de-colores/Paleta-de-colores.PNG" alt="Paleta de Colores">
 
 **Branding**<br>
 El logo de **SmartLock** es directo al grano: un **candado**. Elegimos este isotipo porque es el símbolo universal de la seguridad física; no necesitamos complicarlo con más adornos para que el usuario entienda qué hacemos. Lo que lo hace moderno es su diseño minimalista y limpio. Acompañando al candado, la tipografía del nombre es sólida y de cortes precisos. Queríamos que la identidad visual transmitiera esa firmeza y robustez que se espera de un sistema de seguridad confiable, alejándonos de cualquier estética que pudiera parecer "frágil" o improvisada.
 
-<img src="/Resources/Chapter4/Logo/SmartLock-Logo.png">
+<img src="/Resources/Chapter4/Logo/SmartLock-Logo.png" alt="Logo SmartLock">
 
 **Typography** <br>
 Nos fuimos por **Inter**. ¿Por qué? Porque cuando tienes una lista gigante de registros de entrada y salida, necesitas una letra que se lea perfecto en pantallas de cualquier tamaño. Es una fuente *sans-serif* optimizada para entornos digitales.
@@ -51,7 +50,7 @@ El estilo de comunicación de SmartLock es **directo y técnico**. Como ingenier
 
 ---
 
-### 4.1.2. Web Style Guidelines
+### 4.1.2. Web Style Guidelines.
 
 Aquí es donde aterrizamos todo para que la plataforma web se vea de nivel profesional:
 
@@ -61,6 +60,7 @@ Aquí es donde aterrizamos todo para que la plataforma web se vea de nivel profe
 * **Rojo:** Alertar brechas de seguridad o intentos fallidos.
 * **Verde/Azul:** Accesos válidos y sistema operativo.
 * **Amarillo:** Dar advertencias ante cualquier problema.
+
 ## 4.2. Information Architecture.
 En SmartLock, la arquitectura de la información no es solo un menú de opciones; es el cerebro que permite que un administrador no entre en pánico cuando hay cientos de personas moviéndose por sus instalaciones. En el mundo de la seguridad digital, un segundo de duda puede ser un problema grave. Por eso, hemos diseñado una estructura donde la información crítica (como quién entró por la puerta principal hace un segundo) siempre está a la vista, eliminando cualquier "floro" visual que distraiga de lo importante: el control total y en tiempo real.
 
@@ -91,7 +91,7 @@ En el sistema de etiquetado de SmartLock, hemos huido del lenguaje genérico. Qu
 
 ---
 
-### 4.2.3. SEO Tags and Meta Tags
+### 4.2.3. SEO Tags and Meta Tags.
 Queremos que SmartLock sea lo primero que aparezca cuando una empresa busque modernizar su seguridad.
 
 ### **Landing Page**
@@ -120,18 +120,27 @@ La navegación en SmartLock está pensada para ser "invisible" y eficiente:
 * **Menú Lateral Retráctil:** Prioriza el espacio de trabajo central para ver los mapas de calor y tablas de acceso, manteniendo los módulos principales a un solo clic.
 * **Migas de Pan (Breadcrumbs):** Vital para no perderse cuando navegas por sedes (ej. Sedes > Lima Centro > Piso 3 > Laboratorio A), permitiendo al usuario ubicarse en todo momento.
 * **Acciones Contextuales:** El sistema ofrece botones inteligentes según el estado del punto de control (ej. si una puerta detecta una intrusión, el botón principal será "Bloquear Acceso" o "Contactar Seguridad").
+
 ## 4.3. Landing Page UI Design.
 En esta sección se detalla el proceso de diseño de la interfaz de usuario para la página de aterrizaje de **SmartLock**. El diseño se centra en la conversión de usuarios y la exposición clara de la propuesta de valor del sistema de control de acceso.
+
 ### 4.3.1. Landing Page Wireframe.
 El wireframe de baja fidelidad define la estructura visual y la jerarquía de la información. Se ha priorizado una navegación intuitiva, destacando las funcionalidades principales y los beneficios de seguridad del sistema.
+
 ![Landing Page Wireframe](/Resources/Chapter4/LandingPage/Wireframe%20Landing%20Page.png)
+
 * **Elementos clave:** Estructura de navegación, sección hero con llamado a la acción (CTA) y secciones de beneficios para el segmento de negocios.
+
 ### 4.3.2. Landing Page Mock-up.
 El mock-up de alta fidelidad integra la identidad visual de la marca, incluyendo la paleta de colores, tipografía y elementos gráficos finales. Este diseño representa la apariencia exacta que tendrá la aplicación web una vez implementada.
+
 ![Landing Page Mock-up](/Resources/Chapter4/LandingPage/Mockup%20Landing%20Page.png)
+
 * **Detalles estéticos:** Uso de contrastes para mejorar la legibilidad y elementos visuales que refuerzan la confianza y modernidad del sistema **SmartLock**.
+
 ## 4.4. Web Applications UX/UI Design.
 Esta sección presenta y explica la propuesta visual y de interacción para las aplicaciones que constituyen la experiencia de usuario con los productos digitales de **SmartLock**.
+
 ### 4.4.1. Web Applications Wireframes.
 Esta sección presenta los esquemas de baja fidelidad que definen la estructura de la aplicación web. Se ha priorizado la **Arquitectura de Información** mediante un sistema de navegación lateral (Sidebar) que organiza las funciones de gestión de usuarios, eventos y seguridad de forma jerárquica.
 * **Principios de Diseño:** Se aplica el principio de proximidad para agrupar funciones relacionadas (como el perfil de usuario y notificaciones) y consistencia en la ubicación de los elementos de control.
@@ -143,7 +152,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Inicio de Sesión
 
-![Inicio Sesión](/Resources/Chapter4/Web-Application/Inicio-sesion.png)
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/Inicio sesion.png" width="800" alt="Inicio de Sesión Wireframe">
+</p>
 
 **Descripción:** Wireframe de la pantalla de acceso principal que define la estructura de los campos de autenticación, el botón de inicio de sesión y los elementos de recuperación de acceso.
 
@@ -151,7 +162,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Registro de Sesión (Sign Up)
 
-![Registro Sesión](/Resources/Chapter4/Web-Application/Registro-Sesion.png)
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/Registro Sesión.png" width="800" alt="Registro de Sesión Wireframe">
+</p>
 
 **Descripción:** Esquema del formulario de registro orientado al alta de nuevos administradores dentro de la plataforma, mostrando la distribución lógica de los campos requeridos.
 
@@ -159,7 +172,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Autenticación de Dos Factores (2FA)
 
-![Autenticación 2FA](/Resources/Chapter4/Web-Application/Autenticacion-2FA.png)
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/Autenticacion 2FA.png" width="800" alt="Autenticación 2FA Wireframe">
+</p>
 
 **Descripción:** Diseño estructural de la segunda capa de seguridad mediante verificación por código, enfocado en la simplicidad de interacción y validación segura del usuario.
 
@@ -169,7 +184,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Creación de Sedes (Plan Principiante)
 
-![Crear Sedes](/Resources/Chapter4/Web-Application/crear-sedes-plan-principiante.png)
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/crear sedes -plan principiante.png" width="800" alt="Creación de Sedes Wireframe">
+</p>
 
 **Descripción:** Wireframe del proceso inicial de configuración de sedes, donde se organizan los campos necesarios para el despliegue y administración básica del sistema.
 
@@ -177,7 +194,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Dashboard de Puntos de Control
 
-![Dashboard Puntos de Control](/Resources/Chapter4/Web-Application/Dashboard-Puntos-de-Control.png)
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/Dashboard - Puntos de Control.png" width="800" alt="Dashboard Puntos de Control Wireframe">
+</p>
 
 **Descripción:** Esquema de monitoreo de dispositivos físicos y puntos de acceso, utilizando una distribución visual en cuadrícula para facilitar el control operativo en tiempo real.
 
@@ -187,7 +206,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Dashboard Corporativo
 
-![Dashboard Corporativo](/Resources/Chapter4/Web-Application/Dashboard-corportivo.png)
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/Dashboard -corportivo.png" width="800" alt="Dashboard Corporativo Wireframe">
+</p>
 
 **Descripción:** Vista de alto nivel orientada a organizaciones empresariales, priorizando métricas globales, indicadores de seguridad y administración multisede.
 
@@ -195,7 +216,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Dashboard Principiante
 
-![Dashboard Principiante](/Resources/Chapter4/Web-Application/Dashboard-gratuito.png)
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/Dashboard- gratuito.png" width="800" alt="Dashboard Principiante Wireframe">
+</p>
 
 **Descripción:** Versión simplificada del panel principal, diseñada para usuarios del plan gratuito, manteniendo consistencia visual y acceso a funciones esenciales.
 
@@ -205,7 +228,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Dashboard de Usuarios
 
-![Dashboard Usuarios](/Resources/Chapter4/Web-Application/Dashboard-usuarios.png)
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/Dashboard - usuarios.png" width="800" alt="Dashboard de Usuarios Wireframe">
+</p>
 
 **Descripción:** Distribución estructural del módulo de gestión de usuarios, incluyendo filtros, tabla de registros, búsqueda avanzada y administración de permisos.
 
@@ -213,7 +238,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Gestión de Eventos
 
-![Dashboard Eventos](/Resources/Chapter4/Web-Application/Dashboard-eventos.png)
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/Dashboard - eventos.png" width="800" alt="Gestión de Eventos Wireframe">
+</p>
 
 **Descripción:** Módulo orientado a la configuración de accesos temporales mediante eventos programados, permitiendo restricciones horarias y control de visitantes.
 
@@ -221,7 +248,9 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Gestión de Credenciales
 
-![Dashboard Credenciales](/Resources/Chapter4/Web-Application/Dashboard-Credenciales.png)
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/Dashboard - Credenciales.png" width="800" alt="Gestión de Credenciales Wireframe">
+</p>
 
 **Descripción:** Organización funcional del sistema de emisión y control de credenciales digitales, permitiendo el seguimiento de accesos autorizados.
 
@@ -229,11 +258,15 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 
 ### Bitácora de Accesos
 
-![Dashboard Bitácora](/Resources/Chapter4/Web-Application/Dashboard-Bitacora.png)
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/Dashboard - Bitacora.png" width="800" alt="Bitácora de Accesos Wireframe">
+</p>
 
 **Descripción:** Estructura diseñada para la visualización de logs históricos de acceso, facilitando auditorías de seguridad y trazabilidad de eventos.
 
 ### 4.4.2. Web Applications Wireflow Diagrams.
+*[Sección en desarrollo]*
+
 ### 4.4.3. Web Applications Mock-ups.
 Esta sección presenta los mock-ups de alta fidelidad de la plataforma web de SmartLock. Estos diseños representan la apariencia visual final del sistema, incluyendo identidad visual, paleta de colores, tipografía, distribución de componentes y experiencia de usuario orientada a la implementación real del producto.
 
@@ -243,7 +276,7 @@ Esta sección presenta los mock-ups de alta fidelidad de la plataforma web de Sm
 
 ### Inicio de Sesión
 
-![Inicio de Sesión Mockup](/Resources/Chapter4/Web-Application/Inicio-Sesion-Mockup.png)
+![Inicio de Sesión Mockup](/Resources/Chapter4/Web-Application/Inicio Sesión-Mockup.png)
 
 **Descripción:** Mock-up de la pantalla principal de acceso al sistema, donde se visualiza la interfaz final de autenticación con diseño visual completo, jerarquía de botones y elementos de recuperación de acceso.
 
@@ -251,7 +284,7 @@ Esta sección presenta los mock-ups de alta fidelidad de la plataforma web de Sm
 
 ### Registro de Sesión (Sign Up)
 
-![Registro de Sesión Mockup](/Resources/Chapter4/Web-Application/Registro-Sesion-Mockup.png)
+![Registro de Sesión Mockup](/Resources/Chapter4/Web-Application/Registro Sesión-Mockup.png)
 
 **Descripción:** Representación visual del formulario de registro de nuevos administradores, mostrando el diseño definitivo de campos, validaciones visuales y estructura de navegación.
 
@@ -259,7 +292,7 @@ Esta sección presenta los mock-ups de alta fidelidad de la plataforma web de Sm
 
 ### Autenticación de Dos Factores (2FA)
 
-![Autenticación 2FA Mockup](/Resources/Chapter4/Web-Application/Autentificacion-de-2-Factores-Mockup.png)
+![Autenticación 2FA Mockup](/Resources/Chapter4/Web-Application/Autentificación de 2 Factores-Mockup.png)
 
 **Descripción:** Diseño final de la segunda capa de seguridad mediante código de verificación, enfocado en claridad visual, seguridad y facilidad de uso para el usuario.
 
@@ -268,64 +301,69 @@ Esta sección presenta los mock-ups de alta fidelidad de la plataforma web de Sm
 
 ### Dashboard Plan Principiante
 
-![Dashboard Plan Principiante Mockup](/Resources/Chapter4/Web-Application/Dashboard-Plan-Principiante-Mockup.png)
+![Dashboard Plan Principiante Mockup](/Resources/Chapter4/Web-Application/Dashboard- Plan Principiante-Mockup.png)
 
 **Descripción:** Mock-up del panel principal para usuarios del plan principiante, presentando una interfaz simplificada con acceso rápido a funciones esenciales y monitoreo básico del sistema.
 
 ---
 ### 4.4.4. Web Applications User Flow Diagrams.
+*[Sección en desarrollo]*
+
 ## 4.5. Web Applications Prototyping.
+*[Sección en desarrollo]*
+
 ## 4.6. Domain-Driven Software Architecture.
+
 ### 4.6.1. Design-Level Event Storming.
 En esta sección se detalla el diseño táctico del sistema, profundizando en la arquitectura y los componentes técnicos necesarios para implementar la solución. A diferencia del Big Picture, el DesignLevel Event Storming se enfoca en definir los límites de los agregados, los comandos que disparan cambios de estado y las políticas que gobiernan las reglas de negocio.
 
 <p align="center">
-  <img src="/Resources/Chapter4/eventStormin/design-level.jpeg" width="800">
+  <img src="/Resources/Chapter4/eventStormin/design-level.jpeg" width="800" alt="Design Level Event Storming">
 </p>
 
 #### Authentication Context
 Actúa como la puerta de entrada digital al ecosistema de SmartLock, gestionando los procesos de registro y acceso de los usuarios administrativos. Este componente se encarga de validar las credenciales de identidad y de implementar medidas de seguridad reforzadas, como la verificación en dos pasos (2FA), para garantizar que solo las personas legítimas ingresen al sistema. Además, supervisa la integridad de las sesiones activas, aplicando reglas automáticas que protegen la cuenta global ante cualquier cambio de seguridad o intento de acceso no autorizado.
 
 <p align="center">
-  <img src="/Resources/Chapter4/eventStormin/authentication-context.png" width="800">
+  <img src="/Resources/Chapter4/eventStormin/authentication-context.png" width="800" alt="Authentication Context">
 </p>
 
 #### Organization Context
 Constituye el núcleo operativo del sistema, encargado de estructurar la jerarquía institucional y física de cada cliente. Este componente facilita la creación de entidades globales, la gestión de sedes o sitios específicos y el registro técnico de cada punto de acceso o puerta dentro de la plataforma. Al centralizar esta estructura, el sistema asegura que la administración de los espacios físicos sea coherente y escalable, sirviendo como la base informativa necesaria para que los demás módulos operen según la distribución administrativa de la organización.
 
 <p align="center">
-  <img src="/Resources/Chapter4/eventStormin/organization-context.png" width="800">
+  <img src="/Resources/Chapter4/eventStormin/organization-context.png" width="800" alt="Organization Context">
 </p>
 
 #### Security Context
 Centraliza la gestión de identidades y la integridad del sistema SmartLock, asegurando que solo el personal autorizado interactúe con la infraestructura física. Este componente se encarga de validar el acceso en tiempo real y coordinar las respuestas automáticas ante situaciones críticas o intentos de intrusión. Al aislar estas funciones, se garantiza una capa de protección robusta que salvaguarda tanto la información digital como la seguridad de los espacios físicos administrados.
 <p align="center">
-  <img src="/Resources/Chapter4/eventStormin/security-context.png" height="600">
+  <img src="/Resources/Chapter4/eventStormin/security-context.png" height="600" alt="Security Context">
 </p>
 
 #### Subscription Plan Context
 Administra los planes comerciales y el modelo de facturación para cada organización dentro de la plataforma. Este componente es responsable de definir los niveles de servicio, gestionar los ciclos de pago y establecer los límites operativos, como el número permitido de puertas o usuarios según el plan adquirido.
 <p align="center">
-  <img src="/Resources/Chapter4/eventStormin/subscription-plan-context.png" width="750">
+  <img src="/Resources/Chapter4/eventStormin/subscription-plan-context.png" width="750" alt="Subscription Plan Context">
 </p>
 
 #### User Context
 Gestiona integralmente los perfiles y permisos de las personas que interactúan con la plataforma, distinguiendo claramente entre el personal administrativo y los usuarios de acceso físico. Este componente se encarga de dar de alta, actualizar o dar de baja a los miembros del sistema, asegurando que cada individuo cuente con las atribuciones necesarias según su rol dentro de la organización. Al centralizar esta administración, el sistema facilita un control preciso sobre quién puede operar el software y quién tiene permitido el ingreso a las instalaciones, manteniendo siempre un registro actualizado de todas las identidades activas.
 
 <p align="center">
-  <img src="/Resources/Chapter4/eventStormin/user-context.png" width="550">
+  <img src="/Resources/Chapter4/eventStormin/user-context.png" width="550" alt="User Context">
 </p>
 
 Descripción de los componentes identificados:
-- Comandos (Azul): Representan las intenciones de los usuarios o sistemas externos para realizar una acción específica (ej. "Generar Código QR", "Validar Acceso"). 
-- Agregados (Amarillo): Son las entidades o grupos de objetos que mantienen la consistencia de los datos y ejecutan la lógica de negocio ante un comando. 
-- Políticas (Lila): Definen reacciones automáticas del sistema ante eventos específicos ("Siempre que ocurra el Evento X, ejecutar el Comando Y"). 
-- Modelos de Lectura (Verde): Representan la información que el usuario visualiza en la interfaz para poder tomar una decisión y ejecutar un comando. 
-- Eventos de Dominio (Naranja): Indican que algo relevante para el negocio ha sucedido exitosamente (ej. "Código QR Generado", "Acceso Denegado"). 
+- **Comandos (Azul):** Representan las intenciones de los usuarios o sistemas externos para realizar una acción específica (ej. "Generar Código QR", "Validar Acceso"). 
+- **Agregados (Amarillo):** Son las entidades o grupos de objetos que mantienen la consistencia de los datos y ejecutan la lógica de negocio ante un comando. 
+- **Políticas (Lila):** Definen reacciones automáticas del sistema ante eventos específicos ("Siempre que ocurra el Evento X, ejecutar el Comando Y"). 
+- **Modelos de Lectura (Verde):** Representan la información que el usuario visualiza en la interfaz para poder tomar una decisión y ejecutar un comando. 
+- **Eventos de Dominio (Naranja):** Indican que algo relevante para el negocio ha sucedido exitosamente (ej. "Código QR Generado", "Acceso Denegado"). 
 
 Este modelado permite al equipo de desarrollo tener una guía clara para la implementación de los servicios y la definición de la lógica en el código.
 
-### 4.6.2. Software Architecture Context Diagram
+### 4.6.2. Software Architecture Context Diagram.
 
 In this section, the team introduces the Software Architecture Context Diagram. This high-level overview illustrates the **SmartLock** software system as a central entity, surrounded by the key user personas and the external systems it interacts with to deliver its "Asset-Light" access control value proposition.
 
@@ -337,7 +375,7 @@ In this section, the team introduces the Software Architecture Context Diagram. 
 * **Usuarios:** El diagrama identifica al **Administrator** (configuración), **Security Staff** (validación móvil) y **Attendee** (usuario final) como los actores principales.
 * **Sistemas Externos:** Se detalla la integración con **AWS SES** para la gestión de correos electrónicos y **Twilio API** para el envío de alertas críticas de seguridad vía SMS.
 
-### 4.6.3. Software Architecture Container Level Diagram
+### 4.6.3. Software Architecture Container Diagrams.
 
 In this section, the team presents the **Container Diagram** for SmartLock. This diagram expands the system's context to reveal the software containers that compose it (web applications, mobile applications, APIs, and databases). It illustrates the high-level distribution of responsibilities, exposes key technology decisions—such as Angular for the frontend, Java Spring Boot for the backend, and MySQL for persistence—and details how these containers communicate through the AWS cloud infrastructure.
 
@@ -353,7 +391,7 @@ The Container Diagram breaks down the internal architecture of SmartLock into th
 * **Relational Database:** A **MySQL** database hosted on **Amazon RDS**, serving as the single source of truth. it ensures the immutability of access logs (audit trails) and the integrity of user profiles and access rules.
 * **Communication:** The frontend and mobile app communicate asynchronously with the Backend API via **JSON over HTTPS**. The backend interacts with the database through **JDBC** and with third-party services (AWS SES and Twilio) via REST APIs.
 
-### 4.6.4. Software Architecture Components Diagrams
+### 4.6.4. Software Architecture Components Diagrams.
 
 In this section, the team presents the **Component Diagram** for the Core Backend API container. This diagram zooms into the Java Spring Boot application to illustrate its internal structure based on Domain-Driven Design (DDD) and Layered Architecture. It shows how the system is divided into Controllers (Presentation), Services (Business Logic/Domain), and Repositories (Data Access), and how these components interact to execute the access control logic.
 
@@ -375,82 +413,36 @@ The Component Diagram breaks down the **Core Backend API** into the following fu
 
 * **Repositories (Infrastructure Layer):**
   * **Audit & Log Repository:** Uses Spring Data JPA to securely write immutable logs of every access attempt and security event into the database.
-  * **Domain Data Repository:** Manages the persistence of user profiles, organizational data, doors, and policies.
+  * **Domain Data Repository:** Manage the persistence of user profiles, organizational data, doors, and policies.
 
 * **Communication Flow:** The web and mobile applications send HTTP requests to the **Controllers**. These controllers delegate the business logic to the **Services**. The services evaluate the rules and use the **Repositories** to interact with the MySQL database via JDBC, or use the **Notification Publisher** to dispatch asynchronous emails and SMS via AWS SES and Twilio.
 
-## 4.7. Software Object-Oriented Design
+## 4.7. Software Object-Oriented Design.
 
 En esta sección, el equipo presenta el diseño orientado a objetos del software, detallando la implementación interna y la estructura de componentes para cada *Bounded Context* de **SmartLock**. Los diagramas a continuación ilustran cómo se ha aplicado el enfoque de *Domain-Driven Design* (DDD) a nivel de código, definiendo claramente las responsabilidades, los límites de los agregados y los patrones de diseño utilizados tanto en la capa de presentación (Frontend) como en la lógica de negocio (Backend). Esta estructura garantiza un código modular, mantenible y altamente escalable.
-
----
 
 ### 4.7.1. Class Diagrams.
 
 #### Diagrama de clases (Frontend)
 
-<img src="/Resources/Chapter4/Diagram-Class/Frontend/Class-Diagram-Frontend-image.png">
+<img src="/Resources/Chapter4/Diagram-Class/Frontend/Class-Diagram-Frontend-image.png" alt="Class Diagram Frontend">
 
-El diagrama organiza el frontend de SmartLock en cinco 
-Bounded Contexts (Authentication, Organization, User, 
-Security y Subscription), lo que permite aislar la lógica 
-de negocio y asegurar que cada módulo evolucione de forma 
-independiente. Dentro de estos contextos, se implementan 
-los 8 Agregados definidos, donde entidades raíz como Security 
-y Organization encapsulan a Door y Office respectivamente; 
-esto garantiza la integridad del sistema, ya que cualquier 
-cambio de estado físico o estructural debe ser validado 
-por su respectiva raíz de agregado antes de impactar la interfaz.
+El diagrama organiza el frontend de SmartLock en cinco *Bounded Contexts* (Authentication, Organization, User, Security y Subscription), lo que permite aislar la lógica de negocio y asegurar que cada módulo evolucione de forma independiente. Dentro de estos contextos, se implementan los 8 Agregados definidos, donde entidades raíz como *Security* y *Organization* encapsulan a *Door* y *Office* respectivamente; esto garantiza la integridad del sistema, ya que cualquier cambio de estado físico o estructural debe ser validado por su respectiva raíz de agregado antes de impactar la interfaz.
 
-Bajo el enfoque DDD, la aplicación utiliza un EventBus 
-en la capa Shared para comunicar eventos entre contextos
-de forma desacoplada y emplea el patrón Assembler para
-transformar los datos crudos de la API en objetos de dominio 
-con comportamiento propio. Los Stores de la capa de aplicación 
-gestionan estos agregados mediante Signals, permitiendo 
-que la interfaz reaccione instantáneamente a cambios operativos 
-—como la apertura de una puerta o la actualización de un perfil—
-sin comprometer la separación de responsabilidades ni la pureza 
-del modelo de negocio.
+Bajo el enfoque DDD, la aplicación utiliza un *EventBus* en la capa Shared para comunicar eventos entre contextos de forma desacoplada y emplea el patrón *Assembler* para transformar los datos crudos de la API en objetos de dominio con comportamiento propio. Los *Stores* de la capa de aplicación gestionan estos agregados mediante Signals, permitiendo que la interfaz reaccione instantáneamente a cambios operativos —como la apertura de una puerta o la actualización de un perfil— sin comprometer la separación de responsabilidades ni la pureza del modelo de negocio.
 
 #### Diagrama de clases (Backend)
 
-<img src="/Resources/Chapter4/Diagram-Class/Backend/Class-Diagram-Backend-image.png">
+<img src="/Resources/Chapter4/Diagram-Class/Backend/Class-Diagram-Backend-image.png" alt="Class Diagram Backend">
 
-El backend de nuestro proyecto SmartLock lo hemos armado siguiendo 
-a tope la arquitectura DDD en SpringBoot, separando todo en los 5 
-Bounded Contexts y los 8 agregados que sacamos del Event Storming 
-para que no sea un espagueti de código. Usamos Aggregate Roots como 
-Security y Organization para mandar sobre entidades como Door y Office, 
-asegurando que ninguna puerta se abra si no pasa por las reglas del 
-negocio. Metimos patrones que vimos en clase como el Assembler para 
-limpiar los datos que vienen del front, usamos Records para que los 
-DTOs sean inmutables y puras Interfaces en los servicios y repositorios 
-para que el sistema sea fácil de mantener y escalar si luego queremos 
-cambiar algo de la base de datos o la lógica de las suscripciones.
+El backend de SmartLock ha sido estructurado estrictamente bajo los principios de *Domain-Driven Design* (DDD) utilizando el framework Spring Boot. La arquitectura se divide en 5 *Bounded Contexts* y 8 agregados principales, derivados del *Event Storming*, garantizando un alto nivel de cohesión y un bajo acoplamiento. Se emplean *Aggregate Roots* (como Security y Organization) para orquestar entidades secundarias (Door y Office), asegurando el cumplimiento de las reglas de negocio en la capa de dominio antes de ejecutar cualquier cambio de estado. 
+
+Adicionalmente, se implementaron patrones de diseño estratégico como *Assembler* para la conversión de datos y aislamiento de la capa de presentación, el uso de *Records* de Java para garantizar la inmutabilidad de los DTOs, e interfaces dedicadas para los servicios y repositorios. Esta abstracción asegura un sistema altamente mantenible y preparado para escalar sin generar deuda técnica.
 
 ## 4.8. Database Design.
 
----
-
 ### 4.8.1. Database Diagrams.
 
-<img src="/Resources/Chapter4/Data-Base-Diagram/Data-Base-Diagram-image.png">
+<img src="/Resources/Chapter4/Data-Base-Diagram/Data-Base-Diagram-image.png" alt="Database Diagram">
 
-El diagrama de base de datos para SmartLock se ha estructurado bajo un 
-enfoque de normalización 3FN y Domain-Driven Design (DDD), organizando 
-la información en Bounded Contexts que actúan como Aggregate Roots 
-(como Users y Organization) para garantizar la integridad operativa y 
-la escalabilidad mediante el uso de tipos de datos atómicos en MySQL. 
-Desde la perspectiva de seguridad y persistencia, el diseño separa 
-estrictamente las credenciales en authentications y los datos sensibles 
-en user_profiles (con correos encriptados) para cumplir con las leyes 
-de protección de datos, mientras que la tabla access_logs asegura una 
-auditoría inmutable de cada evento físico. Finalmente, la arquitectura 
-está totalmente optimizada para un ORM como Hibernate, facilitando el 
-mapeo de relaciones uno-a-muchos y uno-a-uno mediante claves foráneas 
-claras y tipos bigint, lo que permite un manejo eficiente de la carga 
-perezosa (Lazy Loading) y una transición fluida del modelo relacional 
-al código en Spring Boot.
-
----
+El diagrama de base de datos para SmartLock se ha estructurado bajo un enfoque de normalización 3FN y *Domain-Driven Design* (DDD), organizando la información en *Bounded Contexts* que actúan como *Aggregate Roots* (como Users y Organization) para garantizar la integridad operativa y la escalabilidad mediante el uso de tipos de datos atómicos en MySQL. Desde la perspectiva de seguridad y persistencia, el diseño separa estrictamente las credenciales en la tabla *authentications* y los datos sensibles en *user_profiles* (con correos encriptados) para cumplir con las leyes de protección de datos, mientras que la tabla *access_logs* asegura una auditoría inmutable de cada evento físico. Finalmente, la arquitectura está totalmente optimizada para un ORM como Hibernate, facilitando el mapeo de relaciones uno-a-muchos y uno-a-uno mediante claves foráneas claras y tipos bigint, lo que permite un manejo eficiente de la carga perezosa (*Lazy Loading*) y una transición fluida del modelo relacional al código en Spring Boot.
