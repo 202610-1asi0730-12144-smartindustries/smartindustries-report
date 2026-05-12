@@ -21,6 +21,7 @@
     * **Gestión Colaborativa y Simple:** Creemos que la tecnología debe ser fácil de usar. Centralizamos todo en un panel intuitivo para que la comunicación entre administradores y usuarios sea rápida, eliminando complicaciones innecesarias.
   <br>
     * **Compromiso con la Excelencia:** Trabajamos para que nuestra plataforma soporte las exigencias de un entorno real, ofreciendo una herramienta robusta que aguante el flujo constante de usuarios sin perder fiabilidad.
+    
 ### 1.1.2. Perfiles de integrantes del equipo
 
 |**Integrante**|**Perfil**|**Imagen**|
