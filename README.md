@@ -1710,30 +1710,30 @@ Nuestro objetivo ha sido consolidar el núcleo de seguridad y gestión de identi
 | **User Story** | | **Work-Item / Task** | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Id** | **Título** | **Id** | **Título** | **Descripción** | **Est. (Hrs)** | **Asignado** | **Status** |
-| SMAR-33 | Encriptación | T-33-1 | Hash de claves | Programar la función para que las contraseñas se guarden encriptadas en la DB usando Bcrypt. | 4 | Juan | To-Do |
-| SMAR-33 | Encriptación | T-33-2 | Pruebas de Login | Verificar que al loguearse, el sistema compare la clave escrita con la encriptada en la DB. | 3 | Juan | To-Do |
-| SMAR-34 | Datos en tránsito | T-34-1 | Configuración HTTPS | Configurar el servidor para que la URL use certificados SSL. | 4 | Gabriel | To-Do |
-| SMAR-34 | Datos en tránsito | T-34-2 | Redirección Segura | Hacer que si alguien entra por HTTP, la web lo redirija automáticamente a HTTPS. | 2 | Gabriel | To-Do |
-| SMAR-45 | Data Isolation | T-45-1 | Campo de Empresa | Agregar la columna "Empresa_Id" en todas las tablas para separar los datos de cada cliente. | 6 | Imanol | To-Do |
-| SMAR-45 | Data Isolation | T-45-2 | Filtro de Consultas | Programar la lógica para que un usuario solo pueda ver los registros de su "Empresa_Id". | 8 | Imanol | To-Do |
-| SMAR-01 | Login estándar | T-01-1 | Maquetado de Login | Crear la página visual (HTML/CSS) con el formulario de correo y contraseña responsivo. | 5 | Johan | To-Do |
-| SMAR-01 | Login estándar | T-01-2 | Conexión Backend | Programar el endpoint que recibe datos del formulario y valida si el usuario existe. | 6 | Johan | To-Do |
-| SMAR-03 | Creación usuarios | T-03-1 | Formulario Registro | Diseñar la interfaz para que el Admin pueda ingresar datos de nuevos empleados. | 5 | Gabriel | To-Do |
-| SMAR-03 | Creación usuarios | T-03-2 | Guardado Usuario | Crear función que inserta al nuevo usuario validando que el correo no esté repetido. | 5 | Gabriel | To-Do |
-| SMAR-04 | Asignación roles | T-04-1 | Tabla de Roles | Crear en la base de datos los niveles (Admin, Staff, Monitor) y asignarlos. | 4 | Johan | To-Do |
-| SMAR-04 | Asignación roles | T-04-2 | Control de Accesos | Programar que ciertas páginas o botones solo se activen si se tiene el rol adecuado. | 6 | Johan | To-Do |
-| SMAR-23 | Reset de clave | T-23-1 | Envío de Correo | Integrar servicio de AWS para que el sistema envíe mail automático al pedir el reset. | 6 | Imanol | To-Do |
-| SMAR-23 | Reset de clave | T-23-2 | Link Temporal | Crear página donde el usuario escriba su nueva clave usando enlace que expire en 1 hora. | 5 | Imanol | To-Do |
-| SMAR-26 | Cierre de sesión | T-26-1 | Botón de Salir | Programar la acción que borre los datos de sesión guardados en el navegador. | 2 | Imanol | To-Do |
-| SMAR-26 | Cierre de sesión | T-26-2 | Limpieza de Token | Asegurar que el servidor rechace el token anterior una vez que el usuario cerró sesión. | 4 | Imanol | To-Do |
-| SMAR-44 | Anti-Brute Force | T-44-1 | Contador Fallos | Programar un contador que identifique si una persona falla su clave más de 5 veces. | 5 | Juan | To-Do |
-| SMAR-44 | Anti-Brute Force | T-44-2 | Bloqueo por tiempo | Impedir el acceso a esa cuenta por 15 minutos tras los fallos detectados. | 4 | Juan | To-Do |
-| SMAR-51 | Complejidad clave | T-51-1 | Reglas de Clave | Crear validaciones para clave segura (mínimo 8 letras, número y símbolo). | 3 | Gabriel | To-Do |
-| SMAR-51 | Complejidad clave | T-51-2 | Mensajes de Error | Mostrar mensajes en rojo al usuario si su clave es muy débil mientras la escribe. | 3 | Gabriel | To-Do |
-| SMAR-81 | Manejo Errores | T-81-1 | Pantalla de Error | Crear alerta amigable para cuando el servidor falle, sin mostrar código técnico. | 5 | Johan | To-Do |
-| SMAR-81 | Manejo Errores | T-81-2 | Auditoría Interna | Configurar que el sistema guarde un archivo log con los errores reales para revisión. | 4 | Johan | To-Do |
-| SMAR-82 | CORS Policy | T-82-1 | Permisos Dominio | Configurar el sistema para que solo acepte peticiones desde tu web oficial. | 3 | Gabriel | To-Do |
-| SMAR-82 | CORS Policy | T-82-2 | Cabeceras Seguras | Definir qué acciones HTTP (GET, POST, DELETE) están permitidas. | 3 | Gabriel | To-Do |
+| SMAR-33 | Encriptación | T-33-1 | Hash de claves | Programar la función para que las contraseñas se guarden encriptadas en la DB usando Bcrypt. | 4 | Juan | Done |
+| SMAR-33 | Encriptación | T-33-2 | Pruebas de Login | Verificar que al loguearse, el sistema compare la clave escrita con la encriptada en la DB. | 3 | Juan | Done |
+| SMAR-34 | Datos en tránsito | T-34-1 | Configuración HTTPS | Configurar el servidor para que la URL use certificados SSL. | 4 | Gabriel | Done |
+| SMAR-34 | Datos en tránsito | T-34-2 | Redirección Segura | Hacer que si alguien entra por HTTP, la web lo redirija automáticamente a HTTPS. | 2 | Gabriel | Done |
+| SMAR-45 | Data Isolation | T-45-1 | Campo de Empresa | Agregar la columna "Empresa_Id" en todas las tablas para separar los datos de cada cliente. | 6 | Imanol | Done |
+| SMAR-45 | Data Isolation | T-45-2 | Filtro de Consultas | Programar la lógica para que un usuario solo pueda ver los registros de su "Empresa_Id". | 8 | Imanol | Done |
+| SMAR-01 | Login estándar | T-01-1 | Maquetado de Login | Crear la página visual (HTML/CSS) con el formulario de correo y contraseña responsivo. | 5 | Johan | Done |
+| SMAR-01 | Login estándar | T-01-2 | Conexión Backend | Programar el endpoint que recibe datos del formulario y valida si el usuario existe. | 6 | Johan | Done |
+| SMAR-03 | Creación usuarios | T-03-1 | Formulario Registro | Diseñar la interfaz para que el Admin pueda ingresar datos de nuevos empleados. | 5 | Gabriel | Done |
+| SMAR-03 | Creación usuarios | T-03-2 | Guardado Usuario | Crear función que inserta al nuevo usuario validando que el correo no esté repetido. | 5 | Gabriel | Done |
+| SMAR-04 | Asignación roles | T-04-1 | Tabla de Roles | Crear en la base de datos los niveles (Admin, Staff, Monitor) y asignarlos. | 4 | Johan | Done |
+| SMAR-04 | Asignación roles | T-04-2 | Control de Accesos | Programar que ciertas páginas o botones solo se activen si se tiene el rol adecuado. | 6 | Johan | Done |
+| SMAR-23 | Reset de clave | T-23-1 | Envío de Correo | Integrar servicio de AWS para que el sistema envíe mail automático al pedir el reset. | 6 | Imanol | Done |
+| SMAR-23 | Reset de clave | T-23-2 | Link Temporal | Crear página donde el usuario escriba su nueva clave usando enlace que expire en 1 hora. | 5 | Imanol | Done |
+| SMAR-26 | Cierre de sesión | T-26-1 | Botón de Salir | Programar la acción que borre los datos de sesión guardados en el navegador. | 2 | Imanol | Done |
+| SMAR-26 | Cierre de sesión | T-26-2 | Limpieza de Token | Asegurar que el servidor rechace el token anterior una vez que el usuario cerró sesión. | 4 | Imanol | Done |
+| SMAR-44 | Anti-Brute Force | T-44-1 | Contador Fallos | Programar un contador que identifique si una persona falla su clave más de 5 veces. | 5 | Juan | Done |
+| SMAR-44 | Anti-Brute Force | T-44-2 | Bloqueo por tiempo | Impedir el acceso a esa cuenta por 15 minutos tras los fallos detectados. | 4 | Juan | Done |
+| SMAR-51 | Complejidad clave | T-51-1 | Reglas de Clave | Crear validaciones para clave segura (mínimo 8 letras, número y símbolo). | 3 | Gabriel | Done |
+| SMAR-51 | Complejidad clave | T-51-2 | Mensajes de Error | Mostrar mensajes en rojo al usuario si su clave es muy débil mientras la escribe. | 3 | Gabriel | Done |
+| SMAR-81 | Manejo Errores | T-81-1 | Pantalla de Error | Crear alerta amigable para cuando el servidor falle, sin mostrar código técnico. | 5 | Johan | Done |
+| SMAR-81 | Manejo Errores | T-81-2 | Auditoría Interna | Configurar que el sistema guarde un archivo log con los errores reales para revisión. | 4 | Johan | Done |
+| SMAR-82 | CORS Policy | T-82-1 | Permisos Dominio | Configurar el sistema para que solo acepte peticiones desde tu web oficial. | 3 | Gabriel | Done |
+| SMAR-82 | CORS Policy | T-82-2 | Cabeceras Seguras | Definir qué acciones HTTP (GET, POST, DELETE) están permitidas. | 3 | Gabriel | Done |
 | **TOTAL HORAS** | | | | | **105** | | |
 
 ## 5.3. Validation Interviews.
