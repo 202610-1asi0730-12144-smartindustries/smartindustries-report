@@ -25,11 +25,11 @@
 | :-------------------------------- | :--------- |
 | Bottger Salazar, Johan Karl       | u202210735 |
 | Limache Coronel, Imanol Fabrizio  | u20231h067 |
-| Palacios Tinoco, Adrian Fernando  | u202410817 |
+| Ayllon Pauccar, Juan David        | u20241a860 |
 | Peñaranda Caldas, Gabriel Augusto | u202210836 |
 
 <br>
-**Abril, 2026**
+**Mayo, 2026**
 </div>
 
 ---
@@ -56,6 +56,7 @@
 | **4.0** | 22/04/2026 | Johan Karl Bottger Salazar | Se agregó el diagrama de Clases tanto para Frontend como para Backend. |
 | **4.1** | 23/04/2026 | Juan David Ayllon Pauccar | Se elaboró la sección 4.3 del documento técnico. |
 | **4.2** | 24/04/2026 | Juan David Ayllon Pauccar | Se completó la sección 4.4 cerrando los requerimientos asignados. |
+| **4.2** | 24/04/2026 | Juan David Ayllon Pauccar | Se completó la sección de Sprint 2 |
 </div>
 <br>
 
