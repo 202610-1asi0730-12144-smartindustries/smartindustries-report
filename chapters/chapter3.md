@@ -93,14 +93,14 @@
 
 | ID | Título | Descripción | Criterios de Aceptación (Gherkin) |
 | :--- | :--- | :--- | :--- |
-| **TS-01** | Documentación OpenAPI | Implementar Swagger/OpenAPI para la documentación automática de la API. | El endpoint `/api/docs` debe mostrar todos los recursos, métodos y esquemas de respuesta actualizados. |
-| **TS-02** | Estandarización de Respuestas | Crear un interceptor/formateador global para respuestas JSON consistentes. | Todas las respuestas deben seguir la estructura `{ "data": {}, "meta": {}, "errors": [] }`. |
-| **TS-03** | Autenticación JWT | Implementar autenticación basada en JSON Web Tokens con rotación de Refresh Tokens. | El sistema debe emitir un `access_token` de corta duración y un `refresh_token` seguro en `HttpOnly cookie`. |
-| **TS-04** | Paginación Global | Desarrollar un helper de paginación para endpoints de colecciones (Historial, Usuarios). | Los endpoints de lista deben aceptar parámetros `page` y `limit`, y devolver metadata de totalización. |
-| **TS-05** | Middleware de Roles (RBAC) | Crear decoradores o middlewares para validar permisos por rol en los controladores. | Si un usuario con rol "Staff" intenta un `DELETE` en `/doors`, la API debe retornar un error `403 Forbidden`. |
-| **TS-06** | Validación de DTOs | Implementar validación de esquemas de entrada (Data Transfer Objects) en cada request. | Cualquier payload que no cumpla con el tipo de dato o longitud debe ser rechazado con un error `400 Bad Request`. |
-| **TS-07** | Manejo de Excepciones | Crear un Global Exception Filter para capturar errores y evitar fugas de stack trace. | En modo producción, los errores `500` no deben revelar detalles de la base de datos o líneas de código. |
-| **TS-08** | CORS Policy | Configurar políticas de Cross-Origin Resource Sharing. | La API solo debe aceptar peticiones desde los dominios autorizados de la aplicación web y el simulador. |
+| **TS-01** | Documentación OpenAPI | Como equipo backend, quiero implementar documentación automática con Swagger/OpenAPI, para mantener una especificación actualizada y accesible de todos los endpoints de la API. | Dado que la API se encuentra en ejecución, cuando un usuario accede al endpoint /api/docs, entonces debe visualizar todos los recursos, métodos y esquemas de respuesta actualizados. |
+| **TS-02** | Estandarización de Respuestas | Como desarrollador backend, quiero estandarizar el formato de las respuestas JSON para que todos los consumidores de la API reciban estructuras consistentes y predecibles. | Dado que un endpoint retorna una respuesta HTTP, cuando la respuesta es enviada al cliente, entonces debe seguir la estructura { "data": {}, "meta": {}, "errors": [] }. |
+| **TS-03** | Autenticación JWT | Como desarrollador backend, quiero implementar autenticación basada en JWT con rotación de Refresh Tokens para garantizar sesiones seguras y controladas. | Dado que un usuario se autentica correctamente, cuando el sistema genera las credenciales de sesión, entonces debe emitir un access_token de corta duración y un refresh_token seguro almacenado en una cookie HttpOnly. |
+| **TS-04** | Paginación Global | Como desarrollador backend, quiero desarrollar un mecanismo de paginación global para endpoints de colecciones para optimizar la consulta y navegación de grandes volúmenes de datos. | Dado que un cliente consulta un endpoint de lista, cuando envía los parámetros page y limit, entonces la API debe devolver los resultados paginados junto con metadata de totalización. |
+| **TS-05** | Middleware de Roles (RBAC) | Como desarrollador backend, quiero implementar validaciones de permisos basadas en roles (RBAC) para restringir el acceso a operaciones según el perfil del usuario. | Dado que un usuario con rol "Staff" intenta ejecutar una operación DELETE sobre /doors, cuando la solicitud es procesada por la API, entonces el sistema debe responder con un error 403 Forbidden. |
+| **TS-06** | Validación de DTOs | Como desarrollador backend, quiero validar los DTOs de entrada en cada request para garantizar la integridad y consistencia de los datos recibidos. | Dado que un cliente envía un payload inválido, cuando los datos no cumplen con el tipo o longitud definidos, entonces la API debe rechazar la solicitud con un error 400 Bad Request. |
+| **TS-07** | Manejo de Excepciones | Como desarrollador backend, quiero implementar un manejo global de excepciones para evitar la exposición de información sensible y estandarizar las respuestas de error. | Dado que ocurre un error interno en la aplicación en ambiente de producción, cuando la API retorna una respuesta 500 Internal Server Error, entonces no debe revelar detalles de la base de datos ni líneas de código del stack trace. |
+| **TS-08** | CORS Policy | Como desarrollador backend, quiero configurar políticas de CORS para controlar qué dominios pueden consumir la API de forma segura. | Dado que una aplicación cliente realiza una petición a la API, cuando el dominio de origen no está autorizado, entonces la solicitud debe ser rechazada por la política de CORS. |
 
 ---
 
@@ -108,17 +108,17 @@
 
 | Epic ID | Nombre de la Epic | Descripción |
 | :--- | :--- | :--- |
-| **EPIC-01** | **Gestión de Identidad y Cuenta** | Todo lo relacionado con autenticación, seguridad de perfil y acceso inicial al sistema. |
-| **EPIC-02** | **Administración de Personal (RRHH)** | Gestión del ciclo de vida del usuario: creación, asignación de roles, desactivación e invitaciones. |
-| **EPIC-03** | **Configuración de Infraestructura y Reglas** | Definición de puertas físicas y las reglas de negocio (horarios, días, accesos temporales). |
-| **EPIC-04** | **Centro de Monitoreo y Alertas** | El "corazón" operativo: dashboard en tiempo real, gestión de alertas e indicadores de estado. |
-| **EPIC-05** | **Entorno de Simulación (Virtual Lock)** | Módulo para clientes sin hardware que permite probar la lógica de acceso digitalmente. |
-| **EPIC-06** | **Auditoría, Reportes e Integridad** | Registro histórico, exportación de datos, analítica avanzada y protección de la inmutabilidad de logs. |
-| **EPIC-07** | **Ecosistema Comercial y Suscripciones** | Manejo de tiers (Básico, Pro, Enterprise), límites de cuenta y gestión multi-sede. |
-| **EPIC-08** | **Rendimiento, Disponibilidad y Escalabilidad** | Calidad del sistema en términos de velocidad, estabilidad frente a carga y recuperación ante fallos. |
-| **EPIC-09** | **Capa de Seguridad y Ciberdefensa** | Normas técnicas de encriptación, protocolos de red, protección contra ataques y privacidad de datos. |
-| **EPIC-10** | **Experiencia de Usuario (UX/UI)** | Consistencia visual, accesibilidad, diseño responsivo y usabilidad general. |
-| **EPIC-11** | **Escalabilidad Global e i18n** | Preparación técnica del software para mercados internacionales y multi-idioma. |
+| **EPIC-01** | **Gestión de Identidad y Cuenta** | Como usuario del sistema, quiero gestionar mi autenticación, seguridad de perfil y acceso inicial para acceder de forma segura a la plataforma. |
+| **EPIC-02** | **Administración de Personal (RRHH)** | Como administrador de la organización, quiero gestionar el ciclo de vida de los usuarios para controlar la creación, asignación de roles, desactivación e invitaciones dentro del sistema. |
+| **EPIC-03** | **Configuración de Infraestructura y Reglas** | Como administrador del sistema, quiero configurar puertas físicas y reglas de negocio para controlar accesos según horarios, días y permisos temporales. |
+| **EPIC-04** | **Centro de Monitoreo y Alertas** | Como operador del sistema, quiero monitorear eventos y alertas en tiempo real para supervisar el estado operativo de la plataforma y responder ante incidentes. |
+| **EPIC-05** | **Entorno de Simulación (Virtual Lock)** | Como cliente sin hardware físico, quiero simular accesos digitales para probar y validar la lógica de control de acceso del sistema. |
+| **EPIC-06** | **Auditoría, Reportes e Integridad** | Como auditor o administrador, quiero registrar y consultar eventos históricos para generar reportes, realizar análisis y garantizar la integridad de los logs. |
+| **EPIC-07** | **Ecosistema Comercial y Suscripciones** | Como administrador comercial, quiero gestionar planes, límites de cuenta y sedes para administrar las suscripciones y capacidades de cada cliente. |
+| **EPIC-08** | **Rendimiento, Disponibilidad y Escalabilidad** | Como organización usuaria, quiero que el sistema mantenga velocidad, estabilidad y recuperación ante fallos para asegurar una operación continua y escalable. |
+| **EPIC-09** | **Capa de Seguridad y Ciberdefensa** | Como organización usuaria, quiero proteger la información y las comunicaciones del sistema para prevenir ataques y garantizar la privacidad de los datos. |
+| **EPIC-10** | **Experiencia de Usuario (UX/UI)** | Como usuario final, quiero una interfaz consistente, accesible y responsiva para interactuar con el sistema de forma clara y eficiente. |
+| **EPIC-11** | **Escalabilidad Global e i18n** | Como organización internacional, quiero que el sistema soporte múltiples idiomas y mercados para permitir su adopción global. |
 
 ## 3.2. Impact Mapping
 
