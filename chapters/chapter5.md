@@ -224,6 +224,8 @@ Se incluyen capturas detalladas de la ejecución de la Landing Page de la aplica
 <img src="/Resources/Chapter5/sprint1/execution-evidence2.png"/>
 <img src="/Resources/Chapter5/sprint1/execution-evidence3.png"/>
 
+[Execution Evidence Sprint 1 Video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210735_upc_edu_pe/IQAICoZ4E8mcQrsknhxiw7YpASuZuy538vsp8p72Yx0w9C8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ljd3tg)
+
 #### 5.2.1.6. Services Documentation Evidence for Sprint Review.
 No aplica a primer sprint y desarrollo de Landing Page.
 
@@ -330,27 +332,26 @@ A continuación, se presentan los commits más importantes para el Sprint, los c
 Se incluyen capturas detalladas de la ejecución de la primera versión del Frontend Web Application como evidencia.
 
 <img src="/Resources/Chapter5/sprint2/execution-evidence1.png"/>
-<img src="/Resources/Chapter5/sprint2/execution-evidence2.png"/>
-<img src="/Resources/Chapter5/sprint2/execution-evidence3.png"/>
+
+[Execution Evidence Sprint 2 Video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210735_upc_edu_pe/IQB8j7Vc40nyRLf55dGjuPMrAeKZb6mCMAs7I2x7mXQ_xjg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ySzFKD)
+
 
 #### 5.2.2.6. Services Documentation Evidence for Sprint Review.
-Para el alcance del segundo sprint se utilizó el servicio de json-server.
-
-<img src="/Resources/Chapter5/sprint2/services-evidence1.png"/>
+No aplica.
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
-El despliegue de la primera versiión del Frontend Web Application se realizó en la plataforma de Amazon S3 y CloudFront.
+El despliegue de la primera versión del Frontend Web Application se realizó en la plataforma de Amazon S3 y CloudFront.
 Se incluye la evidencia de despliegue: 
 [https://feature-organization-list.dx10b2ahz129b.amplifyapp.com](https://feature-organization-list.dx10b2ahz129b.amplifyapp.com)
 
 
 <img src="/Resources/Chapter5/sprint2/deployment-evidence1.png"/>
-<img src="/Resources/Chapter5/sprint2/deployment-evidence2.png"/>
+
 
 #### 5.2.2.8. Team Collaboration Insights for Sprint Review
 Durante el transcurso de este sprint, todos los miembros participaron de forma activa y constante en la creación de las tareas asignadas. A continuación todos los analíticos que nos proporciona Github, en su apartado de Insights, sobre la colaboración del equipo durante el Sprint 2:
 
-<img src="/Resources/Chapter5/sprint2/collab-insights1.png"/>
+<img src="/Resources/Chapter5/sprint1/collab-insights1.png"/>
 
 
 
