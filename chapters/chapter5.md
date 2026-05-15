@@ -208,7 +208,7 @@ Durante el primer sprint, el equipo se centró en desarrollar una landing page q
 #### 5.2.1.4. Development Evidence for Sprint Review
 
 El principal avance durante el Sprint 1 fue el desarrollo de la Landing Page institucional del producto, incorporando navegación fluida entre secciones, diseño responsive para dispositivos móviles, tablas comparativas de planes, tarjetas visuales de beneficios, estadísticas de confianza y secciones de casos de uso orientadas a potenciales clientes.
-A continuación, se presentan los commits más importantes para el del Sprint, los cuales muestran el ciclo de vida del proyecto, y toda la información que se usó para el desarrollo del Landing Page.
+A continuación, se presentan los commits más importantes del Sprint, los cuales muestran el ciclo de vida del proyecto, y toda la información que se usó para el desarrollo del Landing Page.
 
 | Repository | Branch | Commit ID | Message | Body | Commit Date  |
 |---|---|---|---|---|---|
@@ -240,6 +240,118 @@ Se incluye la evidencia de despliegue del Landing Page en la plataforma Github P
 Durante el transcurso de este sprint, todos los miembros participaron de forma activa y constante en la creación de las tareas asignadas. A continuación todos los analíticos que nos proporciona Github, en su apartado de Insights, sobre la colaboración del equipo durante el Sprint 1:
 
 <img src="/Resources/Chapter5/sprint1/collab-insights1.png"/>
+
+
+### 5.2.2. Sprint 2
+
+En esta sección se registra y explica el avance obtenido durante el segundo ciclo de desarrollo (Sprint 2), abarcando tanto la construcción de los productos de software intermedios como el trabajo colaborativo del equipo. Se incluyen los detalles de planificación, los líderes de cada aspecto, el backlog comprometido y las evidencias de ejecución, documentación y despliegue del trabajo completado.
+
+#### 5.2.2.1. Sprint Planning 2
+
+Durante esta sesión, el equipo de desarrollo junto al Product Owner seleccionaron las Historias de Usuario más prioritarias del Product Backlog para definir el objetivo central de la iteración. A continuación, se presenta el cuadro resumen con los detalles y acuerdos de esta reunión:
+
+| **Sprint #** | Sprint 2 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| **Date** | 2026-05-01 |
+| **Time** | 19:00 PM |
+| **Location** | Reunión virtual (Microsoft Teams) |
+| **Prepared By** | Peñaranda Caldas, Gabriel Augusto |
+| **Attendees (to planning meeting)** | Peñaranda Caldas, Gabriel Augusto / Ayllon Pauccar, Juan David / Bottger Salazar, Johan Karl / Limache Coronel, Imanol Fabrizio |
+| **Sprint 1 Review Summary** | Durante el Sprint 1 el equipo logró completar la primera versión funcional de la Landing Page y del sistema base de autenticación de SmartLock. Se cumplió el objetivo principal del sprint al habilitar un flujo seguro de acceso para administradores y establecer la presencia digital inicial del producto. |
+| **Sprint 1 Retrospective Summary** | a comunicación entre integrantes fue constante y facilitó la integración temprana. Mantener documentación y estándares técnicos actualizados durante el sprint. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 2 Goal** | **Contexto:** **Sprint Goal:**<br>*"Our focus is on delivering the first operational version of the SmartLock Web Application while improving the quality, usability, and stability of artifacts created during Sprint 1.*<br>*We believe this delivers a more complete digital experience to administrators and prospective customers by providing the first functional version of the Frontend Web Application.*<br>*This will be confirmed when users can access the deployed web application, navigate the improved Landing Page without usability issues, and interact successfully with the first administrative frontend modules in a production-like environment."* |
+| **Sprint 1 Velocity** | 30 Story Points. (Velocidad estimada basada en la capacidad inicial del equipo para configurar los entornos y desarrollar los módulos de autenticación básicos). |
+| **Sum of Story Points** | 29 Story Points. |
+
+#### 5.2.2.2. Aspect Leaders and Collaborators
+
+En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)**. Esta matriz detalla los líderes (L) y colaboradores (C) para cada aspecto clave del Sprint, asegurando una comunicación clara y una distribución de responsabilidades eficiente para el proyecto **SmartLock**. La organización está directamente relacionada con la selección de tareas (*tasks*) que se desarrollarán durante el Sprint.
+
+> **Leyenda:** <br>
+> **L:** Líder (Responsable de la revisión y entrega del módulo). <br>
+> **C:** Colaborador (Apoyo en desarrollo y tareas específicas).
+
+| Team Member (Last Name, First Name) | GitHub Username | Arquitectura & DB | Backend API & Seguridad | Frontend (Landing & Web App) | QA & Deployment |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| Peñaranda Caldas, Gabriel Augusto | gapc2124 | L | C | C | C |
+| Ayllon Pauccar, Juan David | JuanDPAUC | C | L | C | C |
+| Bottger Salazar, Johan Karl | Deskjobo | C | C | L | C |
+| Limache Coronel, Imanol Fabrizio | ImaLi06 | C | C | C | L |
+
+#### 5.2.2.3. Sprint Backlog 2
+
+Durante el segundo sprint, el equipo se centró en desarrollar la primera versión del Web Application funcional, organizando y distribuyendo tareas en el tablero de Sprint de acuerdo con las habilidades de cada integrante.
+
+* **Enlace al Backlog del Proyecto:** [Tablero Jira - SmartLock](https://upc-team-open-source.atlassian.net/jira/software/projects/SMAR/boards/1)
+
+##### **Sprint 2 - Tareas Asignadas**
+
+| **User Story** |  | **Work-Item / Task** |  |  |  |  |  |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Id** | **Título** | **Id** | **Título** | **Descripción** | **Est. (Hrs)** | **Asignado** | **Status** |
+| HU-03 | Creación de usuarios | T-01 | Implementar formulario organización | Crear formulario para registrar organizaciones | 4 | Gabriel | Done |
+| HU-03 | Creación de usuarios | T-02 | Crear endpoint organizaciones | Implementar API CRUD básico de organizaciones | 5 | Johan | Done |
+| HU-03 | Creación de usuarios | T-03 | Validar creación organización | Agregar validaciones frontend y backend | 2 | Juan | Done |
+| HU-03 | Creación de usuarios | T-04 | Persistencia organizaciones | Configurar tablas y relaciones básicas en base de datos | 3 | Imanol | Done |
+| HU-04 | Asignación de roles | T-05 | Implementar roles básicos | Configurar roles Admin y Staff | 3 | Gabriel | Done |
+| HU-04 | Asignación de roles | T-06 | Asociar usuarios a organización | Relacionar usuarios registrados con organizaciones | 4 | Johan | Done |
+| HU-19 | Desactivación rápida | T-07 | Implementar desactivación usuario | Permitir activar/desactivar usuarios desde panel | 3 | Juan | Done |
+| HU-20 | Gestión de Puertas | T-08 | Crear módulo ingresos | Construir vista básica de registros de ingreso | 4 | Imanol | Done |
+| HU-20 | Gestión de Puertas | T-09 | Registrar eventos ingreso | Implementar creación manual de ingresos | 4 | Gabriel | Done |
+| HU-20 | Gestión de Puertas | T-10 | Mostrar historial ingresos | Visualizar lista simple de accesos registrados | 3 | Johan | Done |
+| HU-40 | Adaptabilidad a pantallas móviles | T-11 | Responsive dashboard | Adaptar panel administrativo a móviles | 4 | Juan | Done |
+| HNF-06 | Diseño Responsivo | T-12 | QA responsive frontend | Validar comportamiento responsive general | 2 | Imanol | Done |
+| HNF-10 | Compatibilidad | T-13 | Cross-browser testing web app | Validar funcionamiento en navegadores principales | 3 | Gabriel | Done |
+| HNF-18 | Mensajes de error | T-14 | Manejo visual errores | Estandarizar mensajes visuales del sistema | 2 | Johan | Done |
+| HNF-29 | Design System | T-15 | Extender componentes UI | Reutilizar estilos y componentes globales | 3 | Juan | Done |
+| N/A | Configuración general | T-16 | Inicializar frontend web app | Configurar estructura base aplicación web | 2 | Imanol | Done |
+| N/A | Configuración general | T-17 | Configurar routing frontend | Implementar navegación protegida | 3 | Gabriel | Done |
+| N/A | Configuración general | T-18 | Configurar estado global | Manejar sesión y datos principales | 3 | Johan | Done |
+| N/A | Configuración general | T-19 | Deploy Web Application | Desplegar primera versión frontend | 3 | Juan | Done |
+| N/A | Configuración general | T-20 | Actualizar Landing Page | Publicar versión corregida y mejorada | 2 | Imanol | Done |
+| N/A | Configuración general | T-21 | QA integración final | Ejecutar pruebas funcionales integrales | 4 | Gabriel | Done |
+| **TOTAL HORAS** |  |  |  |  | **66** |  |  |
+
+#### 5.2.2.4. Development Evidence for Sprint Review
+
+El principal avance durante el Sprint 2 fue el desarrollo de la primera version del frontend Web Application del producto, incorporando navegación fluida entre secciones, diseño responsive para dispositivos móviles, tablas comparativas de planes, tarjetas visuales de beneficios, estadísticas de confianza y secciones de casos de uso orientadas a potenciales clientes.
+A continuación, se presentan los commits más importantes para el Sprint, los cuales muestran el ciclo de vida del proyecto, y toda la información que se usó para el desarrollo.
+
+| Repository | Branch | Commit ID | Message | Body | Commit Date  |
+|---|---|---|---|---|---|
+| smartlock-webapp | feature/organization-list | 0d0cd05243704ddc8fa6df73c990bef1e7b2fff5 | feat: add json-server | - | 14-05-2026 |
+| smartlock-webapp | feature/organization-list | c2f53edacb07b36c15792f75dd9989ad7d9031c5 | feat: add i18n support | - | 14-05-2026 |
+| smartlock-webapp | develop | d70f8e8903e5fa33cc2d3a7568fc741a9d37f073 | feat: add base-api and base-endpoint | - | 14-05-2026 |
+| smartlock-webapp | develop | 84f82709abf92fae60abb06b80103efcb85ee811 | feat: add environment configuration files | - | 12-05-2026 |
+
+#### 5.2.2.5. Execution Evidence for Sprint Review
+Se incluyen capturas detalladas de la ejecución de la primera versión del Frontend Web Application como evidencia.
+
+<img src="/Resources/Chapter5/sprint2/execution-evidence1.png"/>
+<img src="/Resources/Chapter5/sprint2/execution-evidence2.png"/>
+<img src="/Resources/Chapter5/sprint2/execution-evidence3.png"/>
+
+#### 5.2.2.6. Services Documentation Evidence for Sprint Review.
+Para el alcance del segundo sprint se utilizó el servicio de json-server.
+
+<img src="/Resources/Chapter5/sprint2/services-evidence1.png"/>
+
+#### 5.2.2.7. Software Deployment Evidence for Sprint Review.
+El despliegue de la primera versuión del Frontend Web Application se realizó en la plataforma de Amazon S3 y CloudFront.
+Se incluye la evidencia de despliegue: 
+[https://feature-organization-list.dx10b2ahz129b.amplifyapp.com](https://feature-organization-list.dx10b2ahz129b.amplifyapp.com)
+
+
+<img src="/Resources/Chapter5/sprint2/deployment-evidence1.png"/>
+<img src="/Resources/Chapter5/sprint2/deployment-evidence2.png"/>
+
+#### 5.2.2.8. Team Collaboration Insights for Sprint Review
+Durante el transcurso de este sprint, todos los miembros participaron de forma activa y constante en la creación de las tareas asignadas. A continuación todos los analíticos que nos proporciona Github, en su apartado de Insights, sobre la colaboración del equipo durante el Sprint 1:
+
+<img src="/Resources/Chapter5/sprint2/collab-insights1.png"/>
+
 
 
 ## 5.3. Validation Interviews.
