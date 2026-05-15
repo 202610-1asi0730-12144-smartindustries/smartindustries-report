@@ -344,19 +344,19 @@ User Goal 7: Como usuario ,quiero poder acceder a la bitacora de accesos y alert
 User Goal 8: Como usuario ,quiero añadir accesos desde control de entidades.
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/wireflow/accesos-wireflow-wireflow.png" width="800" alt="Logout Wireframe">
+  <img src="/Resources/Chapter4/Web-Application/wireflow/accesos-wireflow.png" width="800" alt="Logout Wireframe">
 </p>
 
 User Goal 9: Como usuario ,quiero añadir personas desde control de entidades.
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/wireflow/pesonas-wireflow-wireflow.png" width="800" alt="Logout Wireframe">
+  <img src="/Resources/Chapter4/Web-Application/wireflow/personas-wireflow.png" width="800" alt="Logout Wireframe">
 </p>
 
 User Goal 10: Como usuario ,quiero añadir grupos de personas desde control de entidades.
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/wireflow/grupos-wireflow-wireflow.png" width="800" alt="Logout Wireframe">
+  <img src="/Resources/Chapter4/Web-Application/wireflow/grupos-wireflow.png" width="800" alt="Logout Wireframe">
 </p>
 
 User Goal 11: Como usuario ,quiero añadir administradores desde control de entidades.
