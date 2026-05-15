@@ -102,7 +102,7 @@ La estrategia de despliegue de **SmartLock** se basa en un modelo de **Integraci
 #### Ecosistema de Despliegue
 | Producto | Entorno de Hosting | Tecnología de Despliegue |
 | :--- | :--- | :--- |
-| **Landing Page** | Amazon S3 & CloudFront | Estático (HTML/CSS/JS puro) con CDN para baja latencia. |
+| **Landing Page** | Github Pages | Estático (HTML/CSS/JS puro) con CDN para baja latencia. |
 | **Frontend Web App** | Amazon S3 & CloudFront | Vue.js Build (`dist` folder) con certificados SSL. |
 | **Web Services** | Amazon Elastic Beanstalk | Entorno .NET Core con autoescalado y balanceo de carga. |
 | **Database** | Amazon RDS (MySQL) | Instancia gestionada con backups automáticos. |
@@ -137,11 +137,11 @@ El Sprint Planning Meeting marcó el inicio formal del desarrollo del código de
 | **Location** | Reunión virtual (Microsoft Teams) |
 | **Prepared By** | Peñaranda Caldas, Gabriel Augusto |
 | **Attendees (to planning meeting)** | Peñaranda Caldas, Gabriel Augusto / Ayllon Pauccar, Juan David / Bottger Salazar, Johan Karl / Limache Coronel, Imanol Fabrizio |
-| **Sprint n – 1 Review Summary** | Al ser el primer Sprint de desarrollo, la revisión anterior corresponde a la fase de ideación. Resultados alcanzados: arquitectura C4 finalizada, bases de datos diseñadas y repositorios GitHub configurados. El Product Owner brindó el feedback necesario para iniciar la codificación orientada al dominio. |
-| **Sprint n – 1 Retrospective Summary** | Como retrospectiva inicial de la forma de trabajo, el equipo identificó como acierto el uso de diagramas compartidos, pero reconoció como oportunidad de mejora establecer reglas más estrictas de GitFlow para evitar colisiones en los Pull Requests futuros. |
+| **Sprint n – 1 Review Summary** | - |
+| **Sprint n – 1 Retrospective Summary** | - |
 | **Sprint Goal & User Stories** | |
-| **Sprint n Goal** | **Contexto:** El equipo decidió enfocar el primer esfuerzo de codificación en sentar las bases operativas de la plataforma, desarrollando la Landing Page para presentar el producto y construyendo el sistema central de autenticación y gestión de identidad, lo cual es requisito previo para cualquier operación de acceso físico. <br><br> **Sprint Goal:**<br>*"Our focus is on offering a secure and reliable authentication gateway for the initial users of SmartLock, while establishing the product's digital presence through a responsive Landing Page.*<br>*We believe it delivers a trustworthy onboarding experience to administrators and clear product value proposition to prospective customers.*<br>*This will be confirmed when administrators can successfully register, log in using 2FA, and access the main dashboard, and visitors can navigate the Landing Page features without errors."* |
-| **Sprint n Velocity** | 30 Story Points. (Velocidad estimada basada en la capacidad inicial del equipo para configurar los entornos y desarrollar los módulos de autenticación básicos). |
+| **Sprint 1 Goal** | **Contexto:** El equipo decidió enfocar el primer esfuerzo de codificación en sentar las bases operativas de la plataforma, desarrollando la Landing Page para presentar el producto y construyendo el sistema central de autenticación y gestión de identidad, lo cual es requisito previo para cualquier operación de acceso físico. <br><br> **Sprint Goal:**<br>*"Our focus is on offering a secure and reliable authentication gateway for the initial users of SmartLock, while establishing the product's digital presence through a responsive Landing Page.*<br>*We believe it delivers a trustworthy onboarding experience to administrators and clear product value proposition to prospective customers.*<br>*This will be confirmed when administrators can successfully register and access the main dashboard, and visitors can navigate the Landing Page features without errors."* |
+| **Sprint 1 Velocity** | 30 Story Points. (Velocidad estimada basada en la capacidad inicial del equipo para configurar los entornos y desarrollar los módulos de autenticación básicos). |
 | **Sum of Story Points** | 29 Story Points. |
 
 #### 5.2.1.2. Aspect Leaders and Collaborators
@@ -161,40 +161,86 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)**. 
 
 #### 5.2.1.3. Sprint Backlog 1
 
-Nuestro objetivo ha sido consolidar el núcleo de seguridad y gestión de identidades del sistema SmartLock. De manera técnica, hemos logrado la implementación de mecanismos de autenticación, aislamiento total de datos por cliente y blindaje contra ataques externos. Con esto, hemos transformado un diseño conceptual en una infraestructura técnica funcional que garantiza que solo las personas correctas tengan acceso a los recursos adecuados, bajo un entorno de comunicación 100% cifrado y seguro. Esperamos que nuestros clientes tengan siempre la certeza de que nuestro producto será 100% confiable y eficiente.
+Durante el primer sprint, el equipo se centró en desarrollar una landing page que fuera tanto atractiva como funcional, organizando y distribuyendo tareas en el tablero de Sprint de acuerdo con las habilidades de cada integrante.
 
 * **Enlace al Backlog del Proyecto:** [Tablero Jira - SmartLock](https://upc-team-open-source.atlassian.net/jira/software/projects/SMAR/boards/1)
 
 ##### **Sprint 1 - Tareas Asignadas**
 
-| **User Story** | | **Work-Item / Task** | | | | | |
+| **User Story** |  | **Work-Item / Task** |  |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Id** | **Título** | **Id** | **Título** | **Descripción** | **Est. (Hrs)** | **Asignado** | **Status** |
-| SMAR-33 | Encriptación | T-33-1 | Hash de claves | Programar la función para que las contraseñas se guarden encriptadas en la DB usando Bcrypt. | 4 | Juan | To-Do |
-| SMAR-33 | Encriptación | T-33-2 | Pruebas de Login | Verificar que al loguearse, el sistema compare la clave escrita con la encriptada en la DB. | 3 | Juan | To-Do |
-| SMAR-34 | Datos en tránsito | T-34-1 | Configuración HTTPS | Configurar el servidor para que la URL use certificados SSL. | 4 | Gabriel | To-Do |
-| SMAR-34 | Datos en tránsito | T-34-2 | Redirección Segura | Hacer que si alguien entra por HTTP, la web lo redirija automáticamente a HTTPS. | 2 | Gabriel | To-Do |
-| SMAR-45 | Data Isolation | T-45-1 | Campo de Empresa | Agregar la columna "Empresa_Id" en todas las tablas para separar los datos de cada cliente. | 6 | Imanol | To-Do |
-| SMAR-45 | Data Isolation | T-45-2 | Filtro de Consultas | Programar la lógica para que un usuario solo pueda ver los registros de su "Empresa_Id". | 8 | Imanol | To-Do |
-| SMAR-01 | Login estándar | T-01-1 | Maquetado de Login | Crear la página visual (HTML/CSS) con el formulario de correo y contraseña responsivo. | 5 | Johan | To-Do |
-| SMAR-01 | Login estándar | T-01-2 | Conexión Backend | Programar el endpoint que recibe datos del formulario y valida si el usuario existe. | 6 | Johan | To-Do |
-| SMAR-03 | Creación usuarios | T-03-1 | Formulario Registro | Diseñar la interfaz para que el Admin pueda ingresar datos de nuevos empleados. | 5 | Gabriel | To-Do |
-| SMAR-03 | Creación usuarios | T-03-2 | Guardado Usuario | Crear función que inserta al nuevo usuario validando que el correo no esté repetido. | 5 | Gabriel | To-Do |
-| SMAR-04 | Asignación roles | T-04-1 | Tabla de Roles | Crear en la base de datos los niveles (Admin, Staff, Monitor) y asignarlos. | 4 | Johan | To-Do |
-| SMAR-04 | Asignación roles | T-04-2 | Control de Accesos | Programar que ciertas páginas o botones solo se activen si se tiene el rol adecuado. | 6 | Johan | To-Do |
-| SMAR-23 | Reset de clave | T-23-1 | Envío de Correo | Integrar servicio de AWS para que el sistema envíe mail automático al pedir el reset. | 6 | Imanol | To-Do |
-| SMAR-23 | Reset de clave | T-23-2 | Link Temporal | Crear página donde el usuario escriba su nueva clave usando enlace que expire en 1 hora. | 5 | Imanol | To-Do |
-| SMAR-26 | Cierre de sesión | T-26-1 | Botón de Salir | Programar la acción que borre los datos de sesión guardados en el navegador. | 2 | Imanol | To-Do |
-| SMAR-26 | Cierre de sesión | T-26-2 | Limpieza de Token | Asegurar que el servidor rechace el token anterior una vez que el usuario cerró sesión. | 4 | Imanol | To-Do |
-| SMAR-44 | Anti-Brute Force | T-44-1 | Contador Fallos | Programar un contador que identifique si una persona falla su clave más de 5 veces. | 5 | Juan | To-Do |
-| SMAR-44 | Anti-Brute Force | T-44-2 | Bloqueo por tiempo | Impedir el acceso a esa cuenta por 15 minutos tras los fallos detectados. | 4 | Juan | To-Do |
-| SMAR-51 | Complejidad clave | T-51-1 | Reglas de Clave | Crear validaciones para clave segura (mínimo 8 letras, número y símbolo). | 3 | Gabriel | To-Do |
-| SMAR-51 | Complejidad clave | T-51-2 | Mensajes de Error | Mostrar mensajes en rojo al usuario si su clave es muy débil mientras la escribe. | 3 | Gabriel | To-Do |
-| SMAR-81 | Manejo Errores | T-81-1 | Pantalla de Error | Crear alerta amigable para cuando el servidor falle, sin mostrar código técnico. | 5 | Johan | To-Do |
-| SMAR-81 | Manejo Errores | T-81-2 | Auditoría Interna | Configurar que el sistema guarde un archivo log con los errores reales para revisión. | 4 | Johan | To-Do |
-| SMAR-82 | CORS Policy | T-82-1 | Permisos Dominio | Configurar el sistema para que solo acepte peticiones desde tu web oficial. | 3 | Gabriel | To-Do |
-| SMAR-82 | CORS Policy | T-82-2 | Cabeceras Seguras | Definir qué acciones HTTP (GET, POST, DELETE) están permitidas. | 3 | Gabriel | To-Do |
-| **TOTAL HORAS** | | | | | **105** | | |
+| HU-01 | Inicio de sesión estándar | T-01 | Diseñar formulario login | Crear interfaz responsive de login con email y contraseña | 3 | Gabriel | Done |
+| HU-01 | Inicio de sesión estándar | T-02 | Implementar endpoint autenticación | Crear endpoint backend para validación de credenciales | 4 | Johan | Done |
+| HU-01 | Inicio de sesión estándar | T-03 | Manejo de errores login | Mostrar mensajes amigables para credenciales inválidas | 2 | Gabriel | Done |
+| HU-23 | Reset de contraseña | T-04 | Crear pantalla recuperación | Diseñar formulario de recuperación de contraseña | 2 | Johan | Done |
+| HU-23 | Reset de contraseña | T-05 | Configurar envío email | Integrar servicio SMTP/email | 3 | Imanol | Done |
+| HU-23 | Reset de contraseña | T-06 | Implementar cambio contraseña | Permitir actualizar contraseña mediante token | 3 | Gabriel | Done |
+| HU-26 | Cierre de sesión | T-07 | Implementar logout | Invalidar token y limpiar sesión frontend | 2 | Johan | Done |
+| HU-37 | Acceso rápido para clientes | T-08 | Agregar botón login landing | Incorporar botón destacado hacia login | 1 | Juan | Done |
+| HU-31 | Navegación fluida por secciones | T-09 | Configurar navegación smooth scroll | Implementar scroll suave entre secciones | 2 | Imanol | Done |
+| HU-33 | Botón de acción resaltado | T-10 | Diseñar CTA principal | Crear botón visualmente destacado para demo | 1 | Gabriel | Done |
+| HU-34 | Tarjetas de beneficios visuales | T-11 | Crear sección features | Diseñar cards con iconos y descripciones | 4 | Johan | Done |
+| HU-35 | Formulario de contacto limpio | T-12 | Diseñar formulario contacto | Crear inputs accesibles y botón interactivo | 3 | Juan | Done |
+| HU-35 | Formulario de contacto limpio | T-13 | Validación landing page formulario | Validar campos requeridos y formato email | 2 | Imanol | Done |
+| HU-36 | Visualización de casos de uso | T-14 | Construir sección casos de uso | Crear bloques organizados por categorías | 3 | Gabriel | Done |
+| HU-38 | Tabla de precios comparativa | T-15 | Crear cards pricing | Diseñar tabla comparativa de planes | 4 | Johan | Done |
+| HU-39 | Estadísticas de confianza | T-16 | Implementar sección estadísticas | Mostrar métricas destacadas del producto | 2 | Juan | Done |
+| HU-40 | Adaptabilidad a pantallas móviles | T-17 | Adaptar grid responsive | Ajustar layouts para pantallas pequeñas | 4 | Gabriel | Done |
+| HNF-02 | Rendimiento carga | T-18 | Optimizar assets landing page | Comprimir imágenes y minimizar CSS/JS | 2 | Johan | Done |
+| HNF-04 | Datos en tránsito | T-19 | Configurar HTTPS local | Configurar entorno seguro HTTPS/TLS | 1 | Imanol | Done |
+| HNF-06 | Diseño Responsivo | T-20 | Validación responsive QA | Verificar comportamiento en móvil/tablet | 2 | Gabriel | Done |
+| HNF-10 | Compatibilidad | T-21 | Cross-browser testing | Validar funcionamiento en Chrome, Firefox y Safari | 3 | Johan | Done |
+| HNF-13 | Accesibilidad | T-22 | Revisar contraste y labels | Ajustar accesibilidad WCAG básica | 2 | Juan | Done |
+| HNF-18 | Mensajes de error | T-23 | Crear componentes error UI | Diseñar mensajes visuales reutilizables | 2 | Imanol | Done |
+| HNF-29 | Design System | T-24 | Definir estilos globales | Crear paleta, tipografía y spacing base | 3 | Juan | Done |
+| N/A | Configuración general | T-25 | Inicializar repositorio landing page | Configurar estructura base del proyecto landing page | 1 | Imanol | Done |
+| N/A | Configuración general | T-26 | Inicializar backend auth | Crear estructura inicial backend autenticación | 2 | Gabriel | Done |
+| N/A | Configuración general | T-27 | Configurar base de datos usuarios | Crear tablas iniciales de usuarios y sesiones | 3 | Johan | Done |
+| N/A | Configuración general | T-28 | Configurar CI/CD básico | Automatizar build y deploy inicial | 2 | Juan | Done |
+| N/A | Configuración general | T-29 | Deploy Landing Page | Publicar landing page en entorno cloud | 2 | Imanol | Done |
+| N/A | Configuración general | T-30 | Configurar dominio y DNS | Asociar dominio a landing page | 1 | Gabriel | Done |
+| N/A | Configuración general | T-31 | Configurar variables entorno | Gestionar secrets y configuración segura | 1 | Johan | Done |
+| N/A | Configuración general | T-32 | Documentación técnica inicial | Crear README y guía setup proyecto | 2 | Juan | Done |
+| N/A | Configuración general | T-33 | Sprint QA y testing final | Ejecutar pruebas funcionales integrales | 4 | Imanol | Done |
+| **TOTAL HORAS** |  |  |  |  | **78** |  |  |
+
+#### 5.2.1.4. Development Evidence for Sprint Review
+
+El principal avance durante el Sprint 1 fue el desarrollo de la Landing Page institucional del producto, incorporando navegación fluida entre secciones, diseño responsive para dispositivos móviles, tablas comparativas de planes, tarjetas visuales de beneficios, estadísticas de confianza y secciones de casos de uso orientadas a potenciales clientes.
+A continuación, se presentan los commits más importantes para el del Sprint, los cuales muestran el ciclo de vida del proyecto, y toda la información que se usó para el desarrollo del Landing Page.
+
+| Repository | Branch | Commit ID | Message | Body | Commit Date  |
+|---|---|---|---|---|---|
+| smartlock-website | develop | d1e7f8bb5557e48ea7c2e54cde7eb91ec101ac50 | feat: Landing Page development | - | 12-05-2026 |
+| smartlock-website | develop | 43b5a493d77dd4809c77b96bdd14e62ad4ff0728 | feat: added Script | - | 14-05-2026 |
+| smartlock-website | develop | 55fd6bc2899a113555c20b13eb07e41078879f35 | feat: added landing page header | - | 12-05-2026 |
+| smartlock-website | develop | 8782695d930241cd0631d5b4419565efedd5f86d | feat: implementing price section cards and i18 tags | - | 12-05-2026 |
+
+#### 5.2.1.5. Execution Evidence for Sprint Review
+Se incluyen capturas detalladas de la ejecución de la Landing Page de la aplicación como evidencia. La Landing Page es compuesta por varias secciones que se presentan en las capturas a continuación.
+
+<img src="/Resources/Chapter5/sprint1/execution-evidence1.png"/>
+<img src="/Resources/Chapter5/sprint1/execution-evidence2.png"/>
+<img src="/Resources/Chapter5/sprint1/execution-evidence3.png"/>
+
+#### 5.2.1.6. Services Documentation Evidence for Sprint Review.
+No aplica a primer sprint y desarrollo de Landing Page.
+
+#### 5.2.1.7. Software Deployment Evidence for Sprint Review.
+El despliegue de la Landing Page se realizó en el servicio de Github Pages, se seleccionó esta alternativa debido a la rapidez de despliegue y su sencillez, apropiada para una página estática.
+Se incluye la evidencia de despliegue del Landing Page en la plataforma Github Pages: 
+[https://202610-1asi0730-12144-smartindustries.github.io/smartlock-website/](https://202610-1asi0730-12144-smartindustries.github.io/smartlock-website/)
+
+
+<img src="/Resources/Chapter5/sprint1/deployment-evidence1.png"/>
+<img src="/Resources/Chapter5/sprint1/deployment-evidence2.png"/>
+
+#### 5.2.1.8. Team Collaboration Insights for Sprint Review
+Durante el transcurso de este sprint, todos los miembros participaron de forma activa y constante en la creación de las tareas asignadas. A continuación todos los analíticos que nos proporciona Github, en su apartado de Insights, sobre la colaboración del equipo durante el Sprint 1:
+
+<img src="/Resources/Chapter5/sprint1/collab-insights1.png"/>
+
 
 ## 5.3. Validation Interviews.
 ### 5.3.1. Diseño de Entrevistas.
