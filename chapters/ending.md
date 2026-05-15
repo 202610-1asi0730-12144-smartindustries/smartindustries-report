@@ -13,4 +13,7 @@
 
 * <img src="/Resources/Ending/Herramientas/organizacion.png" alt="Estructura de prioridad" width="500"/> 
 
-* <img src="/Resources/Ending/Herramientas/Sprint.png" alt="Sprint" width="500"/> 
+* <img src="/Resources/Ending/Herramientas/Sprint.png" alt="Sprint" width="500"/>
+
+**Videos De Exposiciones**
+[Video De exposición TB1](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210735_upc_edu_pe/IQDMGSSzT3tbT6d7UghgtYQ7AXXGsW99bgxdqIh9waaG2Ro?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=kun0Vx)
