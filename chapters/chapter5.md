@@ -339,7 +339,7 @@ Para el alcance del segundo sprint se utilizó el servicio de json-server.
 <img src="/Resources/Chapter5/sprint2/services-evidence1.png"/>
 
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
-El despliegue de la primera versuión del Frontend Web Application se realizó en la plataforma de Amazon S3 y CloudFront.
+El despliegue de la primera versiión del Frontend Web Application se realizó en la plataforma de Amazon S3 y CloudFront.
 Se incluye la evidencia de despliegue: 
 [https://feature-organization-list.dx10b2ahz129b.amplifyapp.com](https://feature-organization-list.dx10b2ahz129b.amplifyapp.com)
 
@@ -348,7 +348,7 @@ Se incluye la evidencia de despliegue:
 <img src="/Resources/Chapter5/sprint2/deployment-evidence2.png"/>
 
 #### 5.2.2.8. Team Collaboration Insights for Sprint Review
-Durante el transcurso de este sprint, todos los miembros participaron de forma activa y constante en la creación de las tareas asignadas. A continuación todos los analíticos que nos proporciona Github, en su apartado de Insights, sobre la colaboración del equipo durante el Sprint 1:
+Durante el transcurso de este sprint, todos los miembros participaron de forma activa y constante en la creación de las tareas asignadas. A continuación todos los analíticos que nos proporciona Github, en su apartado de Insights, sobre la colaboración del equipo durante el Sprint 2:
 
 <img src="/Resources/Chapter5/sprint2/collab-insights1.png"/>
 
