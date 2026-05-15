@@ -147,170 +147,416 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 * **Diseño Inclusivo:** Los wireframes consideran espacios adecuados para elementos interactivos y una disposición clara que facilita el uso de tecnologías de asistencia como lectores de pantalla.
 
 ---
-
-#### A. Flujo de Acceso y Autenticación
-
-### Inicio de Sesión
+### 1. Inicio de Sesión (Login)
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Inicio-sesion.png" width="800" alt="Inicio de Sesión Wireframe">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/Iniciosesion-wireframe.png" width="800" alt="Login Wireframe">
 </p>
 
-**Descripción:** Wireframe de la pantalla de acceso principal que define la estructura de los campos de autenticación, el botón de inicio de sesión y los elementos de recuperación de acceso.
+**Descripción:** Interfaz de autenticación para el acceso seguro de usuarios al sistema de gestión.
 
----
-
-### Registro de Sesión (Sign Up)
+### 2. Registro de Usuario (Sign Up)
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Registro-Sesion.png" width="800" alt="Registro de Sesión Wireframe">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/RegistroSesión-wireframe.png" width="800" alt="Registro Wireframe">
 </p>
 
-**Descripción:** Esquema del formulario de registro orientado al alta de nuevos administradores dentro de la plataforma, mostrando la distribución lógica de los campos requeridos.
+**Descripción:** Formulario simplificado para la creación de nuevas cuentas de administrador.
 
----
-
-### Autenticación de Dos Factores (2FA)
+### 3. Autenticación de Dos Factores (2FA)
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Autenticacion-2FA.png" width="800" alt="Autenticación 2FA Wireframe">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/Autenticacion2FA-wireframe.png" width="800" alt="2FA Wireframe">
 </p>
 
-**Descripción:** Diseño estructural de la segunda capa de seguridad mediante verificación por código, enfocado en la simplicidad de interacción y validación segura del usuario.
+**Descripción:** Pantalla de verificación de seguridad adicional mediante código enviado a dispositivo móvil.
 
----
-
-#### B. Configuración de Infraestructura
-
-### Creación de Sedes (Plan Principiante)
+### 4. Creación de Organización
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/crear-sedes-plan-principiante.png" width="800" alt="Creación de Sedes Wireframe">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/crear-organizacion.png" width="800" alt="Creación de Organización">
 </p>
 
-**Descripción:** Wireframe del proceso inicial de configuración de sedes, donde se organizan los campos necesarios para el despliegue y administración básica del sistema.
+**Descripción:** Paso inicial para registrar tu nueva organización.
 
----
-
-### Dashboard de Puntos de Control
+### 5. Selección Plan de Suscripción
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Dashboard-Puntos-de-Control.png" width="800" alt="Dashboard Puntos de Control Wireframe">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/seleccionar-plan-suscripcion.png" width="800" alt="Plan de Suscripción Wireframe">
 </p>
 
-**Descripción:** Esquema de monitoreo de dispositivos físicos y puntos de acceso, utilizando una distribución visual en cuadrícula para facilitar el control operativo en tiempo real.
+**Descripción:** Pantalla de selección de plan de suscripción.
 
----
-
-#### C. Dashboards de Gestión por Niveles
-
-### Dashboard Corporativo
+### 6. Configuración Organización
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Dashboard-corportivo.png" width="800" alt="Dashboard Corporativo Wireframe">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/form-organizacion-plan principiante.png" width="800" alt="Configuración Organización Wireframe">
 </p>
 
-**Descripción:** Vista de alto nivel orientada a organizaciones empresariales, priorizando métricas globales, indicadores de seguridad y administración multisede.
+**Descripción:** Ajustes detallados de la organización.
 
----
-
-### Dashboard Principiante
+### 7. Confirmación de creación de organización                                      
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Dashboard-gratuito.png" width="800" alt="Dashboard Principiante Wireframe">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/confirm-plan-suscripcion.png" width="800" alt="Confirmación Organización Wireframe">
 </p>
 
-**Descripción:** Versión simplificada del panel principal, diseñada para usuarios del plan gratuito, manteniendo consistencia visual y acceso a funciones esenciales.
+**Descripción:** Mensaje de éxito al registrar la organización.
 
----
-
-#### D. Administración de Seguridad y Personal
-
-### Dashboard de Usuarios
+### 8. Crear Sedes
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Dashboard-usuarios.png" width="800" alt="Dashboard de Usuarios Wireframe">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/crear-sede.png" width="800" alt="Configuración de Sedes Wireframe">
 </p>
 
-**Descripción:** Distribución estructural del módulo de gestión de usuarios, incluyendo filtros, tabla de registros, búsqueda avanzada y administración de permisos.
+**Descripción:** Interfaz para añadir una nueva ubicación física.
 
----
-
-### Gestión de Eventos
+### 9. Configuración de Sedes
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Dashboard-eventos.png" width="800" alt="Gestión de Eventos Wireframe">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/crear-sede-info.png" width="800" alt="Configuración de Sedes Wireframe">
 </p>
 
-**Descripción:** Módulo orientado a la configuración de accesos temporales mediante eventos programados, permitiendo restricciones horarias y control de visitantes.
+**Descripción:** Ajuste de parámetros para cada sede creada.
 
----
-
-### Gestión de Credenciales
+### 10. Panel de Control 
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Dashboard-Credenciales.png" width="800" alt="Gestión de Credenciales Wireframe">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/panel-control.png" width="800" alt="Panel de Control Wireframe">
 </p>
 
-**Descripción:** Organización funcional del sistema de emisión y control de credenciales digitales, permitiendo el seguimiento de accesos autorizados.
+**Descripción:** Vista general del estado de las sedes.
 
----
-
-### Bitácora de Accesos
+### 11. Bitácora de accesos
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Dashboard-Bitacora.png" width="800" alt="Bitácora de Accesos Wireframe">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/Dashboard-bitacora.png" width="800" alt="Bitácora Wireframe">
 </p>
 
-**Descripción:** Estructura diseñada para la visualización de logs históricos de acceso, facilitando auditorías de seguridad y trazabilidad de eventos.
+**Descripción:** Registro detallado del historial de los accesos.
+
+### 12. Control de Entidades(Accesos)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/ControlEntidades-accesos.png" width="800" alt="Accesos Wireframe">
+</p>
+
+**Descripción:** Directorio completo de usuarios con acceso permitido.
+
+### 13. Control de Entidades(Personas)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/ControlEntidades-personas.png" width="800" alt="Personas Wireframe">
+</p>
+
+**Descripción:** Asignación de roles y permisos por usuario.
+
+### 14. Control de Entidades(Grupos)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/ControlEntidades-grupos.png" width="800" alt="Grupos Wireframe">
+</p>
+
+**Descripción:** Asignación de grupos de personas.
+
+### 15. Control de Entidades(Administradores)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/ControlEntidades-admins.png" width="800" alt="Administradores Wireframe">
+</p>
+
+**Descripción:** Asignacion de permisos a administradores.
+
+### 16. Control de Entidades(Añadir Accesos)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/ControlEntidades-añadir-accesos.png" width="800" alt="Añadir Accesos Wireframe">
+</p>
+
+### 17. Control de Entidades(Añadir Personas)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/ControlEntidades-añadir-personas.png" width="800" alt="Añadir Personas Wireframe">
+</p>
+
+### 18. Control de Entidades(Añadir Grupos)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/ControlEntidades-añadir-admins.png" width="800" alt="Añadir Grupos Wireframe">
+</p>
+
+### 19. Control de Entidades(Añadir Administradores)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/ControlEntidades-añadir-admins.png" width="800" alt="Añadir Administradores Wireframe">
+</p>
+
+### 20. Confirmación de Cierre de Sesión
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireframes/CerrarSesion-wireframe.png" width="800" alt="Logout Wireframe">
+</p>
 
 ### 4.4.2. Web Applications Wireflow Diagrams.
-*[Sección en desarrollo]*
+
+User Goal 1: Como usuario nuevo, quiero poder registrarme.
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireflow/registrosesion-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 2: Como usuario registrado, quiero poder iniciar sesión .
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireflow/iniciosesion-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 3: Como usuario registrado, quiero validar la identidad del usuario mediante un segundo factor de autenticación.
+
+<p align="center  ">
+  <img src="/Resources/Chapter4/Web-Application/wireflow/2fa-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 4: Como usuario nuevo, quiero registrar una nueva organización con un plan a elección.
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireflow/crearorg-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 5: Como usuario nuevo, quiero registrar una nueva sede o existente a mi organización.
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireflow/crearsede-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 6: Como usuario ,quiero poder cerrar sesión.
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireflow/cerrar-sesion-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 7: Como usuario ,quiero poder acceder a la bitacora de accesos y alertas desde el panel de control.
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireflow/bitacora-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 8: Como usuario ,quiero añadir accesos desde control de entidades.
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireflow/accesos-wireflow-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 9: Como usuario ,quiero añadir personas desde control de entidades.
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireflow/pesonas-wireflow-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 10: Como usuario ,quiero añadir grupos de personas desde control de entidades.
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireflow/grupos-wireflow-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 11: Como usuario ,quiero añadir administradores desde control de entidades.
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireflow/administrador-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
 
 ### 4.4.3. Web Applications Mock-ups.
 Esta sección presenta los mock-ups de alta fidelidad de la plataforma web de SmartLock. Estos diseños representan la apariencia visual final del sistema, incluyendo identidad visual, paleta de colores, tipografía, distribución de componentes y experiencia de usuario orientada a la implementación real del producto.
 
----
+### 1. Inicio de Sesión (Login)
 
-#### A. Flujo de Acceso y Seguridad
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/InicioSesión-Mockup.png" width="800" alt="Login Mockup">
+</p>
 
-### Inicio de Sesión
+**Descripción:** Pantalla de acceso seguro al sistema principal.
 
-![Inicio de Sesión Mockup](/Resources/Chapter4/Web-Application/Inicio-Sesion-Mockup.png)
+### 2. Registro de Usuario (Sign Up)
 
-**Descripción:** Mock-up de la pantalla principal de acceso al sistema, donde se visualiza la interfaz final de autenticación con diseño visual completo, jerarquía de botones y elementos de recuperación de acceso.
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/RegistroSesión-Mockup.png" width="800" alt="Registro Mockup">
+</p>
 
----
+**Descripción:** Formulario rápido para crear una cuenta nueva.
 
-### Registro de Sesión (Sign Up)
+### 3. Autenticación de Dos Factores (2FA)
 
-![Registro de Sesión Mockup](/Resources/Chapter4/Web-Application/Registro-Sesion-Mockup.png)
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/Autenticacion2FA-mockup.png" width="800" alt="2FA Mockup">
+</p>
 
-**Descripción:** Representación visual del formulario de registro de nuevos administradores, mostrando el diseño definitivo de campos, validaciones visuales y estructura de navegación.
+**Descripción:** Capa extra de seguridad con código móvil.
 
----
+### 4. Creación de Organización
 
-### Autenticación de Dos Factores (2FA)
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/crear-organizacion-mockup.png" width="800" alt="Creación de Organización Mockup">
+</p>
 
-![Autenticación 2FA Mockup](/Resources/Chapter4/Web-Application/Autentificacion-de-2-Factores-Mockup.png)
+**Descripción:** Paso inicial para registrar tu nueva organización.
 
-**Descripción:** Diseño final de la segunda capa de seguridad mediante código de verificación, enfocado en claridad visual, seguridad y facilidad de uso para el usuario.
+### 5. Selección Plan de Suscripción
 
----
-#### B. Configuración de Infraestructura
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/seleccionar-plan-mockup.png" width="800" alt="Plan de Suscripción Mockup">
+</p>
 
-### Dashboard Plan Principiante
+**Descripción:** Pantalla de selección de plan de suscripción.
 
-![Dashboard Plan Principiante Mockup](/Resources/Chapter4/Web-Application/Dashboard-Plan-Principiante-Mockup.png)
+### 6. Configuración Organización
 
-**Descripción:** Mock-up del panel principal para usuarios del plan principiante, presentando una interfaz simplificada con acceso rápido a funciones esenciales y monitoreo básico del sistema.
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/form-organizacion-mockup.png" width="800" alt="Configuración Organización Mockup">
+</p>
 
----
+**Descripción:** Ajustes detallados de la organización activa.
+
+### 7. Confirmación de creación de organización
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/confirm-plan-mockup.png" width="800" alt="Confirmación Organización Mockup">
+</p>
+
+**Descripción:** Mensaje de éxito al registrar la organización.
+
+### 8. Crear Sedes
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/crear-sede-Mockup.png" width="800" alt="Configuración de Sedes Mockup">
+</p>
+
+**Descripción:** Interfaz para añadir una nueva ubicación física.
+
+### 9. Configuración de Sedes
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/crear-sede-info-Mockup.png" width="800" alt="Configuración de Sedes Mockup">
+</p>
+
+**Descripción:** Ajuste de parámetros para cada sede creada.
+
+### 10. Panel de Control
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/panel-control-Mockup.png" width="800" alt="Panel de Control Mockup">
+</p>
+
+**Descripción:** Vista general del estado de las sedes.
+
+### 11. Bitácora de accesos
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/Dashboard-bitacora-Mockup.png" width="800" alt="Bitácora Mockup">
+</p>
+
+**Descripción:** Registro detallado del historial de los accesos.
+
+### 12. Control de Entidades (Accesos)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/ControlEntidades-accesos-mockup.png" width="800" alt="Accesos Mockup">
+</p>
+
+**Descripción:** Directorio completo de usuarios con acceso permitido.
+
+### 13. Control de Entidades (Personas)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/ControlEntidades-personas-mockup.png" width="800" alt="Personas Mockup">
+</p>
+
+**Descripción:** Asignación de roles y permisos por usuario.
+
+### 14. Control de Entidades (Grupos)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/ControlEntidades-grupos-mockup.png" width="800" alt="Grupos Mockup">
+</p>
+
+**Descripción:** Interfaz para la gestión de grupos operativos.
+
+### 15. Control de Entidades (Administradores)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/ControlEntidades-admins-mockup.png" width="800" alt="Administradores Mockup">
+</p>
+
+**Descripción:** Asignación de permisos a administradores del sistema.
+
+### 16. Control de Entidades (Añadir Accesos)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/ControlEntidades-añadir-accesos-mockup.png" width="800" alt="Añadir Accesos Mockup">
+</p>
+
+**Descripción:** Formulario para registrar nuevos permisos de entrada.
+
+### 17. Control de Entidades (Añadir Personas)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/ControlEntidades-añadir-personas-mockup.png" width="800" alt="Añadir Personas Mockup">
+</p>
+
+**Descripción:** Registro de nuevos integrantes a la plataforma.
+
+### 18. Control de Entidades (Añadir Grupos)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/ControlEntidades-añadir-grupo-mockup.png" width="800" alt="Añadir Grupos Mockup">
+</p>
+
+**Descripción:** Creación de nuevos grupos de trabajo específicos.
+
+### 19. Control de Entidades (Añadir Administradores)
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/ControlEntidades-admins-añadir-mockup.png" width="800" alt="Añadir Administradores Mockup">
+</p>
+
+**Descripción:** Alta de nuevos perfiles con privilegios administrativos.
+
+### 20. Confirmación de Cierre de Sesión
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/mockups/CerrarSesion-mockup.png" width="800" alt="Logout Mockup">
+</p>
+
+**Descripción:** Ventana segura para salir de la plataforma.
+
 ### 4.4.4. Web Applications User Flow Diagrams.
-*[Sección en desarrollo]*
+En la siguiente sección se puede observar de manera detallada el  diagrama Userflow.
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/userflow/userflow.png" width="800" alt="userflow">
+</p>
 
 ## 4.5. Web Applications Prototyping.
-*[Sección en desarrollo]*
+
+
+<p align="center">
+  <img src="../Resources/Chapter4/Web-Application/figma prototype.jpg" width="900">
+</p>
+
+<br>
+
+**Link del Figma:**  
+[Ver enlace](https://www.figma.com/design/kVDoKtb6qnhzGb0kD1rCyR/Untitled?node-id=0-1&t=ZrgcAyr2GfzBtvf7-1)
+
+<br>
+
+**Link del video de explicación:**  
+[Ver enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a860_upc_edu_pe/IQAoeufOBXR1Q4_QgHSUq5ZoAdnsC9hr3FJfDiVG26U60XM?e=5zpImg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+<br>
+
+<p align="center">
+  <img src="../Resources/Chapter4/Web-Application/Captura Prototype evidencia.jpg" width="900">
+</p>
 
 ## 4.6. Domain-Driven Software Architecture.
 
@@ -318,41 +564,28 @@ Esta sección presenta los mock-ups de alta fidelidad de la plataforma web de Sm
 En esta sección se detalla el diseño táctico del sistema, profundizando en la arquitectura y los componentes técnicos necesarios para implementar la solución. A diferencia del Big Picture, el DesignLevel Event Storming se enfoca en definir los límites de los agregados, los comandos que disparan cambios de estado y las políticas que gobiernan las reglas de negocio.
 
 <p align="center">
-  <img src="/Resources/Chapter4/eventStormin/design-level.jpeg" width="800" alt="Design Level Event Storming">
+  <img src="/Resources/Chapter4/eventStormin/DesignLevel.png" width="800" alt="Design Level Event Storming">
 </p>
 
-#### Authentication Context
-Actúa como la puerta de entrada digital al ecosistema de SmartLock, gestionando los procesos de registro y acceso de los usuarios administrativos. Este componente se encarga de validar las credenciales de identidad y de implementar medidas de seguridad reforzadas, como la verificación en dos pasos (2FA), para garantizar que solo las personas legítimas ingresen al sistema. Además, supervisa la integridad de las sesiones activas, aplicando reglas automáticas que protegen la cuenta global ante cualquier cambio de seguridad o intento de acceso no autorizado.
+### 1. Space Management (Gestión de Espacios)
+Es el contexto central encargado de la infraestructura física y lógica de la plataforma. Su responsabilidad principal es modelar la jerarquía operativa, gestionando entidades como **Organizations**, **Sites** (sedes) y **Zones**. Este contexto administra la relación entre los activos físicos y su ubicación, permitiendo que la plataforma identifique la posición de los dispositivos de bloqueo digital.
+<img src="/Resources/Chapter4/eventStormin/space-management-Context.png">
 
-<p align="center">
-  <img src="/Resources/Chapter4/eventStormin/authentication-context.png" width="800" alt="Authentication Context">
-</p>
+### 2. Access Control (Control de Acceso)
+Este contexto se enfoca estrictamente en la autorización y la seguridad física. Gestiona las identidades mediante la entidad **Subject** y su agrupación en **Groups** para facilitar la asignación masiva de permisos. Su lógica de negocio define quién tiene permitido ingresar a áreas específicas basándose en la validación de tokens y reglas de seguridad configuradas.
+<img src="/Resources/Chapter4/eventStormin/Acces-Context.png">
 
-#### Organization Context
-Constituye el núcleo operativo del sistema, encargado de estructurar la jerarquía institucional y física de cada cliente. Este componente facilita la creación de entidades globales, la gestión de sedes o sitios específicos y el registro técnico de cada punto de acceso o puerta dentro de la plataforma. Al centralizar esta estructura, el sistema asegura que la administración de los espacios físicos sea coherente y escalable, sirviendo como la base informativa necesaria para que los demás módulos operen según la distribución administrativa de la organización.
+### 3. Authentication (Autenticación e Identidad)
+Responsable de la seguridad a nivel de software y la validación de la identidad del usuario en el sistema. Administra las **Accounts**, los hashes de contraseñas y los roles de usuario. Asegura que el usuario sea quien dice ser antes de permitirle interactuar con la interfaz del frontend o las APIs de la aplicación.
+<img src="/Resources/Chapter4/eventStormin/Authentication-Context.png">
 
-<p align="center">
-  <img src="/Resources/Chapter4/eventStormin/organization-context.png" width="800" alt="Organization Context">
-</p>
+### 4. Report & Audit (Reportes y Auditoría)
+Dedicado a la observabilidad y la persistencia de eventos históricos dentro del ecosistema SmartLock. Utiliza entidades como **Audit**, **AuditRecord** y **Alert** para registrar cada acción realizada por los usuarios y cada anomalía detectada por los dispositivos. Es fundamental para el cumplimiento normativo y la reconstrucción de líneas de tiempo ante incidentes de seguridad.
+<img src="/Resources/Chapter4/eventStormin/Report-Context.png">
 
-#### Security Context
-Centraliza la gestión de identidades y la integridad del sistema SmartLock, asegurando que solo el personal autorizado interactúe con la infraestructura física. Este componente se encarga de validar el acceso en tiempo real y coordinar las respuestas automáticas ante situaciones críticas o intentos de intrusión. Al aislar estas funciones, se garantiza una capa de protección robusta que salvaguarda tanto la información digital como la seguridad de los espacios físicos administrados.
-<p align="center">
-  <img src="/Resources/Chapter4/eventStormin/security-context.png" height="600" alt="Security Context">
-</p>
-
-#### Subscription Plan Context
-Administra los planes comerciales y el modelo de facturación para cada organización dentro de la plataforma. Este componente es responsable de definir los niveles de servicio, gestionar los ciclos de pago y establecer los límites operativos, como el número permitido de puertas o usuarios según el plan adquirido.
-<p align="center">
-  <img src="/Resources/Chapter4/eventStormin/subscription-plan-context.png" width="750" alt="Subscription Plan Context">
-</p>
-
-#### User Context
-Gestiona integralmente los perfiles y permisos de las personas que interactúan con la plataforma, distinguiendo claramente entre el personal administrativo y los usuarios de acceso físico. Este componente se encarga de dar de alta, actualizar o dar de baja a los miembros del sistema, asegurando que cada individuo cuente con las atribuciones necesarias según su rol dentro de la organización. Al centralizar esta administración, el sistema facilita un control preciso sobre quién puede operar el software y quién tiene permitido el ingreso a las instalaciones, manteniendo siempre un registro actualizado de todas las identidades activas.
-
-<p align="center">
-  <img src="/Resources/Chapter4/eventStormin/user-context.png" width="550" alt="User Context">
-</p>
+### 5. Billing & Subscription (Facturación y Suscripciones)
+Gestiona el aspecto comercial y la viabilidad del servicio para cada organización. Se encarga de la entidad **Subscription**, controlando los planes activos, precios y fechas de renovación. Este contexto habilita o restringe funcionalidades avanzadas, como el control por franjas horarias o alertas automáticas, según el estado de pago del cliente.
+<img src="/Resources/Chapter4/eventStormin/Billing-Context.png">
 
 Descripción de los componentes identificados:
 - **Comandos (Azul):** Representan las intenciones de los usuarios o sistemas externos para realizar una acción específica (ej. "Generar Código QR", "Validar Acceso"). 
@@ -425,12 +658,11 @@ En esta sección, el equipo presenta el diseño orientado a objetos del software
 
 #### Diagrama de clases (Frontend)
 
-<img src="/Resources/Chapter4/Diagram-Class/Frontend/Class-Diagram-Frontend-image.png" alt="Class Diagram Frontend">
+<img src="/Resources/Chapter4/Diagram-Class/Frontend/Diagrama-de-clases-Frontend-SmartLock.png" alt="Class Diagram Frontend">
 
-El diagrama organiza el frontend de SmartLock en cinco *Bounded Contexts* (Authentication, Organization, User, Security y Subscription), lo que permite aislar la lógica de negocio y asegurar que cada módulo evolucione de forma independiente. Dentro de estos contextos, se implementan los 8 Agregados definidos, donde entidades raíz como *Security* y *Organization* encapsulan a *Door* y *Office* respectivamente; esto garantiza la integridad del sistema, ya que cualquier cambio de estado físico o estructural debe ser validado por su respectiva raíz de agregado antes de impactar la interfaz.
-
-Bajo el enfoque DDD, la aplicación utiliza un *EventBus* en la capa Shared para comunicar eventos entre contextos de forma desacoplada y emplea el patrón *Assembler* para transformar los datos crudos de la API en objetos de dominio con comportamiento propio. Los *Stores* de la capa de aplicación gestionan estos agregados mediante Signals, permitiendo que la interfaz reaccione instantáneamente a cambios operativos —como la apertura de una puerta o la actualización de un perfil— sin comprometer la separación de responsabilidades ni la pureza del modelo de negocio.
-
+La arquitectura se organiza bajo los principios de **Domain-Driven Design (DDD)**, estructurando el frontend en contextos delimitados que separan lógicamente las responsabilidades de negocio. El núcleo reside en `spaceManagement`, que gestiona la jerarquía física desde la `Organization` hasta los `Device`, utilizando un `spaceManagementStore` en la capa de aplicación para centralizar el estado y desacoplar la vista de la infraestructura. Este se complementa con `authentication` y `access`, encargados de la identidad y los permisos mediante `Account` y `Subject`, mientras que `report` se especializa en la observabilidad a través de entidades de auditoría y alertas. Finalmente, `billing` opera de forma independiente para controlar el ciclo de vida de las suscripciones en el dominio de pagos.
+<br><br>
+La interacción entre estos contextos y las clases de frontend se facilita mediante un **Kernel Compartido** (`shared`), donde la capa de infraestructura provee una `BaseApiEndpoint` de la cual heredan los servicios específicos para estandarizar el consumo de APIs. En la capa de presentación, los componentes se dividen en `views` (contenedores de alto nivel) y `components` (piezas reutilizables como `OrganizationCard`), los cuales interactúan con los **Stores** para obtener datos de manera reactiva en lugar de consultar directamente a los servicios. Todo el sistema es orquestado por el `AppComponent`, que integra el `Layout` compartido para mantener una interfaz consistente en toda la plataforma.
 #### Diagrama de clases (Backend)
 
 <img src="/Resources/Chapter4/Diagram-Class/Backend/Class-Diagram-Backend-image.png" alt="Class Diagram Backend">
