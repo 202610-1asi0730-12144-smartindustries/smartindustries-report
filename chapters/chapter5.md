@@ -261,7 +261,7 @@ Durante esta sesión, el equipo de desarrollo junto al Product Owner seleccionar
 | **Prepared By** | Peñaranda Caldas, Gabriel Augusto |
 | **Attendees (to planning meeting)** | Peñaranda Caldas, Gabriel Augusto / Ayllon Pauccar, Juan David / Bottger Salazar, Johan Karl / Limache Coronel, Imanol Fabrizio |
 | **Sprint 1 Review Summary** | Durante el Sprint 1 el equipo logró completar la primera versión funcional de la Landing Page y del sistema base de autenticación de SmartLock. Se cumplió el objetivo principal del sprint al habilitar un flujo seguro de acceso para administradores y establecer la presencia digital inicial del producto. |
-| **Sprint 1 Retrospective Summary** | a comunicación entre integrantes fue constante y facilitó la integración temprana. Mantener documentación y estándares técnicos actualizados durante el sprint. |
+| **Sprint 1 Retrospective Summary** | La comunicación entre integrantes fue constante y facilitó la integración temprana. Mantener documentación y estándares técnicos actualizados durante el sprint. |
 | **Sprint Goal & User Stories** | |
 | **Sprint 2 Goal** | **Contexto:** **Sprint Goal:**<br>*"Our focus is on delivering the first operational version of the SmartLock Web Application while improving the quality, usability, and stability of artifacts created during Sprint 1.*<br>*We believe this delivers a more complete digital experience to administrators and prospective customers by providing the first functional version of the Frontend Web Application.*<br>*This will be confirmed when users can access the deployed web application, navigate the improved Landing Page without usability issues, and interact successfully with the first administrative frontend modules in a production-like environment."* |
 | **Sprint 1 Velocity** | 30 Story Points. (Velocidad estimada basada en la capacidad inicial del equipo para configurar los entornos y desarrollar los módulos de autenticación básicos). |
@@ -353,6 +353,95 @@ Durante el transcurso de este sprint, todos los miembros participaron de forma a
 
 <img src="/Resources/Chapter5/sprint1/collab-insights1.png"/>
 
+### 5.2.3. Sprint 3
+
+En esta sección se registra y explica el avance obtenido durante el tercer ciclo de desarrollo (Sprint 3), abarcando tanto la construcción de los productos de software iniciales como el trabajo colaborativo del equipo. Se incluyen los detalles de planificación, los líderes de cada aspecto, el backlog comprometido y las evidencias de ejecución, documentación y despliegue del trabajo completado.
+
+#### 5.2.3.1. Sprint Planning 3
+
+Durante esta sesión, el equipo de desarrollo junto al Product Owner seleccionaron las Historias de Usuario más prioritarias del Product Backlog para definir el objetivo central de la iteración. A continuación, se presenta el cuadro resumen con los detalles y acuerdos de esta reunión:
+
+| **Sprint #** | Sprint 3 |
+| :--- | :--- |
+| **Sprint Planning Background** | |
+| **Date** | 2026-05-29 |
+| **Time** | 19:00 PM |
+| **Location** | Reunión virtual (Microsoft Teams) |
+| **Prepared By** | Limache Coronel, Imanol Fabrizio |
+| **Attendees (to planning meeting)** | Peñaranda Caldas, Gabriel Augusto / Ayllon Pauccar, Juan David / Bottger Salazar, Johan Karl / Limache Coronel, Imanol Fabrizio |
+| **Sprint 2 Review Summary** | Durante el Sprint 2 el equipo logró completar la primera versión funcional del Frontend Web Application. Se cumplió el objetivo principal del sprint al habilitar el entorno inicial del producto.  |
+| **Sprint 2 Retrospective Summary** | El equipo trabajó de manera exitosa para lograr los objetivos. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 3 Goal** | **Contexto:** <br><br> **Sprint Goal:**<br>*"Our focus is on offering a functional backend enviroment to the Smartlock platform through a working web service.*<br>*We believe it establishes a working platform experience to administrators and functional product value to prospective customers.*<br>*This will be confirmed when administrators can successfully register and access the main dashboard, and visitors can navigate the Landing Page features without errors."* |
+| **Sprint 3 Velocity** | 30 Story Points. (Velocidad estimada basada en la capacidad inicial del equipo para configurar los entornos y desarrollar el backend). |
+| **Sum of Story Points** | 29 Story Points. |
+
+#### 5.2.3.2. Aspect Leaders and Collaborators
+
+En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)**. Esta matriz detalla los líderes (L) y colaboradores (C) para cada aspecto clave del Sprint, asegurando una comunicación clara y una distribución de responsabilidades eficiente para el proyecto **SmartLock**. La organización está directamente relacionada con la selección de tareas (*tasks*) que se desarrollarán durante el Sprint.
+
+> **Leyenda:** <br>
+> **L:** Líder (Responsable de la revisión y entrega del módulo). <br>
+> **C:** Colaborador (Apoyo en desarrollo y tareas específicas).
+
+| Team Member (Last Name, First Name) | GitHub Username | Arquitectura & DB | Backend API & Seguridad | Frontend (Landing & Web App) | QA & Deployment |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| Peñaranda Caldas, Gabriel Augusto | gapc2124 | L | C | C | C |
+| Ayllon Pauccar, Juan David | JuanDPAUC | C | L | C | C |
+| Bottger Salazar, Johan Karl | johan-bottger | C | C | L | C |
+| Limache Coronel, Imanol Fabrizio | ImaLi06 | C | C | C | L |
+
+#### 5.2.3.3. Sprint Backlog 3
+
+##### **Sprint 2 - Tareas Asignadas**
+
+| **User Story** |  | **Work-Item / Task** |  |  |  |  |  |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Id** | **Título** | **Id** | **Título** | **Descripción** | **Est. (Hrs)** | **Asignado** | **Status** |
+| HU-01 | Inicio de sesión estándar | T-01 | Diseñar formulario login | Crear interfaz responsive de login con email y contraseña | 3 | Gabriel | Done |
+| N/A | Configuración general | T-33 | Sprint QA y testing final | Ejecutar pruebas funcionales integrales | 4 | Imanol | Done |
+| **TOTAL HORAS** |  |  |  |  | **78** |  |  |
+
+#### 5.2.3.4. Development Evidence for Sprint Review
+
+El principal avance durante el Sprint 3 fue el desarrollo del Backend Web Service, incorporando queries y comandos relevantes a cada función del producto.
+A continuación, se presentan los commits más importantes del Sprint, los cuales muestran el ciclo de vida del proyecto, y toda la información que se usó para el desarrollo del Backend.
+
+| Repository | Branch | Commit ID | Message | Body | Commit Date  |
+|---|---|---|---|---|---|
+| smartlock-platform  | develop | f269da8a9178736046509bf68f85d29aa5a79516 | feat(spacemanagement): create CreateOrganizationCommand | - | 15-06-2026 |
+| smartlock-platform  | develop | cf10971af41a7792499040069d14890efda63fb3 | feat(administration): create Role aggregate | - | 15-06-2026 |
+| smartlock-platform  | develop | 3efdaa231b95f5c30cd9c081a54b7cc6e576ce9c | feat(migrations): AddMemberships | - | 15-06-2026 |
+| smartlock-platform  | develop | 9fd2ed8094766b86270245724f263e101890c629 | feat(iam): implements acl | - | 15-06-2026 |
+| smartlock-platform  | develop | 80aec175043c899516223464e1732c85733325d4 | feat(administration): create OrganizationsController | - | 15-06-2026 |
+
+
+#### 5.2.3.5. Execution Evidence for Sprint Review
+Se incluyen capturas detalladas de la ejecución de la Landing Page de la aplicación como evidencia. La Landing Page es compuesta por varias secciones que se presentan en las capturas a continuación.
+
+<img src="/Resources/Chapter5/sprint3/execution-evidence1.png"/>
+<img src="/Resources/Chapter5/sprint3/execution-evidence2.png"/>
+<img src="/Resources/Chapter5/sprint3/execution-evidence3.png"/>
+
+[Execution Evidence Sprint 3 Video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210735_upc_edu_pe/IQAICoZ4E8mcQrsknhxiw7YpASuZuy538vsp8p72Yx0w9C8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ljd3tg)
+
+#### 5.2.3.6. Services Documentation Evidence for Sprint Review.
+
+<img src="/Resources/Chapter5/sprint3/service-evidence1.png"/>
+<img src="/Resources/Chapter5/sprint3/service-evidence2.png"/>
+
+#### 5.2.3.7. Software Deployment Evidence for Sprint Review.
+El despliegue del backend web service se realizó en Azure por su simplicidad y compatibilidad con servicios basados en contenedores.
+[]()
+
+
+<img src="/Resources/Chapter5/sprint3/deployment-evidence1.png"/>
+<img src="/Resources/Chapter5/sprint3/deployment-evidence2.png"/>
+
+#### 5.2.3.8. Team Collaboration Insights for Sprint Review
+Durante el transcurso de este sprint, todos los miembros participaron de forma activa y constante en la creación de las tareas asignadas. A continuación todos los analíticos que nos proporciona Github, en su apartado de Insights, sobre la colaboración del equipo durante el Sprint 1:
+
+<img src="/Resources/Chapter5/sprint3/collab-insights1.png"/>
 
 
 ## 5.3. Validation Interviews.
