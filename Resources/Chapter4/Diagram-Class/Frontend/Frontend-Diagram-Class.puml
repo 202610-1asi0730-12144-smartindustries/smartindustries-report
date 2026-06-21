@@ -1,0 +1,291 @@
+@startuml
+package "smartLock" {
+  class AppComponent <<Component>> {
+    + title: string
+    + ngOnInit(): void
+  }
+
+  package "report" {
+    package "domain" {
+      package "model" {
+        class Alert <<Entity>> {
+          - id: long
+          - type: string
+          - message: string
+          - timestamp: Date
+          + getId(): long
+          + getMessage(): string
+        }
+        class Audit <<Entity>> {
+          - id: long
+          - action: string
+          - userId: long
+          + getDetails(): string
+        }
+        class AuditRecord <<Entity>> {
+          - id: long
+          - previousValue: string
+          - newValue: string
+          + getChanges(): string
+        }
+        Audit "1" --> "*" AuditRecord
+        Audit "1" --> "*" Alert
+      }
+    }
+    package "presentation" {
+      package "views" {
+        class EventList <<Component>> {
+          + alerts: Alert[]
+          + fetchEvents(): void
+        }
+      }
+      package "component" {
+        class EventCard <<Component>> {
+          + eventId: long
+          + displayDetails(): void
+        }
+        class AlertForm <<Component>> {
+          + submitAlert(): void
+        }
+      }
+      EventList --> EventCard
+      EventList --> AlertForm
+    }
+  }
+
+  package "spaceManagement" {
+    package "infrastructure" {
+      class SpaceManagementApi <<Entity>> {
+        - siteEndpoint: SiteApiEndPoint
+        + getSites(): Observable<Site[]>
+      }
+      class SiteApiEndPoint <<Entity>> {
+        - http: HttpClient
+        - endpointUrl: string
+      }
+    }
+    package "domain" {
+      package "model" {
+        class Site <<Entity>> {
+          - id: long
+          - name: string
+          - location: string
+          + getId(): long
+          + getName(): string
+          + setName(name: string): void
+        }
+        class Zone <<Entity>> {
+          - id: long
+          - name: string
+          - capacity: int
+          + getCapacity(): int
+        }
+        class Device <<Entity>> {
+          - id: long
+          - serialNumber: string
+          - status: string
+          + getStatus(): string
+        }
+        class Calendar <<Entity>> {
+          - id: long
+          - timezone: string
+          + getEvents(): Event[]
+        }
+        class Organization <<Entity>> {
+          - id: long
+          - name: string
+          - description: string
+          - ownerId: long
+          + getId(): long
+        }
+        class User <<Entity>> {
+          - id: long
+          - name: string
+          - email: string
+          + getEmail(): string
+        }
+        class Invitation <<Entity>> {
+          - id: long
+          - token: string
+          - status: string
+          + accept(): void
+        }
+        class Event <<Entity>> {
+          - id: long
+          - startDate: Date
+          - endDate: Date
+          + getDuration(): int
+        }
+
+        Organization "1" -- "*" Invitation
+        User "1" -- "*" Invitation
+        Site "*" -- "1" Organization
+        Site "1" -- "*" Device
+        Zone "*" -- "*" Device
+        Site "1" *-- "1" Calendar
+        Site "1" -- "*" Zone
+        Calendar "1" -- "*" Event
+      }
+    }
+    package "application" {
+      class spaceManagementStore {
+        + sites: Site[]
+        + currentOrganization: Organization
+        + loadSites(): void
+        + addSite(site: Site): void
+      }
+    }
+    package "presentation" {
+      package "components" {
+        class OrganizationCard <<Component>> {
+          + organization: Organization
+        }
+        class EntitesList <<Component>> {
+          + items: any[]
+        }
+        class FilterBar <<Component>> {
+          + filterCriteria: string
+          + applyFilter(): void
+        }
+      }
+      package "views" {
+        class EntitiesControl <<Component>> {
+          + store: spaceManagementStore
+          + ngOnInit(): void
+        }
+        class OrganizationCardList <<Component>> {
+          + store: spaceManagementStore
+        }
+      }
+      EntitiesControl -> EntitesList
+      EntitiesControl ..> spaceManagementStore : uses
+      OrganizationCardList ..> spaceManagementStore : uses
+      OrganizationCardList -> OrganizationCard
+    }
+    spaceManagementStore --> SpaceManagementApi : fetches data
+    SpaceManagementApi --> SiteApiEndPoint : delegates
+  }
+
+  package "billing" {
+    package "domain" {
+      package "model" {
+        class Subscription <<Entity>> {
+          - id: long
+          - planName: string
+          - price: double
+          - active: boolean
+          + isActive(): boolean
+          + renew(): void
+        }
+      }
+    }
+  }
+
+  package "authentication" {
+    package "domain" {
+      package "model" {
+        class Account <<Entity>> {
+          - id: long
+          - username: string
+          - passwordHash: string
+          - roles: string[]
+          + verifyPassword(): boolean
+        }
+      }
+    }
+    package "presentation" {
+      package "components" {
+        class LoginForm <<Component>> {
+          + username: string
+          + submitLogin(): void
+        }
+        class RegistrationForm <<Component>> {
+          + email: string
+          + register(): void
+        }
+      }
+      package "views" {
+        class AuthenticationForm <<Component>> {
+          + isLoginMode: boolean
+          + toggleMode(): void
+        }
+      }
+      AuthenticationForm --> LoginForm
+      AuthenticationForm --> RegistrationForm
+    }
+  }
+
+  package "shared" {
+    package "presentation" {
+      package "views" {
+        class PanelControl <<Component>> {
+          + togglePanel(): void
+        }
+      }
+      package "components" {
+        class Layout <<Component>> {
+          + theme: string
+          + render(): void
+        }
+        class LanguageSwitcher <<Component>> {
+          + currentLang: string
+          + switchLanguage(lang: string): void
+        }
+        class SideBar <<Component>> {
+          + menuItems: string[]
+          + navigate(): void
+        }
+        class HeaderBar <<Component>> {
+          + title: string
+          + showProfile(): void
+        }
+      }
+      Layout --> HeaderBar : includes
+      Layout --> SideBar : includes
+      Layout --> LanguageSwitcher : includes
+    }
+    package "infrastructure" {
+      class BaseApiEndpoint {
+        - endpointUrl: string
+        - assembler: BaseAssembler
+        + getAll(): Observable<any[]>
+      }
+      class BaseApi {
+        + request(endpoint: string): any
+      }
+      interface BaseAssembler {
+        + toEntitiesFromResponse(response: any): any[]
+      }
+      BaseApiEndpoint --> BaseApi : uses
+      BaseApiEndpoint --> BaseAssembler : uses
+    }
+  }
+
+  package "access" {
+    package "domain" {
+      package "model" {
+        class Subject <<Entity>> {
+          - id: long
+          - identity: string
+          + getIdentity(): string
+        }
+        class Group <<Entity>> {
+          - id: long
+          - groupName: string
+          + addSubject(sub: Subject): void
+        }
+        Group "1" -- "*" Subject
+      }
+    }
+    package "application" {
+      class AccessStore {
+        + currentSubject: Subject
+        + checkPermission(): boolean
+      }
+    }
+  }
+
+  AppComponent -> shared.presentation.components.Layout
+  SiteApiEndPoint --|> BaseApiEndpoint
+}
+@enduml
