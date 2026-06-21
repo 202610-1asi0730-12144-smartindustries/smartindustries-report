@@ -853,7 +853,7 @@ En esta sección, el equipo introduce y resume el proceso colaborativo realizado
 
 Esta primera aproximación visual de alto nivel nos permitió explorar el landscape del negocio, exponiendo potenciales problemas de sincronización y validación, así como oportunidades para optimizar la experiencia del usuario final al eliminar la dependencia de hardware físico tradicional.
 
-![Big Picture Event Storming](/Resources/Chapter2/eventStormin/bigpicture.jpeg)
+![Big Picture Event Storming](Resources/Chapter2/eventStormin/bigpicture.jpeg)
 
 **Explicación de las etapas:**
 * **Identificación de Eventos de Dominio:** Plasmamos en color naranja todos los sucesos relevantes (ej. QR generado, Acceso validado).
@@ -865,69 +865,42 @@ Esta primera aproximación visual de alto nivel nos permitió explorar el landsc
 
 En esta sección se define el **Lenguaje Ubicuo (Ubiquitous Language)** del proyecto, un concepto clave dentro de la arquitectura orientada al dominio (Domain-Driven Design). El objetivo es establecer un vocabulario estandarizado y compartido entre los desarrolladores y los expertos del negocio para evitar ambigüedades. A continuación, se detallan los términos en inglés organizados por sus respectivos contextos (*Bounded Contexts*).
 
-### Identity & Auth Context
+### IAM
+- User: Persona registrada en la plataforma. Tiene email, contraseña, nombre completo y una suscripción activa
+- SignUp: Proceso de registro de un nuevo usuario (firstName, lastName, email, password)
+- SignIn: Proceso de autenticación con email y password; devuelve un token JWT
+- Authenticated User: Usuario autenticado que porta un token de sesión
+### Space Management
+- Organization: Entidad raíz (tenant). Contenedor de sites, people, devices, roles y access groups. Todo pertenece a una organización
+- Site: Ubicación física (edificio, piso, sala) dentro de una organización donde se instalan dispositivos
+- Person: Individuo (empleado, contratista) registrado en una organización. Tiene nombre completo y documento de identidad de 8 dígitos. Puede pertenecer a un grupo de acceso
+- Device: Cerradura inteligente o dispositivo IoT instalado en un site
+- Device Status: Estado de conectividad: ONLINE (operativo) u OFFLINE (desconectado)
+- Device Mode: Modo operativo de la cerradura: FREE (paso libre), BLOCKED (bloqueado), SECURITY (seguridad reforzada)
+### Administration
+- Role: Conjunto nombrado de permisos dentro de una organización. Tipos: Root (todos los permisos, no eliminable), Basic (sin permisos, no eliminable), o personalizado (eliminable)
+- Role Permissions: Permisos granulares: canCreateSites, canCreatePeople, canConnectDevices
+- Membership: Asociación entre un User y un Role en una organización. Define qué puede hacer el usuario en ese contexto
+- Invitation: Invitación enviada a un usuario para unirse a una organización con un rol específico. Tiene estado y fecha
+### Access
+- Access Group: Grupo nombrado que categoriza personas para fines de control de acceso. Pertenece a una organización
+- Person Access: Vincula una Person a un AccessGroup con un estado (ENABLED o DISABLED). Relación uno a uno con Person
+- Person Access Status: ENABLED (acceso activo) o DISABLED (acceso revocado/suspendido)
+- Access Schedule: Asignación de un AccessGroup a un Device específico, definiendo cuándo ese grupo puede acceder a ese dispositivo
+- Access Schedule Day: Día concreto dentro de un Access Schedule, con nombre y bloque horario (start/end)
+- Scheduled Mode Change — Cambio automático programado del modo de un dispositivo en una fecha y hora específica (ej. pasar a BLOCKED a las 22:00)
+### Report
+- AccessEvent: Registro de un acceso a un dispositivo. Tiene dirección (IN/OUT) e indica si ocurrió fuera de horario (out_of_schedule)
+- Direction: Sentido del acceso: entrada o salida
+- Out Of Schedule: Indica si el acceso ocurrió fuera del horario permitido
+- Alert: Alerta de seguridad asociada a un site. Tiene fecha, estado de resolución y comentario
+- Resolved: Si la alerta ya fue atendida
+- Schedule Day: Entrada de horario semanal: asigna a una persona un día de la semana y un bloque horario para acceso programado
+### Billing
+- Plan: Plan de suscripción con nombre y límite de organizaciones (organizations_limit)
+- Subscription: Vincula un User a un Plan. Registra la fecha de pago (payment_date_time)
+- Organizations Limit: Cantidad máxima de organizaciones que un usuario puede crear según su plan
 
-**Términos (Terms):**
-* **Subscription:** Platform tenant subscription.
-* **System User:** Admin/Operator/Auditor who accesses the web platform.
-* **Authentication:** Verifying user identity (login + 2FA).
-* **Role:** Permission level (Super Admin, Admin, Operator, Auditor).
-* **2FA:** Two-factor authentication.
-* **Quota:** Usage limits (users, subscription limits).
-* **Billing Cycle:** Recurring payment period.
-* **Quota Warning:** Alert when reaching usage limits.
-* **User Lock:** Account lockout after failed attempts.
-
----
-
-### Physical Space Context
-
-**Términos (Terms):**
-* **Location:** Physical site/office where doors are installed.
-* **Door:** Physical entry point with access control.
-* **Access Mode:** How door grants access (card, biometric, PIN, etc.).
-* **Door Status:** Current state of door (open, closed, locked).
-* **Maintenance:** Updates/repairs to doors.
-
----
-
-### Access Control Context
-
-**Términos (Terms):**
-* **Access User:** Person who passes through physical doors.
-* **Access Policy:** Set of rules defining who can access.
-* **Schedule:** Time windows for access (workdays, hours).
-* **Holiday Schedule:** Special dates with different access rules.
-* **Policy Assignment:** Linking policy to doors/users.
-* **Access Attempt:** Any attempt to enter through a door.
-* **Access Grant:** Successful access.
-* **Access Denial:** Failed access attempt.
-
----
-
-### Security Context
-
-**Términos (Terms):**
-* **Security Alert:** Notification of suspicious/unsafe activity.
-* **Access Denial Reason:** Why access was denied (invalid credentials, out of schedule, policy violation).
-* **Repeated Failed Attempts:** Multiple failed access attempts.
-* **Unauthorized Access:** Access by unauthorized person.
-* **Suspicious Behavior:** Activity that violates normal patterns.
-* **Emergency Override:** Bypass all security to unlock doors.
-* **Alert Acknowledgment:** Operator confirms alert.
-* **Alert Resolution:** Alert issue resolved.
-
----
-
-### Billing & Subscription Context
-
-**Términos (Terms):**
-* **Subscription Plan:** Paid tier (Free, Professional, Enterprise).
-* **Subscription Upgrade/Downgrade:** Plan level changes.
-* **Payment Failure:** Failed billing transaction.
-* **Billing Renewal:** Automatic recurring payment.
-* **History Archive:** Storing old access logs.
-* **Deactivation:** Disabling user/location access.
 
 # Capítulo III: Requirements Specification
 
