@@ -2393,14 +2393,16 @@ El botón "Ver cómo funciona" no presenta comportamiento funcional visible (no 
 ## 5.4. Video About-the-Product.
 
 <p align="center">
-  <img src="Resources/Evidencias/theproduct.jpeg" width="800" alt="Evidence">
+  <img src="Resources/Evidencias/theproduct.png" width="800" alt="Evidence">
 </p>
 | Tiempo Inicio : 00:00  |
-Tiempo Fin : 03:43 |
+Tiempo Fin : 05:07 |
 
-Enlace: [About the Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210735_upc_edu_pe/IQDZ0hcp-OPWSrH8Yfzvm6vBAVxLBb3yyqXuBJZV9xKZ_3M?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=BrVHHb)
+Enlaces:
+- Microsoft Stream: [About the Product](
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210735_upc_edu_pe/IQDZ0hcp-OPWSrH8Yfzvm6vBAVxLBb3yyqXuBJZV9xKZ_3M?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=BrVHHb)
+- Youtube: [About the Product](https://youtu.be/BUuIUui9u3Q)
 
-[Youtube.](https://youtu.be/BUuIUui9u3Q)
 
 ## Conclusión general
  
@@ -2418,11 +2420,14 @@ Enlace: [About the Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u2
 
 **Video about the team**:
 <p align="center">
-  <img src="Resources/Evidencias/theteam.jpeg" width="800" alt="Evidence">
+  <img src="Resources/Evidencias/theteam.png" width="800" alt="Evidence">
 </p>
 |Tiempo Inicio: 00:00 |
 Tiempo Fin: 03:12|
 
+Enlaces:
+- Microsoft Stream: [About the Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210735_upc_edu_pe/IQDVRa0h0DJMRpD7sZvUBjDeAZDUtZ8xlBGzTRXXd6R2aj8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=fbAOCR)
+- Youtube: [About the Team](https://youtu.be/yEZ1Tvwn13U)
 
 # Anexos
 
