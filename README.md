@@ -63,8 +63,9 @@ Proyecto
 | **3.3** | 20/04/2026 | Imanol Fabricio Limache Coronel | Se finalizó el Capítulo 3 con la redacción de las secciones restantes. |
 | **4.0** | 22/04/2026 | Johan Karl Bottger Salazar | Se agregó el diagrama de Clases tanto para Frontend como para Backend. |
 | **4.1** | 23/04/2026 | Juan David Ayllon Pauccar | Se elaboró la sección 4.3 del documento técnico. |
-| **4.2** | 24/04/2026 | Juan David Ayllon Pauccar | Se completó la sección 4.4 cerrando los requerimientos asignados. |
-| **4.2** | 24/04/2026 | Juan David Ayllon Pauccar | Se completó la sección de Sprint 2 |
+| **5.0** | 24/04/2026 | Juan David Ayllon Pauccar | Se completó la sección 4.4 cerrando los requerimientos asignados. |
+| **5.1** | 24/04/2026 | Juan David Ayllon Pauccar | Se completó la sección de Sprint 2 |
+| **6.0** | 21/06/2026 | JOhan Karl Bottger Salazar | Se completó la sección de Sprint 3 |
 </div>
 <br>
 
@@ -206,7 +207,7 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
  <b>AV1:</b><p>Expuso el modelo de negocio, el proceso de User Personas y la propuesta de valor de SmartLock frente a la clase.</p>
  <b>TB1:</b><p>Presentó el análisis de la experiencia de usuario en la Web Application, demostrando cómo los wireframes y mockups se conectan con la Landing Page para una experiencia cohesiva.</p>
  <b>AV2:</b><p>Expondrá los servicios de aplicación, las políticas de seguridad del Backend (JWT, RBAC) y cómo la lógica de negocio se implementa en C# con ASP.NET Core.</p>
-<h4>Palacios Tinoco, Adrian Fernando</h4>
+<h4>Ayllon Pauccar, Juan David  </h4>
  <b>AV1:</b><p>Detalló los diagramas de clases y la arquitectura de la información durante la revisión del sprint técnico.</p>
  <b>TB1:</b><p>Explicó los diseños responsivos de la Web Application (wireframes y mockups), mostrando cómo se adaptan a diferentes dispositivos y cómo conectan con la propuesta visual de la Landing Page.</p>
  <b>AV2:</b><p>Sustentará los diagramas de componentes del Backend, la estructura de capas (Domain, Application, Infrastructure, Interfaces) y los patrones de diseño empleados en la implementación del API REST.</p>
@@ -219,19 +220,19 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 <h4>Limache Coronel, Imanol Fabrizio</h4>
 <b>AV1:</b> Demostró fluidez al explicar conceptos técnicos a un público no técnico y mantuvo una comunicación asertiva para el alineamiento del equipo.<br><br>
 <b>TB1:</b> Comunicó la integración Frontend-Backend de forma clara, destacando el flujo de datos desde la Landing hasta el Dashboard.<br><br>
-<b>AV2:</b> (Próximo) Explicará con precisión la arquitectura hexagonal y los bounded contexts del Backend.<br><br>
+<b>AV2:</b> Explicó con precisión la arquitectura hexagonal y los bounded contexts del Backend.<br><br>
 <h4>Peñaranda Caldas, Gabriel Augusto</h4>
 <b>AV1:</b> Logró captar la atención de la audiencia al articular claramente los beneficios del sistema sin depender de tecnicismos.<br><br>
 <b>TB1:</b> Comunicó eficazmente cómo la experiencia de usuario en la Web App mejora con respecto a sistemas tradicionales.<br><br>
-<b>AV2:</b> (Próximo) Explicará la lógica empresarial centralizada en servicios de aplicación y políticas de seguridad.<br><br>
-<h4>Palacios Tinoco, Adrian Fernando</h4>
+<b>AV2:</b> Explicó la lógica empresarial centralizada en servicios de aplicación y políticas de seguridad.<br><br>
+<h4>Ayllon Pauccar, Juan David  </h4>
 <b>AV1:</b> Sustentó con seguridad las decisiones de diseño arquitectónico frente a las consultas del jurado calificador.<br><br>
 <b>TB1:</b> Presentó con claridad los diseños responsivos, demostrando cómo los componentes de la Web App se adaptan a múltiples pantallas.<br><br>
-<b>AV2:</b> (Próximo) Sustentará las decisiones de arquitectura Backend, componentes de la API y patrones de integración.<br><br>
+<b>AV2:</b> Sustentó las decisiones de arquitectura Backend, componentes de la API y patrones de integración.<br><br>
 <h4>Bottger Salazar, Johan Karl</h4>
 <b>AV1:</b> Comunicó eficazmente el problema inicial y cómo la solución se alinea con los objetivos del cliente.<br><br>
 <b>TB1:</b> Explicó los módulos del Frontend de forma clara, mostrando cómo cada pantalla cumple con requerimientos específicos de negocio.<br><br>
-<b>AV2:</b> (Próximo) Expondrá cómo el Backend implementa las funcionalidades de negocio con seguridad, escalabilidad y trazabilidad.
+<b>AV2:</b> Expuso cómo el Backend implementa las funcionalidades de negocio con seguridad, escalabilidad y trazabilidad.
 </td>
 </tr>
 <tr>
@@ -240,37 +241,37 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 <h4>Limache Coronel, Imanol Fabrizio</h4>
  <b>AV1:</b><p>Redactó la documentación del Design-Level Event Storming, documentó la gestión del proyecto en Jira y estructuró el backlog.</p>
  <b>TB1:</b><p>Documentó la integración de Sprint 1 y Sprint 2, redactando los evidencias de ejecución, tareas completadas y el resumen del desarrollo de Landing Page + Web App Frontend.</p>
- <b>AV2:</b><p>Documentará la especificación completa del Backend (APIs REST con OpenAPI/Swagger), servicios de dominio y decisiones de arquitectura hexagonal con DDD.</p>
+ <b>AV2:</b><p>Documentó la especificación completa del Backend (APIs REST con OpenAPI/Swagger), servicios de dominio y decisiones de arquitectura hexagonal con DDD.</p>
 <h4>Peñaranda Caldas, Gabriel Augusto</h4>
  <b>AV1:</b><p>Elaboró los perfiles de usuario, el análisis Lean UX y documentó los capítulos iniciales de la propuesta.</p>
  <b>TB1:</b><p>Redactó la documentación de la experiencia de usuario en la Web Application, incluyendo flujos de usuario, casos de uso y justificación de decisiones de diseño en 4.4.</p>
- <b>AV2:</b><p>Documentará los requisitos no funcionales (RNF) implementados en el Backend, seguridad JWT, auditoría automática y patrones de manejo de errores centralizado.</p>
-<h4>Palacios Tinoco, Adrian Fernando</h4>
+ <b>AV2:</b><p>Documentó los requisitos no funcionales (RNF) implementados en el Backend, seguridad JWT, auditoría automática y patrones de manejo de errores centralizado.</p>
+<h4>Ayllon Pauccar, Juan David  </h4>
  <b>AV1:</b><p>Creó las guías de estilo, diagramas técnicos y manuales de arquitectura de software para el equipo de desarrollo.</p>
  <b>TB1:</b><p>Estructuró y documentó los wireframes y mockups de la Web Application (sección 4.4.1 y 4.4.3), acompañándolos con descripciones de componentes y responsividad.</p>
- <b>AV2:</b><p>Documentará los diagramas de componentes del Backend, diagramas de clases detallados, y guías de extensión arquitectónica para futuros desarrolladores.</p>
+ <b>AV2:</b><p>Documentó los diagramas de componentes del Backend, diagramas de clases detallados, y guías de extensión arquitectónica para futuros desarrolladores.</p>
 <h4>Bottger Salazar, Johan Karl</h4>
  <b>AV1:</b><p>Estructuró y redactó la problemática, los antecedentes y los requerimientos funcionales del sistema.</p>
  <b>TB1:</b><p>Documentó los módulos funcionales de la Web Application (HU-08, HU-31, HU-32, HU-33) con sus respectivos criterios de aceptación y casos de uso.</p>
- <b>AV2:</b><p>Redactará la especificación detallada de endpoints, esquemas de request/response, políticas de seguridad (RBAC) y guías de integración Backend-Frontend.</p>
+ <b>AV2:</b><p>Redactó la especificación detallada de endpoints, esquemas de request/response, políticas de seguridad (RBAC) y guías de integración Backend-Frontend.</p>
 </td>
 <td colspan="3" align="justify">
 <h4>Limache Coronel, Imanol Fabrizio</h4>
 <b>AV1:</b> Produjo documentación técnica coherente y mantuvo un registro ordenado de la planificación para lectura ágil.<br><br>
 <b>TB1:</b> Documentó de forma clara el progreso incrementales entre sprints, facilitando la trazabilidad del proyecto.<br><br>
-<b>AV2:</b> (Próximo) Documentará la especificación técnica del Backend con estándares OpenAPI y buenas prácticas de documentación.<br><br>
+<b>AV2:</b> Documentó la especificación técnica del Backend con estándares OpenAPI y buenas prácticas de documentación.<br><br>
 <h4>Peñaranda Caldas, Gabriel Augusto</h4>
 <b>AV1:</b> Redactó los artefactos de UX y negocio con un nivel de detalle excelente, estructura lógica y ortografía impecable.<br><br>
 <b>TB1:</b> Documentó la experiencia de usuario de forma rigurosa, conectando diseño con requerimientos funcionales.<br><br>
-<b>AV2:</b> (Próximo) Documentará requisitos no funcionales con énfasis en seguridad, rendimiento y experiencia de usuario en operaciones críticas.<br><br>
-<h4>Palacios Tinoco, Adrian Fernando</h4>
+<b>AV2:</b> Documentó requisitos no funcionales con énfasis en seguridad, rendimiento y experiencia de usuario en operaciones críticas.<br><br>
+<h4>Ayllon Pauccar, Juan David</h4>
 <b>AV1:</b> Estructuró los diagramas y guías visuales acompañándolos con descripciones precisas y estandarizadas.<br><br>
 <b>TB1:</b> Documentó los diseños visuales de forma sistemática con explicaciones de principios de diseño y arquitectura de información.<br><br>
-<b>AV2:</b> (Próximo) Documentará la arquitectura Backend con diagramas de componentes, secuencia y despliegue con claridad técnica.<br><br>
+<b>AV2:</b> Documentó la arquitectura Backend con diagramas de componentes, secuencia y despliegue con claridad técnica.<br><br>
 <h4>Bottger Salazar, Johan Karl</h4>
 <b>AV1:</b> Consolidó los antecedentes y requisitos en un texto claro, formal y académicamente riguroso.<br><br>
 <b>TB1:</b> Documentó los requerimientos funcionales del Frontend con criterios de aceptación detallados y trazabilidad con historias de usuario.<br><br>
-<b>AV2:</b> (Próximo) Redactará especificaciones de Backend incluyendo contratos de API, validaciones de entrada y políticas de autorización.
+<b>AV2:</b> Redactó especificaciones de Backend incluyendo contratos de API, validaciones de entrada y políticas de autorización.
 </td>
 </tr>
 </tbody>
@@ -1889,9 +1890,9 @@ La estrategia de despliegue de **SmartLock** se basa en un modelo de **Integraci
 #### Ecosistema de Despliegue
 | Producto | Entorno de Hosting | Tecnología de Despliegue |
 | :--- | :--- | :--- |
-| **Landing Page** | Amazon S3 & CloudFront | Estático (HTML/CSS/JS puro) con CDN para baja latencia. |
-| **Frontend Web App** | Amazon S3 & CloudFront | Vue.js Build (`dist` folder) con certificados SSL. |
-| **Web Services** | Amazon Elastic Beanstalk | Entorno .NET Core con autoescalado y balanceo de carga. |
+| **Landing Page** | Github Pages | Estático (HTML/CSS/JS puro) con CDN para baja latencia. |
+| **Frontend Web App** | Netlify | Vue.js Build (`dist` folder) con certificados SSL. |
+| **Web Services** | Microsoft Azure | Entorno .NET Core con autoescalado y balanceo de carga. |
 | **Database** | Amazon RDS (MySQL) | Instancia gestionada con backups automáticos. |
 
 #### Pasos para el Despliegue Satisfactorio
@@ -2019,7 +2020,7 @@ No aplica a primer sprint y desarrollo de Landing Page.
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review.
 El despliegue de la Landing Page se realizó en el servicio de Github Pages, se seleccionó esta alternativa debido a la rapidez de despliegue y su sencillez, apropiada para una página estática.
 Se incluye la evidencia de despliegue del Landing Page en la plataforma Github Pages: 
-[https://202610-1asi0730-12144-smartindustries.github.io/smartlock-website/](https://202610-1asi0730-12144-smartindustries.github.io/smartlock-website/)
+[[https://202610-1asi0730-12144-smartindustries.github.io/smartlock-website/](https://202610-1asi0730-12144-smartindustries.github.io/smartlock-website/)](https://202610-1asi0730-12144-smartindustries.github.io/smartindustries-website/)
 
 
 <img src="Resources/Chapter5/sprint1/deployment-evidence1.png"/>
@@ -2129,7 +2130,8 @@ No aplica.
 #### 5.2.2.7. Software Deployment Evidence for Sprint Review.
 El despliegue de la primera versión del Frontend Web Application se realizó en la plataforma de Amazon S3 y CloudFront.
 Se incluye la evidencia de despliegue: 
-[https://feature-organization-list.dx10b2ahz129b.amplifyapp.com](https://feature-organization-list.dx10b2ahz129b.amplifyapp.com)
+
+[https://smartllock.netlify.app/](https://smartllock.netlify.app/)
 
 
 <img src="Resources/Chapter5/sprint2/deployment-evidence1.png"/>
@@ -2160,8 +2162,8 @@ Durante esta sesión, el equipo de desarrollo junto al Product Owner seleccionar
 | **Sprint 2 Retrospective Summary** | El equipo trabajó de manera exitosa para lograr los objetivos. |
 | **Sprint Goal & User Stories** | |
 | **Sprint 3 Goal** | **Contexto:** <br><br> **Sprint Goal:**<br>*"Our focus is on offering a functional backend enviroment to the Smartlock platform through a working web service.*<br>*We believe it establishes a working platform experience to administrators and functional product value to prospective customers.*<br>*This will be confirmed when administrators can successfully register and access the main dashboard, and visitors can navigate the Landing Page features without errors."* |
-| **Sprint 3 Velocity** | 30 Story Points. (Velocidad estimada basada en la capacidad inicial del equipo para configurar los entornos y desarrollar el backend). |
-| **Sum of Story Points** | 29 Story Points. |
+| **Sprint 3 Velocity** | 68 Story Points. (Velocidad estimada basada en la capacidad inicial del equipo para configurar los entornos y desarrollar el backend). |
+| **Sum of Story Points** | 68 Story Points. |
 
 #### 5.2.3.2. Aspect Leaders and Collaborators
 
@@ -2185,9 +2187,18 @@ En esta sección se presenta la **Leadership-and-Collaboration Matrix (LACX)**. 
 | **User Story** |  | **Work-Item / Task** |  |  |  |  |  |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Id** | **Título** | **Id** | **Título** | **Descripción** | **Est. (Hrs)** | **Asignado** | **Status** |
-| HU-01 | Inicio de sesión estándar | T-01 | Diseñar formulario login | Crear interfaz responsive de login con email y contraseña | 3 | Gabriel | Done |
-| N/A | Configuración general | T-33 | Sprint QA y testing final | Ejecutar pruebas funcionales integrales | 4 | Imanol | Done |
-| **TOTAL HORAS** |  |  |  |  | **78** |  |  |
+| HU-21 | Crear grupo de acceso | T-21 | Implementar endpoint de creación de grupo de acceso | Crear grupo de acceso asociado a una organización con validaciones y persistencia | 6 | Backend Team | Pending |
+| HU-22 | Listar grupos de acceso | T-22 | Implementar consulta de grupos de acceso | Obtener todos los grupos de acceso de una organización | 4 | Backend Team | Pending |
+| HU-23 | Asignar persona a grupo de acceso | T-23 | Implementar asignación PersonAccess | Vincular una persona a un grupo de acceso con validaciones de negocio | 8 | Backend Team | Pending |
+| HU-24 | Cambiar estado de acceso de persona | T-24 | Implementar actualización de estado de acceso | Gestionar estados activo, suspendido y revocado | 6 | Backend Team | Pending |
+| HU-25 | Crear rol con permisos | T-25 | Implementar creación de roles | Registrar roles personalizados con permisos configurables | 6 | Backend Team | Pending |
+| HU-26 | Listar roles | T-26 | Implementar consulta de roles | Obtener todos los roles de una organización | 4 | Backend Team | Pending |
+| HU-27 | Actualizar rol | T-27 | Implementar actualización de roles | Modificar nombre y permisos de roles existentes | 6 | Backend Team | Pending |
+| HU-28 | Listar usuarios de organización | T-28 | Implementar consulta de miembros | Obtener usuarios y roles asociados a una organización | 4 | Backend Team | Pending |
+| HU-29 | Asignar rol a usuario | T-29 | Implementar asignación de rol | Actualizar membresías con nuevos roles | 6 | Backend Team | Pending |
+| HU-30 | Invitar administrador | T-30 | Implementar invitación de administradores | Crear membresías para usuarios existentes en la organización | 8 | Backend Team | Pending |
+| HU-36 | Asignar horario a persona | T-36 | Implementar gestión de horarios | Registrar y validar horarios de acceso por persona | 10 | Backend Team | Pending |
+| **TOTAL HORAS** |  |  |  |  | **68** |  |  |
 
 #### 5.2.3.4. Development Evidence for Sprint Review
 
@@ -2220,7 +2231,8 @@ Evidencia de la ejecución del Swagger.
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.
 El despliegue del backend web service se realizó en Azure por su simplicidad y compatibilidad con servicios basados en contenedores.
-[]()
+(Los web services se encuentrar protegidos por autenticación)
+[https://smartlock-platform.azurewebsites.net/api/v1/](https://smartlock-platform.azurewebsites.net/api/v1/)
 
 <img src="Resources/Chapter5/sprint3/azure-evidencia.jpeg"/>
 <img src="Resources/Chapter5/sprint3/base-datos.jpeg"/>
@@ -2392,7 +2404,7 @@ Tiempo Fin : 03:43 |
  
 - SmartLock presenta una propuesta sólida basada en una solución SaaS para control de accesos y eventos, con hallazgos de entrevistas que validan la demanda de control en tiempo real y la preferencia por soluciones sin hardware físico.
 - Las entrevistas con organizadores y empresarios revelan dos necesidades clave: gestión rápida de aforo/validación de asistentes y revocación de accesos de último minuto.
-- La evaluación de la landing y la documentación muestra que el proyecto tiene una base coherente, pero requiere mejoras en usabilidad, jerarquía visual y funcionalidad interactiva antes de una presentación comercial definitiva.
+- La evaluación y la documentación muestra que el proyecto tiene una base coherente, pero requiere mejoras en usabilidad, jerarquía visual y funcionalidad interactiva antes de una presentación comercial definitiva.
 
 ### Recomendaciones
 
