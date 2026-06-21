@@ -2389,6 +2389,7 @@ El botón "Ver cómo funciona" no presenta comportamiento funcional visible (no 
 - Implementar scroll suave (smooth scroll) desde "Ver cómo funciona" hacia el ancla `#how-it-works`.
 - Convertir las tarjetas de funcionalidades en elementos clicables que despliegen más detalle (modal, acordeón o página de detalle).
 - Agregar estado hover/focus visible en todos los botones para confirmar al usuario que el elemento es interactivo.
+
 ## 5.4. Video About-the-Product.
 
 <p align="center">
@@ -2397,8 +2398,9 @@ El botón "Ver cómo funciona" no presenta comportamiento funcional visible (no 
 | Tiempo Inicio : 00:00  |
 Tiempo Fin : 03:43 |
 
-- *Microsoft Stream:* https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a860_upc_edu_pe/IQBVMXcdnPuSQKI9hqh9AEtDAS_bI9VVnOsDtJQ5Ij98DFc?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=jQ3MQz
-- *YouTube:* https://youtu.be/PqTKXO1_uNk
+Enlace: [About the Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210735_upc_edu_pe/IQDZ0hcp-OPWSrH8Yfzvm6vBAVxLBb3yyqXuBJZV9xKZ_3M?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=BrVHHb)
+
+[Youtube.](https://youtu.be/BUuIUui9u3Q)
 
 ## Conclusión general
  
