@@ -2273,6 +2273,18 @@ Para la parte práctica en la Web Application, pedir al participante que realice
 | Tiempo inicio | 00:00 |
 | Tiempo fin | 08:16 |
 | Duración | 08:16 |
+| Nombre | Sebastián De Las Casas |
+| Edad | 21 |
+| Distrito | San Borja |
+| Segmento | Organizador de Eventos) |
+| Rol | Manejo de Ingresos |
+| Fecha | 20-06-26 |
+| Medio | Video (Stream) |
+| Captura | <img src="Resources/Interview/entrevista2.jpg" alt="Captura" width="750" /> |
+| Enlace | https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210735_upc_edu_pe/IQBePKH42eH4R7ZYVr7B3fSEAdo9SY36pXFK2iOB9HYQKpg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&e=HXOvgj |
+| Tiempo inicio | 08:17 |
+| Tiempo fin | 21:03 |
+| Duración | 14:15 |
 
 
 ### 5.3.3. Evaluaciones según heurísticas.
