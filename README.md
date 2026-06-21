@@ -200,22 +200,38 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 <td colspan="3" align="justify">
 <h4>Limache Coronel, Imanol Fabrizio</h4>
  <b>AV1:</b><p>Presentó la arquitectura de eventos (Big Picture) al equipo y a los stakeholders, explicando el flujo de datos de forma clara. Asimismo, dirigió las reuniones de daily scrum y sustentó el backlog del proyecto.</p>
+ <b>TB1:</b><p>Presentó la integración completa de la Landing Page con el flujo de autenticación del Web Application, explicando la experiencia del usuario desde el primer punto de contacto hasta el acceso al dashboard administrativo.</p>
+ <b>AV2:</b><p>Sustentará la arquitectura del Backend (APIs REST, Domain-Driven Design, servicios de negocio) y explicará cómo los contextos delimitados (IAM, SpaceManagement, Access, Administration) se integran para dar soporte a la Web App.</p>
 <h4>Peñaranda Caldas, Gabriel Augusto</h4>
  <b>AV1:</b><p>Expuso el modelo de negocio, el proceso de User Personas y la propuesta de valor de SmartLock frente a la clase.</p>
+ <b>TB1:</b><p>Presentó el análisis de la experiencia de usuario en la Web Application, demostrando cómo los wireframes y mockups se conectan con la Landing Page para una experiencia cohesiva.</p>
+ <b>AV2:</b><p>Expondrá los servicios de aplicación, las políticas de seguridad del Backend (JWT, RBAC) y cómo la lógica de negocio se implementa en C# con ASP.NET Core.</p>
 <h4>Palacios Tinoco, Adrian Fernando</h4>
  <b>AV1:</b><p>Detalló los diagramas de clases y la arquitectura de la información durante la revisión del sprint técnico.</p>
+ <b>TB1:</b><p>Explicó los diseños responsivos de la Web Application (wireframes y mockups), mostrando cómo se adaptan a diferentes dispositivos y cómo conectan con la propuesta visual de la Landing Page.</p>
+ <b>AV2:</b><p>Sustentará los diagramas de componentes del Backend, la estructura de capas (Domain, Application, Infrastructure, Interfaces) y los patrones de diseño empleados en la implementación del API REST.</p>
 <h4>Bottger Salazar, Johan Karl</h4>
  <b>AV1:</b><p>Explicó las secciones introductorias y la justificación de la solución propuesta en el pitch inicial del proyecto.</p>
+ <b>TB1:</b><p>Presentó los módulos funcionales de la Web Application (Panel de Control, Gestión de Usuarios, Bitácora de Accesos) y su integración con el módulo de autenticación ya implementado.</p>
+ <b>AV2:</b><p>Expondrá la implementación completa del Backend con énfasis en los microservicios, la persistencia de datos (Entity Framework Core + SQL Server), y las políticas de auditoría automática (CreatedAt, UpdatedAt).</p>
 </td>
 <td colspan="3" align="justify">
 <h4>Limache Coronel, Imanol Fabrizio</h4>
 <b>AV1:</b> Demostró fluidez al explicar conceptos técnicos a un público no técnico y mantuvo una comunicación asertiva para el alineamiento del equipo.<br><br>
+<b>TB1:</b> Comunicó la integración Frontend-Backend de forma clara, destacando el flujo de datos desde la Landing hasta el Dashboard.<br><br>
+<b>AV2:</b> (Próximo) Explicará con precisión la arquitectura hexagonal y los bounded contexts del Backend.<br><br>
 <h4>Peñaranda Caldas, Gabriel Augusto</h4>
 <b>AV1:</b> Logró captar la atención de la audiencia al articular claramente los beneficios del sistema sin depender de tecnicismos.<br><br>
+<b>TB1:</b> Comunicó eficazmente cómo la experiencia de usuario en la Web App mejora con respecto a sistemas tradicionales.<br><br>
+<b>AV2:</b> (Próximo) Explicará la lógica empresarial centralizada en servicios de aplicación y políticas de seguridad.<br><br>
 <h4>Palacios Tinoco, Adrian Fernando</h4>
 <b>AV1:</b> Sustentó con seguridad las decisiones de diseño arquitectónico frente a las consultas del jurado calificador.<br><br>
+<b>TB1:</b> Presentó con claridad los diseños responsivos, demostrando cómo los componentes de la Web App se adaptan a múltiples pantallas.<br><br>
+<b>AV2:</b> (Próximo) Sustentará las decisiones de arquitectura Backend, componentes de la API y patrones de integración.<br><br>
 <h4>Bottger Salazar, Johan Karl</h4>
-<b>AV1:</b> Comunicó eficazmente el problema inicial y cómo la solución se alinea con los objetivos del cliente.
+<b>AV1:</b> Comunicó eficazmente el problema inicial y cómo la solución se alinea con los objetivos del cliente.<br><br>
+<b>TB1:</b> Explicó los módulos del Frontend de forma clara, mostrando cómo cada pantalla cumple con requerimientos específicos de negocio.<br><br>
+<b>AV2:</b> (Próximo) Expondrá cómo el Backend implementa las funcionalidades de negocio con seguridad, escalabilidad y trazabilidad.
 </td>
 </tr>
 <tr>
@@ -223,22 +239,38 @@ En el siguiente cuadro se describe las acciones realizadas y enunciados de concl
 <td colspan="3" align="justify">
 <h4>Limache Coronel, Imanol Fabrizio</h4>
  <b>AV1:</b><p>Redactó la documentación del Design-Level Event Storming, documentó la gestión del proyecto en Jira y estructuró el backlog.</p>
+ <b>TB1:</b><p>Documentó la integración de Sprint 1 y Sprint 2, redactando los evidencias de ejecución, tareas completadas y el resumen del desarrollo de Landing Page + Web App Frontend.</p>
+ <b>AV2:</b><p>Documentará la especificación completa del Backend (APIs REST con OpenAPI/Swagger), servicios de dominio y decisiones de arquitectura hexagonal con DDD.</p>
 <h4>Peñaranda Caldas, Gabriel Augusto</h4>
  <b>AV1:</b><p>Elaboró los perfiles de usuario, el análisis Lean UX y documentó los capítulos iniciales de la propuesta.</p>
+ <b>TB1:</b><p>Redactó la documentación de la experiencia de usuario en la Web Application, incluyendo flujos de usuario, casos de uso y justificación de decisiones de diseño en 4.4.</p>
+ <b>AV2:</b><p>Documentará los requisitos no funcionales (RNF) implementados en el Backend, seguridad JWT, auditoría automática y patrones de manejo de errores centralizado.</p>
 <h4>Palacios Tinoco, Adrian Fernando</h4>
  <b>AV1:</b><p>Creó las guías de estilo, diagramas técnicos y manuales de arquitectura de software para el equipo de desarrollo.</p>
+ <b>TB1:</b><p>Estructuró y documentó los wireframes y mockups de la Web Application (sección 4.4.1 y 4.4.3), acompañándolos con descripciones de componentes y responsividad.</p>
+ <b>AV2:</b><p>Documentará los diagramas de componentes del Backend, diagramas de clases detallados, y guías de extensión arquitectónica para futuros desarrolladores.</p>
 <h4>Bottger Salazar, Johan Karl</h4>
  <b>AV1:</b><p>Estructuró y redactó la problemática, los antecedentes y los requerimientos funcionales del sistema.</p>
+ <b>TB1:</b><p>Documentó los módulos funcionales de la Web Application (HU-08, HU-31, HU-32, HU-33) con sus respectivos criterios de aceptación y casos de uso.</p>
+ <b>AV2:</b><p>Redactará la especificación detallada de endpoints, esquemas de request/response, políticas de seguridad (RBAC) y guías de integración Backend-Frontend.</p>
 </td>
 <td colspan="3" align="justify">
 <h4>Limache Coronel, Imanol Fabrizio</h4>
 <b>AV1:</b> Produjo documentación técnica coherente y mantuvo un registro ordenado de la planificación para lectura ágil.<br><br>
+<b>TB1:</b> Documentó de forma clara el progreso incrementales entre sprints, facilitando la trazabilidad del proyecto.<br><br>
+<b>AV2:</b> (Próximo) Documentará la especificación técnica del Backend con estándares OpenAPI y buenas prácticas de documentación.<br><br>
 <h4>Peñaranda Caldas, Gabriel Augusto</h4>
 <b>AV1:</b> Redactó los artefactos de UX y negocio con un nivel de detalle excelente, estructura lógica y ortografía impecable.<br><br>
+<b>TB1:</b> Documentó la experiencia de usuario de forma rigurosa, conectando diseño con requerimientos funcionales.<br><br>
+<b>AV2:</b> (Próximo) Documentará requisitos no funcionales con énfasis en seguridad, rendimiento y experiencia de usuario en operaciones críticas.<br><br>
 <h4>Palacios Tinoco, Adrian Fernando</h4>
 <b>AV1:</b> Estructuró los diagramas y guías visuales acompañándolos con descripciones precisas y estandarizadas.<br><br>
+<b>TB1:</b> Documentó los diseños visuales de forma sistemática con explicaciones de principios de diseño y arquitectura de información.<br><br>
+<b>AV2:</b> (Próximo) Documentará la arquitectura Backend con diagramas de componentes, secuencia y despliegue con claridad técnica.<br><br>
 <h4>Bottger Salazar, Johan Karl</h4>
-<b>AV1:</b> Consolidó los antecedentes y requisitos en un texto claro, formal y académicamente riguroso.
+<b>AV1:</b> Consolidó los antecedentes y requisitos en un texto claro, formal y académicamente riguroso.<br><br>
+<b>TB1:</b> Documentó los requerimientos funcionales del Frontend con criterios de aceptación detallados y trazabilidad con historias de usuario.<br><br>
+<b>AV2:</b> (Próximo) Redactará especificaciones de Backend incluyendo contratos de API, validaciones de entrada y políticas de autorización.
 </td>
 </tr>
 </tbody>
@@ -2174,17 +2206,24 @@ A continuación, se presentan los commits más importantes del Sprint, los cuale
 #### 5.2.3.5. Execution Evidence for Sprint Review
 Se incluyen capturas detalladas de la ejecución de la Landing Page de la aplicación como evidencia. La Landing Page es compuesta por varias secciones que se presentan en las capturas a continuación.
 
-<img src="Resources/Chapter5/sprint3/sprint3-evidencia.jpeg"/>
+<img src="Resources/Chapter5/sprint3/backend1.jpeg"/>
+<img src="Resources/Chapter5/sprint3/backend2.jpeg"/>
+<img src="Resources/Chapter5/sprint3/backend3.jpeg"/>
+<img src="Resources/Chapter5/sprint3/backend4.jpeg"/>
 
-[Execution Evidence Sprint 3 Video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210735_upc_edu_pe/IQAICoZ4E8mcQrsknhxiw7YpASuZuy538vsp8p72Yx0w9C8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ljd3tg)
+[Execution Evidence Sprint 3 Video](https://youtu.be/_iPDwXCv6kM)
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.
+Evidencia de la ejecución del Swagger.
+
+<img src="Resources/Chapter5/sprint3/sprint3-evidencia.jpeg"/>
 
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.
 El despliegue del backend web service se realizó en Azure por su simplicidad y compatibilidad con servicios basados en contenedores.
 []()
 
 <img src="Resources/Chapter5/sprint3/azure-evidencia.jpeg"/>
+<img src="Resources/Chapter5/sprint3/base-datos.jpeg"/>
 
 
 #### 5.2.3.8. Team Collaboration Insights for Sprint Review
@@ -2241,12 +2280,12 @@ Para la parte práctica en la Web Application, pedir al participante que realice
 | Campo | Detalle |
 |---|---|
 | **CARRERA** | Ingeniería de Software |
-| **CURSO** | Desarrollo de Aplicaciones Open Source |
-| **SECCIÓN** | 11811 |
+| **CURSO** | Aplicaciones Web |
+| **SECCIÓN** | 12144 |
 | **PROFESORES** | Bautista Ubillús, Efraín Ricardo |
 | **AUDITOR** | Juan David Ayllon Pauccar |
 | **CLIENTE(S)** | Equipo SmartIndustries |
-| **SITE A EVALUAR** | SmartLock — Landing Page (smartlock.com) |
+| **SITE A EVALUAR** | SmartLock — Landing Page |
  
 ---
  
@@ -2361,7 +2400,11 @@ Tiempo Fin: 03:12|
 
 # Anexos
 
-* **2.4. y 2.6.1. Event Storming (Big Picture & Design Level):** [Excalidraw](https://excalidraw.com/#json=vUgvQ_f8p5qxOvlqhFRzb,fcVt4lcEfKf0J_ePWUhZhw)
+* **2.4. y 2.6.1. Event Storming (Big Picture & Design Level):** 
+
+
+
+[Excalidraw](https://excalidraw.com/#json=vUgvQ_f8p5qxOvlqhFRzb,fcVt4lcEfKf0J_ePWUhZhw)
 * **2.3. User Personas y Community:** [Figma Board](https://www.figma.com/board/okEnho158yZOcK5r6UzEgj/user-personal--Community-?node-id=0-1&t=y2q6BjfRkX2B6Mr1-1)
 * **Landing Page y Web Application Design:** [Figma Design](https://www.figma.com/design/kVDoKtb6qnhzGb0kD1rCyR/Untitled?node-id=14-2537&t=k6bdmNtl5T5W5I9Q-1)
 * **3.3. Gestión del Proyecto y Backlog:** [Jira Board](https://upc-team-open-source.atlassian.net/jira/software/projects/SMAR/boards/1?atlOrigin=eyJpIjoiNDFhNzk1OTIxMGU0NDc5ZjlmYjliMzlmYjU2MDVmOTIiLCJwIjoiaiJ9)
