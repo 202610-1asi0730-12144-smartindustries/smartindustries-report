@@ -1689,7 +1689,7 @@ Descripción de los componentes identificados:
 Este modelado permite al equipo de desarrollo tener una guía clara para la implementación de los servicios y la definición de la lógica en el código.
 
 ### 4.6.2. Software Architecture Context Diagram.
-In this section, the team introduces the Software Architecture Context Diagram. This high-level overview illustrates the **SmartLock** software system as a central entity, surrounded by the key user personas and the external systems it interacts with to deliver its "Asset-Light" access control value proposition.
+En esta sección, el equipo presenta el **Diagrama de Contexto de la Arquitectura de Software**. Esta visión de alto nivel ilustra el sistema de software **SmartLock** como una entidad central, rodeada por los principales perfiles de usuario y los sistemas externos con los que interactúa para ofrecer su propuesta de valor de control de acceso "Asset-Light".
 
 <img src="Resources/Evidencias/contexto.png">
 
@@ -1701,54 +1701,48 @@ In this section, the team introduces the Software Architecture Context Diagram. 
 
 ### 4.6.3. Software Architecture Container Diagrams.
 
-In this section, the team presents the **Container Diagram** for SmartLock. This diagram expands the system's context to reveal the software containers that compose it (web applications, mobile applications, APIs, and databases). It illustrates the high-level distribution of responsibilities, exposes key technology decisions—such as Angular for the frontend, Java Spring Boot for the backend, and MySQL for persistence—and details how these containers communicate through the AWS cloud infrastructure.
+En esta sección, el equipo presenta el **Container Diagram** de SmartLock. Este diagrama amplía el contexto del sistema para revelar los contenedores de software que lo componen (aplicaciones web, aplicaciones móviles, APIs y bases de datos). Además, ilustra la distribución de responsabilidades a alto nivel, expone decisiones tecnológicas clave —como Angular para el frontend, Java Spring Boot para el backend y MySQL para la persistencia— y detalla cómo estos contenedores se comunican a través de la infraestructura en la nube de AWS.
 
 <img src="Resources/Evidencias/contenedor.png">
 
 
-#### Diagram Explanation
+#### Explicación del Diagrama
 
-The Container Diagram breaks down the internal architecture of SmartLock into the following key components:
+El **Container Diagram** descompone la arquitectura interna de SmartLock en los siguientes componentes clave:
 
-* **Landing Page & Web Application (Frontend):** Developed using **Angular, TypeScript, and TailwindCSS**. The web application acts as a Single Page Application (SPA) that consumes the backend API. Both containers are hosted on **AWS S3** and distributed globally via **Amazon CloudFront** to ensure low latency and security via HTTPS.
-* **Scanner Mobile App:** A specialized application for security staff, optimized for scanning QR codes and communicating with the server with minimal latency.
-* **Core Backend API:** The system's main engine, developed in **Java using the Spring Boot framework**. It centralizes all domain-driven business logic (DDD), validates access attempts, and generates encrypted dynamic QR codes. It is deployed on **AWS Elastic Beanstalk** for automated load balancing and scaling.
-* **Relational Database:** A **MySQL** database hosted on **Amazon RDS**, serving as the single source of truth. it ensures the immutability of access logs (audit trails) and the integrity of user profiles and access rules.
-* **Communication:** The frontend and mobile app communicate asynchronously with the Backend API via **JSON over HTTPS**. The backend interacts with the database through **JDBC** and with third-party services (AWS SES and Twilio) via REST APIs.
+* **Landing Page & Web Application (Frontend):** Desarrollada utilizando **Angular, TypeScript y TailwindCSS**. La aplicación web funciona como una Single Page Application (SPA) que consume la API del backend. Ambos contenedores están alojados en **AWS S3** y distribuidos globalmente mediante **Amazon CloudFront** para garantizar baja latencia y seguridad mediante HTTPS.
+* **Scanner Mobile App:** Una aplicación especializada para el personal de seguridad, optimizada para escanear códigos QR y comunicarse con el servidor con una latencia mínima.
+* **Core Backend API:** El motor principal del sistema, desarrollado en **Java utilizando el framework Spring Boot**. Centraliza toda la lógica de negocio basada en Domain-Driven Design (DDD), valida intentos de acceso y genera códigos QR dinámicos cifrados. Está desplegado en **AWS Elastic Beanstalk** para proporcionar balanceo de carga y escalabilidad automatizados.
+* **Relational Database:** Una base de datos **MySQL** alojada en **Amazon RDS**, que actúa como la única fuente de verdad del sistema. Garantiza la inmutabilidad de los registros de acceso (audit trails) y la integridad de los perfiles de usuario y las reglas de acceso.
+* **Comunicación:** El frontend y la aplicación móvil se comunican de forma asíncrona con la Backend API mediante **JSON sobre HTTPS**. El backend interactúa con la base de datos a través de **JDBC** y con servicios de terceros (AWS SES y Twilio) mediante APIs REST.
 
 ### 4.6.4. Software Architecture Components Diagrams.
 
-In this section, the team presents the **Component Diagram** for the Core Backend API container. This diagram zooms into the Java Spring Boot application to illustrate its internal structure based on Domain-Driven Design (DDD) and Layered Architecture. It shows how the system is divided into Controllers (Presentation), Services (Business Logic/Domain), and Repositories (Data Access), and how these components interact to execute the access control logic.
-
+En esta sección, el equipo presenta el **Component Diagram** correspondiente al contenedor **Core Backend API**. Este diagrama profundiza en la aplicación Java Spring Boot para ilustrar su estructura interna basada en Domain-Driven Design (DDD) y Layered Architecture. Muestra cómo el sistema está dividido en Controllers (Presentación), Services (Lógica de Negocio/Dominio) y Repositories (Acceso a Datos), así como la manera en que estos componentes interactúan para ejecutar la lógica de control de acceso.
 
 <img src="Resources/Evidencias/componente.png">
 <img src="Resources/Evidencias/componente1.png">
 
 
-#### Diagram Explanation
+#### Explicación del Diagrama
 
-The Component Diagram breaks down the **Core Backend API** into the following functional layers:
+El **Component Diagram** descompone la **Core Backend API** en las siguientes capas funcionales:
 
 * **Controllers (Presentation Layer):**
-  * **Auth & Security Controller:** Exposes REST endpoints to handle user login, 2FA verification, and JSON Web Token (JWT) issuance.
-  * **Access Validation Controller:** Receives API calls from the Scanner Mobile App to validate dynamic QR payloads in real-time.
-  * **Space Manager Controller:** Provides endpoints for administrators (via the Web App) to perform CRUD operations on physical spaces and configure access schedules.
+  * **Auth & Security Controller:** Expone endpoints REST para gestionar el inicio de sesión de usuarios, la verificación 2FA y la emisión de JSON Web Tokens (JWT).
+  * **Access Validation Controller:** Recibe llamadas API desde la Scanner Mobile App para validar cargas útiles (payloads) de QR dinámicos en tiempo real.
+  * **Space Manager Controller:** Proporciona endpoints para que los administradores (a través de la Web App) realicen operaciones CRUD sobre espacios físicos y configuren horarios de acceso.
 
 * **Services (Domain / Business Logic Layer):**
-  * **Access Credential Service (Core Domain):** The heart of the system. It evaluates complex access policies, generates dynamic QR codes using cryptographic signatures, and determines whether an access attempt is granted or denied.
-  * **Authentication Service:** Implements Role-Based Access Control (RBAC) and manages the lifecycle of credentials and tokens.
-  * **Notification Publisher:** Uses the Spring ApplicationEventPublisher to asynchronously delegate alerts to prevent blocking the main execution thread during access validations.
+  * **Access Credential Service (Core Domain):** El núcleo del sistema. Evalúa políticas de acceso complejas, genera códigos QR dinámicos utilizando firmas criptográficas y determina si un intento de acceso es concedido o denegado.
+  * **Authentication Service:** Implementa Role-Based Access Control (RBAC) y gestiona el ciclo de vida de credenciales y tokens.
+  * **Notification Publisher:** Utiliza Spring ApplicationEventPublisher para delegar alertas de forma asíncrona, evitando bloquear el hilo principal de ejecución durante las validaciones de acceso.
 
 * **Repositories (Infrastructure Layer):**
-  * **Audit & Log Repository:** Uses Spring Data JPA to securely write immutable logs of every access attempt and security event into the database.
-  * **Domain Data Repository:** Manage the persistence of user profiles, organizational data, doors, and policies.
+  * **Audit & Log Repository:** Utiliza Spring Data JPA para registrar de forma segura e inmutable cada intento de acceso y evento de seguridad en la base de datos.
+  * **Domain Data Repository:** Gestiona la persistencia de perfiles de usuario, datos organizacionales, puertas y políticas.
 
-* **Communication Flow:** The web and mobile applications send HTTP requests to the **Controllers**. These controllers delegate the business logic to the **Services**. The services evaluate the rules and use the **Repositories** to interact with the MySQL database via JDBC, or use the **Notification Publisher** to dispatch asynchronous emails and SMS via AWS SES and Twilio.
-
-## 4.7. Software Object-Oriented Design.
-
-
-En esta sección, el equipo presenta el diseño orientado a objetos del software, detallando la implementación interna y la estructura de componentes para cada *Bounded Context* de **SmartLock**. Los diagramas a continuación ilustran cómo se ha aplicado el enfoque de *Domain-Driven Design* (DDD) a nivel de código, definiendo claramente las responsabilidades, los límites de los agregados y los patrones de diseño utilizados tanto en la capa de presentación (Frontend) como en la lógica de negocio (Backend). Esta estructura garantiza un código modular, mantenible y altamente escalable.
+* **Flujo de Comunicación:** Las aplicaciones web y móvil envían solicitudes HTTP a los **Controllers**. Estos controladores delegan la lógica de negocio a los **Services**. Los servicios evalúan las reglas y utilizan los **Repositories** para interactuar con la base de datos MySQL mediante JDBC, o emplean el **Notification Publisher** para enviar correos electrónicos y SMS de forma asíncrona a través de AWS SES y Twilio.
 
 ### 4.7.1. Class Diagrams.
 
@@ -1916,8 +1910,6 @@ El Sprint Planning Meeting marcó el inicio formal del desarrollo del código de
 | **Location** | Reunión virtual (Microsoft Teams) |
 | **Prepared By** | Peñaranda Caldas, Gabriel Augusto |
 | **Attendees (to planning meeting)** | Peñaranda Caldas, Gabriel Augusto / Ayllon Pauccar, Juan David / Bottger Salazar, Johan Karl / Limache Coronel, Imanol Fabrizio |
-| **Sprint n – 1 Review Summary** | - |
-| **Sprint n – 1 Retrospective Summary** | - |
 | **Sprint Goal & User Stories** | |
 | **Sprint 1 Goal** | **Contexto:** El equipo decidió enfocar el primer esfuerzo de codificación en sentar las bases operativas de la plataforma, desarrollando la Landing Page para presentar el producto y construyendo el sistema central de autenticación y gestión de identidad, lo cual es requisito previo para cualquier operación de acceso físico. <br><br> **Sprint Goal:**<br>*"Our focus is on offering a secure and reliable authentication gateway for the initial users of SmartLock, while establishing the product's digital presence through a responsive Landing Page.*<br>*We believe it delivers a trustworthy onboarding experience to administrators and clear product value proposition to prospective customers.*<br>*This will be confirmed when administrators can successfully register and access the main dashboard, and visitors can navigate the Landing Page features without errors."* |
 | **Sprint 1 Velocity** | 30 Story Points. (Velocidad estimada basada en la capacidad inicial del equipo para configurar los entornos y desarrollar los módulos de autenticación básicos). |
@@ -2011,7 +2003,7 @@ No aplica a primer sprint y desarrollo de Landing Page.
 #### 5.2.1.7. Software Deployment Evidence for Sprint Review.
 El despliegue de la Landing Page se realizó en el servicio de Github Pages, se seleccionó esta alternativa debido a la rapidez de despliegue y su sencillez, apropiada para una página estática.
 Se incluye la evidencia de despliegue del Landing Page en la plataforma Github Pages: 
-[[https://202610-1asi0730-12144-smartindustries.github.io/smartlock-website/](https://202610-1asi0730-12144-smartindustries.github.io/smartlock-website/)](https://202610-1asi0730-12144-smartindustries.github.io/smartindustries-website/)
+[https://202610-1asi0730-12144-smartindustries.github.io/smartindustries-website/](https://202610-1asi0730-12144-smartindustries.github.io/smartindustries-website/)
 
 
 <img src="Resources/Chapter5/sprint1/deployment-evidence1.png"/>
