@@ -2174,29 +2174,23 @@ A continuación, se presentan los commits más importantes del Sprint, los cuale
 #### 5.2.3.5. Execution Evidence for Sprint Review
 Se incluyen capturas detalladas de la ejecución de la Landing Page de la aplicación como evidencia. La Landing Page es compuesta por varias secciones que se presentan en las capturas a continuación.
 
-<img src="Resources/Chapter5/sprint3/execution-evidence1.png"/>
-<img src="Resources/Chapter5/sprint3/execution-evidence2.png"/>
-<img src="Resources/Chapter5/sprint3/execution-evidence3.png"/>
+<img src="Resources/Chapter5/sprint3/sprint3-evidencia.jpeg"/>
 
 [Execution Evidence Sprint 3 Video](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210735_upc_edu_pe/IQAICoZ4E8mcQrsknhxiw7YpASuZuy538vsp8p72Yx0w9C8?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ljd3tg)
 
 #### 5.2.3.6. Services Documentation Evidence for Sprint Review.
 
-<img src="/Resources/Chapter5/sprint3/service-evidence1.png"/>
-<img src="/Resources/Chapter5/sprint3/service-evidence2.png"/>
-
 #### 5.2.3.7. Software Deployment Evidence for Sprint Review.
 El despliegue del backend web service se realizó en Azure por su simplicidad y compatibilidad con servicios basados en contenedores.
 []()
 
+<img src="Resources/Chapter5/sprint3/azure-evidencia.jpeg"/>
 
-<img src="/Resources/Chapter5/sprint3/deployment-evidence1.png"/>
-<img src="/Resources/Chapter5/sprint3/deployment-evidence2.png"/>
 
 #### 5.2.3.8. Team Collaboration Insights for Sprint Review
 Durante el transcurso de este sprint, todos los miembros participaron de forma activa y constante en la creación de las tareas asignadas. A continuación todos los analíticos que nos proporciona Github, en su apartado de Insights, sobre la colaboración del equipo durante el Sprint 1:
 
-<img src="Resources/Chapter5/sprint3/collab-insights1.png"/>
+<img src="Resources/Chapter5/sprint3/contribucion3.png"/>
 
 ## 5.3. Validation Interviews.
 ### 5.3.1. Diseño de Entrevistas.
