@@ -2196,7 +2196,7 @@ El despliegue del backend web service se realizó en Azure por su simplicidad y 
 #### 5.2.3.8. Team Collaboration Insights for Sprint Review
 Durante el transcurso de este sprint, todos los miembros participaron de forma activa y constante en la creación de las tareas asignadas. A continuación todos los analíticos que nos proporciona Github, en su apartado de Insights, sobre la colaboración del equipo durante el Sprint 1:
 
-<img src="/Resources/Chapter5/sprint3/collab-insights1.png"/>
+<img src="Resources/Chapter5/sprint3/collab-insights1.png"/>
 
 ## 5.3. Validation Interviews.
 ### 5.3.1. Diseño de Entrevistas.
@@ -2231,9 +2231,9 @@ Para la parte práctica en la Web Application, pedir al participante que realice
 | Nombre | Fernando Güere Calero |
 | Edad | 21 |
 | Distrito | La Molina |
-| Segmento | Organizadora (Eventos) |
+| Segmento | Personal de Seguridad (Eventos) |
 | Rol | Pesonal de Seguridad |
-| Fecha | 19-06-26 |
+| Fecha | 20-06-26 |
 | Medio | Video (Stream) |
 | Captura | <img src="Resources/Interview/entrevista.jpg" alt="Captura" width="750" /> |
 | Enlace | https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a860_upc_edu_pe/IQCNUbOzjMlbR4976PjOPObJAeAsCJ4tOJdy-Tj5dztkVeo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ZhMJ6W |
