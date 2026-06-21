@@ -1,25 +1,29 @@
 <div align="center">
 
-<img src="/Resources/Introduction/UPC/UPC-Logo.png" alt="Logo-UPC" width="180">
+<img src="Resources/Introduction/UPC/UPC-Logo.png" alt="Logo-UPC" width="180">
 
-# Universidad Peruana de Ciencias Aplicadas
-### Facultad de Ingeniería
-**Carrera:** Ingeniería de Software
+## Universidad Peruana de Ciencias Aplicadas
 
----
+**Ingeniería de Software**
 
-## **Informe de Trabajo Final**
-### **Proyecto:** SmartLock
-**Startup:** SmartIndustries
+**Ciclo:** 2026-10
 
-**Curso:** Aplicaciones Web (SW61)
+**Curso:** Aplicaciones Web
+
 **Sección:** 12144
-**Ciclo:** 2026-01
+
 **Profesor:** Efraín Ricardo Bautista Ubillús
 
----
 
-### **Relación de Integrantes**
+----
+## Informe de Trabajo Final
+Equipo
+### SmartTecnologies
+
+Proyecto
+### SmartLock
+#### Relación de integrantes
+<br>
 
 | Nombre y Apellidos                | Código     |
 | :-------------------------------- | :--------- |
@@ -28,9 +32,13 @@
 | Ayllon Pauccar, Juan David        | u20241a860 |
 | Peñaranda Caldas, Gabriel Augusto | u202210836 |
 
-<br>
-**Mayo, 2026**
 </div>
+
+<br><div align="center"><h3>Junio 2026</h3></div><br>
+<div style="page-break-after: always;"></div>
+<div style="text-align: justify;"></div>
+
+<br>
 
 ---
 ### Registro de Versiones
@@ -62,20 +70,20 @@
 
 # Project Report Collaboration Insights
 **URL de la Organización de GitHub:**
-* [SmartIndustries - Organización](https://github.com/202610-1asi0730-12144-SmartIndustries)
+* [SmartIndustries - Organización](https://github.com/202610-1asi0730-12144-smartindustries)
 
 ---
 
 **URLs de los Repositorios del Proyecto:**
 
 * **Project Report:**
-    [https://github.com/202610-1asi0730-12144-SmartIndustries/-SmartLock--report](https://github.com/202610-1asi0730-12144-SmartIndustries/-SmartLock--report)
+    [https://github.com/202610-1asi0730-12144-smartindustries/smartindustries-report](https://github.com/202610-1asi0730-12144-smartindustries/smartindustries-report)
 * **Software Platform (Backend):**
-    [https://github.com/202610-1asi0730-12144-SmartIndustries/-SmartLock--platform](https://github.com/202610-1asi0730-12144-SmartIndustries/-SmartLock--platform)
+    [https://github.com/202610-1asi0730-12144-smartindustries/smartindustries-platform](https://github.com/202610-1asi0730-12144-smartindustries/smartindustries-platform)
 * **Web Application (Frontend):**
-    [https://github.com/202610-1asi0730-12144-SmartIndustries/-SmartLock--webapp](https://github.com/202610-1asi0730-12144-SmartIndustries/-SmartLock--webapp)
+    [https://github.com/202610-1asi0730-12144-smartindustries/smartindustries-webapp](https://github.com/202610-1asi0730-12144-smartindustries/smartindustries-webapp)
 * **Landing Page Website:**
-    [https://github.com/202610-1asi0730-12144-SmartIndustries/-SmartLock--website](https://github.com/202610-1asi0730-12144-SmartIndustries/-SmartLock--website)
+    [https://github.com/202610-1asi0730-12144-smartindustries/smartindustries-website](https://github.com/202610-1asi0730-12144-smartindustries/smartindustries-website)
 
 ---
 
@@ -876,125 +884,84 @@ En esta sección se define el **Lenguaje Ubicuo (Ubiquitous Language)** del proy
 
 ---
 
-### Historias de Usuario Funcionales (40)
+### Historias de Usuario Funcionales 
 
-| ID | Título | Descripción | Criterios de Aceptación (Gherkin) | Relacionado con |
-| :--- | :--- | :--- | :--- | :--- |
-| **HU-01** | Inicio de sesión estándar | Acceso al panel administrativo. | **Dado** que el administrador está en el login, **Cuando** ingresa correo y clave correctos, **Entonces** accede al panel de control. | **EPIC-01** |
-| **HU-02** | Autenticación 2FA | Verificación de identidad reforzada. | **Dado** que el personal ingresó clave válida, **Cuando** el sistema procesa el primer paso, **Entonces** solicita código 2FA y valida que no haya expirado. | **EPIC-01** |
-| **HU-03** | Creación de usuarios | Registro de empleados/miembros. | **Dado** que el admin de RRHH está en el módulo, **Cuando** ingresa datos requeridos y correo único, **Entonces** el sistema registra al usuario. | **EPIC-02** |
-| **HU-04** | Asignación de roles | Gestión de niveles de permiso. | **Dado** que se edita un usuario, **Cuando** se selecciona un rol (Staff/Limpieza), **Entonces** se asignan permisos automáticos del rol. | **EPIC-02** |
-| **HU-05** | Acceso días laborales | Restricción por calendario. | **Dado** que el usuario tiene acceso L-V, **Cuando** intenta acceder un sábado, **Entonces** el sistema deniega y registra el evento. | **EPIC-03** |
-| **HU-06** | Acceso franjas horarias | Restricción por horas. | **Dado** que el acceso es de 9AM a 6PM, **Cuando** intenta acceder 6:05PM, **Entonces** deniega la entrada y genera registro fallido. | **EPIC-03** |
-| **HU-07** | Accesos temporales | Permisos con caducidad. | **Dado** que el permiso vence a las 5:00PM, **Cuando** el reloj marca las 5:01PM, **Entonces** el permiso se revoca automáticamente. | **EPIC-03** |
-| **HU-08** | Dashboard Real-Time | Visualización de eventos. | **Dado** que el dashboard está abierto, **Cuando** ocurre un evento en cualquier puerta, **Entonces** aparece en la lista sin recargar la página. | **EPIC-04** |
-| **HU-09** | Simulación exitosa | Prueba de flujo sin hardware. | **Dado** que se usa la web sin cerraduras, **Cuando** se simula acceso en puerta permitida, **Entonces** registra evento exitoso en dashboard. | **EPIC-05** |
-| **HU-10** | Simulación denegada | Prueba de reglas de negocio. | **Dado** que se usa el simulador, **Cuando** se simula acceso en horario no permitido, **Entonces** genera registro rojo y dispara alertas. | **EPIC-05** |
-| **HU-11** | Alerta intentos fallidos | Detección de intrusos. | **Dado** que el sistema está activo, **Cuando** hay >3 fallos en 5 min, **Entonces** genera alerta visual de seguridad. | **EPIC-04** |
-| **HU-12** | Alerta fuera de horario | Notificación preventiva. | **Dado** que el monitoreo corre, **Cuando** hay intento de apertura fuera de franja, **Entonces** genera notificación destacada en panel. | **EPIC-04** |
-| **HU-13** | Historial detallado | Auditoría de movimientos. | **Dado** que se ingresa a "Historial", **Cuando** carga la vista, **Entonces** muestra lista paginada con usuario, fecha, hora, puerta y estado. | **EPIC-06** |
-| **HU-14** | Filtros de historial | Búsqueda avanzada de eventos. | **Dado** que hay miles de registros, **Cuando** se filtra por estado y fecha, **Entonces** la tabla muestra solo los criterios coincidentes. | **EPIC-06** |
-| **HU-15** | Límites Plan Básico | Bloqueo por suscripción. | **Dado** que se alcanzó el límite de usuarios, **Cuando** se intenta crear uno nuevo, **Entonces** muestra modal para mejorar al Plan Profesional. | **EPIC-07** |
-| **HU-16** | Upgrade Profesional | Escalabilidad de cuenta. | **Dado** que se completa el pago del Plan Profesional, **Cuando** se confirma, **Entonces** elimina límites y desbloquea control avanzado. | **EPIC-07** |
-| **HU-17** | Gestión multi-sede | Centralización operativa. | **Dado** que se tiene Plan Empresarial, **Cuando** se accede al panel, **Entonces** permite crear y cambiar entre Sedes independientes. | **EPIC-07** |
-| **HU-18** | Reportes avanzados | Análisis de flujo. | **Dado** que se tiene Plan Empresarial, **Cuando** se pide reporte de horas pico, **Entonces** exporta PDF/Excel con gráficas. | **EPIC-06** |
-| **HU-19** | Desactivación rápida | Revocación instantánea. | **Dado** que se visualiza lista de empleados, **Cuando** se pulsa "Desactivar", **Entonces** el acceso se revoca en tiempo real en toda la red. | **EPIC-02** |
-| **HU-20** | Gestión de Puertas | CRUD de infraestructura. | **Dado** que se configura el espacio, **Cuando** se entra a "Puertas", **Entonces** permite crear, editar y eliminar puntos de acceso. | **EPIC-03** |
-| **HU-21** | Acceso por puerta | Permisos granulares. | **Dado** que se edita el rol "Limpieza", **Cuando** se marcan puertas específicas, **Entonces** deniega acceso en el resto de puertas. | **EPIC-03** |
-| **HU-22** | Alerta uso indebido | Prevención de espionaje. | **Dado** que hay zonas restringidas, **Cuando** hay intento sin autorización, **Entonces** etiqueta como "Uso indebido" y emite alerta. | **EPIC-04** |
-| **HU-23** | Reset de contraseña | Autogestión de cuenta. | **Dado** que el usuario olvidó su clave, **Cuando** la solicita, **Entonces** recibe enlace tokenizado válido por 15 minutos. | **EPIC-01** |
-| **HU-24** | Exportación de datos | Descarga de reportes. | **Dado** que se aplicaron filtros en historial, **Cuando** se pulsa "Exportar", **Entonces** descarga CSV con los registros filtrados. | **EPIC-06** |
-| **HU-25** | Cierre de alertas | Gestión de incidencias. | **Dado** que hay alerta activa, **Cuando** se pulsa "Resolver", **Entonces** desaparece de la vista y se archiva como resuelta. | **EPIC-04** |
-| **HU-26** | Cierre de sesión | Seguridad de terminal. | **Dado** que el usuario está logueado, **Cuando** pulsa "Cerrar sesión", **Entonces** destruye el token y redirige al login. | **EPIC-01** |
-| **HU-27** | Invitación masiva | Onboarding eficiente. | **Dado** que se carga lista de correos, **Cuando** se envía, **Entonces** cada empleado recibe link único para crear su clave. | **EPIC-02** |
-| **HU-28** | Edición de perfil | Actualización de datos. | **Dado** que el usuario está autenticado, **Cuando** edita su perfil, **Entonces** permite cambiar foto/teléfono pero bloquea cambio de rol. | **EPIC-01** |
-| **HU-29** | Alerta desconexión | Monitoreo de hardware. | **Dado** que se monitorea hardware, **Cuando** una puerta pierde red, **Entonces** el ícono en dashboard cambia a "Offline" o rojo. | **EPIC-04** |
-| **HU-30** | Notificación crítica | Alerta vía email. | **Dado** que hay notificaciones activas, **Cuando** ocurre emergencia (madrugada), **Entonces** envía email automático al dueño. | **EPIC-04** |
-| **HU-31** | Navegación fluida por secciones | **Como** visitante, **quiero** que al pulsar los enlaces del menú la página se deslice suavemente, **para** no perder el hilo de la lectura mientras busco información. | **Dado** que el usuario visualiza la `navbar`, **Cuando** hace clic en un enlace (ej. "Precios"), **Entonces** la pantalla se desplaza con un efecto de scroll suave hasta la sección con el ID `#pricing`. | **EPIC-10** |
-| **HU-32** | Selector de idioma visual | **Como** usuario que habla inglés, **quiero** ver un botón claro para cambiar el idioma, **para** entender la propuesta de valor sin tener que usar traductores externos. | **Dado** que el usuario localiza el botón `lang-btn`, **Cuando** lo presiona, **Entonces** todos los textos con el atributo `data-i18n` deben actualizarse visualmente al idioma seleccionado. | **EPIC-11** |
-| **HU-33** | Botón de acción resaltado | **Como** interesado en el producto, **quiero** que el botón de "Solicitar Demo" tenga un color llamativo, **para** identificar rápidamente dónde debo registrarme. | **Dado** que el usuario carga el Hero de la página, **Cuando** observa los botones de navegación, **Entonces** el botón `.btn-nav-blue` debe destacar visualmente sobre los enlaces de texto plano. | **EPIC-07** |
-| **HU-34** | Tarjetas de beneficios visuales | **Como** usuario curioso, **quiero** ver las ventajas del sistema organizadas en tarjetas con iconos, **para** que la lectura sea ágil y atractiva. | **Dado** que el usuario hace scroll hasta `#features`, **Cuando** revisa las tarjetas `.feat-card`, **Entonces** cada una debe presentar un icono representativo, un título y una descripción breve. | **EPIC-10** |
-| **HU-35** | Formulario de contacto limpio | **Como** cliente con dudas, **quiero** un formulario con espacios claros para escribir, **para** enviar mi consulta de forma rápida y sin distracciones visuales. | **Dado** que el usuario llega a la sección `#contact`, **Cuando** interactúa con los campos de texto, **Entonces** el diseño debe mostrar etiquetas legibles y un botón de "Enviar" que reaccione al pasar el cursor (hover). | **EPIC-07** |
-| **HU-36** | Visualización de casos de uso | **Como** dueño de un negocio, **quiero** leer ejemplos de aplicación de SmartLock por sectores, **para** visualizar cómo el sistema resolvería mis problemas de seguridad. | **Dado** que el usuario explora la sección `#use-cases`, **Cuando** lee los bloques de contenido, **Entonces** la información debe estar separada visualmente en categorías (ej. Corporativo, Eventos). | **EPIC-10** |
-| **HU-37** | Acceso rápido para clientes | **Como** usuario ya registrado, **quiero** un botón de "Iniciar Sesión" bien ubicado, **para** entrar a mi panel de control sin tener que navegar por toda la web. | **Dado** que el usuario está en el menú superior, **Cuando** busca el acceso a la plataforma, **Entonces** el botón `.btn-nav-gray` debe estar claramente diferenciado y llevarlo directo al login. | **EPIC-01** |
-| **HU-38** | Tabla de precios comparativa | **Como** comprador consciente, **quiero** comparar los planes y sus precios en columnas, **para** elegir la opción que mejor se adapte a mi presupuesto de un vistazo. | **Dado** que el usuario visualiza la sección `#pricing`, **Cuando** revisa los planes (Básico, Pro, Enterprise), **Entonces** cada tarjeta debe listar sus características con iconos de "check" para facilitar la comparación. | **EPIC-07** |
-| **HU-39** | Estadísticas de confianza | **Como** visitante nuevo, **quiero** ver cifras grandes sobre el éxito de la empresa, **para** sentir la seguridad de que SmartLock es una solución probada y confiable. | **Dado** que el usuario carga la página inicial, **Cuando** visualiza la fila `.stats-row`, **Entonces** los números (ej. +500 edificios) deben resaltar por su tamaño de fuente y grosor frente al texto secundario. | **EPIC-10** |
-| **HU-40** | Adaptabilidad a pantallas móviles | **Como** usuario que navega desde su celular, **quiero** que todo el diseño se ajuste a lo ancho de mi pantalla, **para** no tener que hacer zoom o scroll horizontal para leer. | **Dado** que se accede a la web desde un smartphone, **Cuando** la resolución es menor a 768px, **Entonces** el menú debe adaptarse (hamburguesa) y los elementos del grid deben apilarse verticalmente. | **EPIC-10** |
+| ID | Título | Descripción | Criterios de Aceptación | Epic |
+|----|--------|-------------|--------------------------|------|
+| HU-01 | Registro de usuario | Como usuario nuevo, quiero poder registrarme en la plataforma proporcionando mi nombre, apellido, correo electrónico y contraseña para crear una cuenta en el sistema. | Given soy un usuario no registrado<br>When ingreso mi nombre, apellido, email y contraseña válidos en el formulario de registro<br>Then el sistema crea mi cuenta y devuelve HTTP 201 con mis datos de usuario (id, nombre, apellido, email)<br><br>Given soy un usuario no registrado<br>When ingreso un email que ya está registrado en el sistema<br>Then el sistema devuelve HTTP 409 con un mensaje indicando que el email ya está en uso<br><br>Given soy un usuario no registrado<br>When dejo cualquiera de los campos obligatorios vacío (nombre, apellido, email o contraseña)<br>Then el sistema devuelve HTTP 400 con los mensajes de validación correspondientes por campo<br><br>Given soy un usuario no registrado<br>When ingreso un email con formato inválido (sin @, sin dominio)<br>Then el sistema devuelve HTTP 400 indicando formato de email incorrecto<br><br>Given soy un usuario no registrado<br>When ingreso una contraseña con menos de 6 caracteres<br>Then el sistema devuelve HTTP 400 indicando que la contraseña debe tener al menos 6 caracteres | EP-01 |
+| HU-02 | Inicio de sesión | Como usuario registrado, quiero autenticarme con mi correo electrónico y contraseña para obtener un token JWT que me permita acceder a las funcionalidades protegidas. | Given tengo una cuenta registrada y activa<br>When ingreso mi email y contraseña correctos en el formulario de inicio de sesión<br>Then el sistema devuelve HTTP 200 con un token JWT, mis datos de usuario y la fecha de expiración del token<br><br>Given tengo una cuenta registrada<br>When ingreso mi email correcto pero una contraseña incorrecta<br>Then el sistema devuelve HTTP 401 con un mensaje de credenciales inválidas<br><br>Given no tengo una cuenta registrada<br>When intento iniciar sesión con un email no registrado<br>Then el sistema devuelve HTTP 401 con un mensaje de credenciales inválidas sin revelar si el email existe o no<br><br>Given estoy en el formulario de inicio de sesión<br>When envío el formulario con el campo email o contraseña vacíos<br>Then el sistema devuelve HTTP 400 con mensajes de validación | EP-01 |
+| HU-03 | Persistencia de sesión | Como usuario autenticado, quiero que mi sesión se mantenga al recargar la página para no tener que iniciar sesión nuevamente mientras mi token JWT siga vigente. | Given inicié sesión previamente y mi token JWT está almacenado en localStorage<br>When recargo la página o reabro la aplicación en el navegador<br>Then el sistema lee el token de localStorage, restaura mi sesión automáticamente y me muestra la página de inicio<br><br>Given tengo un token JWT almacenado que ya ha expirado<br>When intento acceder a cualquier ruta protegida<br>Then el sistema elimina el token expirado del almacenamiento y me redirige a la pantalla de inicio de sesión<br><br>Given no tengo ningún token almacenado en localStorage<br>When intento acceder a cualquier ruta protegida<br>Then el sistema me redirige inmediatamente a la pantalla de inicio de sesión<br><br>Given tengo un token almacenado que ha sido corrompido o manipulado<br>When el sistema intenta decodificar el token al restaurar la sesión<br>Then el sistema descarta el token inválido y me redirige al inicio de sesión | EP-01 |
+| HU-04 | Cierre de sesión | Como usuario autenticado, quiero poder cerrar sesión para que mi token JWT sea eliminado del almacenamiento local y quede desprotegido el acceso. | Given estoy con sesión iniciada en la aplicación<br>When selecciono la opción "Cerrar sesión" desde el menú de usuario en la barra superior<br>Then el sistema elimina mi token JWT de localStorage, limpia mi estado de usuario y me redirige a la pantalla de inicio de sesión<br><br>Given acabo de cerrar sesión<br>When intento navegar manualmente a una URL protegida como /home u /operations<br>Then el sistema me redirige a /auth/sign-in porque ya no hay token válido<br><br>Given tengo la aplicación abierta en dos pestañas del navegador<br>When cierro sesión en una de las pestañas<br>Then al interactuar en la otra pestaña, cualquier petición a la API falla por falta de token y soy redirigido al inicio de sesión | EP-01 |
+| HU-05 | Crear organización | Como usuario autenticado, quiero crear una nueva organización proporcionando su nombre y descripción para comenzar a gestionar mis espacios y dispositivos. | Given estoy autenticado y en la página de inicio<br>When completo el formulario con un nombre y descripción válidos y confirmo la creación<br>Then el sistema crea la organización, me asigna como miembro con rol raíz y la muestra en mi lista de organizaciones con HTTP 201<br><br>Given estoy en el formulario de creación de organización<br>When envío el formulario con el campo nombre vacío<br>Then el sistema devuelve HTTP 400 indicando que el nombre es obligatorio<br><br>Given estoy en el formulario de creación de organización<br>When envío un nombre que excede los 100 caracteres permitidos<br>Then el sistema devuelve HTTP 400 indicando la longitud máxima permitida<br><br>Given no estoy autenticado<br>When intento crear una organización mediante el endpoint de la API<br>Then el sistema devuelve HTTP 401 | EP-02 |
+| HU-06 | Listar organizaciones | Como usuario autenticado, quiero ver todas las organizaciones a las que pertenezco para seleccionar con cuál deseo trabajar. | Given soy miembro de una o más organizaciones<br>When accedo a la página de inicio (/home)<br>Then el sistema muestra tarjetas con el nombre, propietario y descripción de cada organización a la que pertenezco<br><br>Given soy un usuario recién registrado que no pertenece a ninguna organización<br>When accedo a la página de inicio<br>Then el sistema muestra un mensaje indicando que no tengo organizaciones y me invita a crear una<br><br>Given selecciono una organización haciendo clic en su tarjeta<br>When el sistema cambia la organización activa<br>Then me redirige al dashboard de operaciones de esa organización y todos los datos (sitios, dispositivos, personas) se cargan en ese contexto<br><br>Given soy miembro de múltiples organizaciones<br>When cambio la organización seleccionada desde el menú de navegación<br>Then el sistema actualiza el contexto activo y recarga los datos correspondientes a la nueva organización | EP-02 |
+| HU-07 | Actualizar organización | Como propietario de una organización, quiero poder modificar el nombre y la descripción de mi organización para mantener la información actualizada. | Given soy el propietario de una organización<br>When abro el menú de la tarjeta, selecciono editar, modifico el nombre o descripción y confirmo<br>Then el sistema actualiza los datos y devuelve HTTP 200 con la organización actualizada reflejada en la interfaz<br><br>Given soy miembro de una organización pero no soy el propietario<br>When intento actualizar los datos de la organización<br>Then el sistema devuelve HTTP 403 indicando que no tengo permisos para modificar la organización<br><br>Given estoy editando una organización<br>When intento guardar con el campo nombre vacío<br>Then el sistema devuelve HTTP 400 con el mensaje de validación correspondiente<br><br>Given soy el propietario<br>When intento actualizar una organización que ha sido eliminada por otro proceso concurrente<br>Then el sistema devuelve HTTP 404 indicando que la organización no existe | EP-02 |
+| HU-08 | Eliminar organización | Como propietario de una organización, quiero poder eliminarla completamente para remover todos sus sitios, dispositivos, personas, roles, grupos de acceso y horarios asociados. | Given soy el propietario de una organización<br>When selecciono la opción de eliminar, confirmo en el diálogo de confirmación<br>Then el sistema elimina la organización y todos sus recursos asociados en cascada, devuelve HTTP 204 y la organización desaparece de mi lista<br><br>Given se me muestra el diálogo de confirmación para eliminar la organización<br>When cancelo la acción en el diálogo<br>Then la organización no se elimina y permanece en mi lista sin cambios<br><br>Given soy miembro pero no propietario de la organización<br>When intento eliminar la organización<br>Then el sistema devuelve HTTP 403 indicando permisos insuficientes<br><br>Given soy el propietario<br>When intento eliminar una organización que ya no existe<br>Then el sistema devuelve HTTP 404 | EP-02 |
+| HU-09 | Añadir sitio a organización | Como administrador de una organización, quiero añadir un nuevo sitio físico (edificio, piso, sala) proporcionando su nombre y descripción para organizar mis dispositivos por ubicación. | Given tengo una organización seleccionada y permisos de administración<br>When completo el formulario con nombre y descripción del sitio y confirmo<br>Then el sistema crea el sitio, lo asocia a la organización y devuelve HTTP 201 con los datos del sitio creado<br><br>Given estoy en el formulario de creación de sitio<br>When envío el formulario con el campo nombre vacío<br>Then el sistema devuelve HTTP 400 indicando que el nombre es obligatorio<br><br>Given tengo una organización seleccionada<br>When intento crear un sitio con un nombre que excede 100 caracteres<br>Then el sistema devuelve HTTP 400 con el error de validación de longitud<br><br>Given no tengo permisos de administración en la organización<br>When intento añadir un sitio<br>Then el sistema devuelve HTTP 403 indicando permisos insuficientes | EP-02 |
+| HU-10 | Listar sitios | Como administrador, quiero ver todos los sitios de la organización seleccionada en una tabla con su identificador, nombre y descripción para gestionarlos. | Given tengo una organización seleccionada que contiene sitios<br>When navego a la vista de sitios (/operations/sites)<br>Then el sistema muestra una tabla con columnas ID, Nombre y Descripción para cada sitio de la organización<br><br>Given tengo una organización seleccionada que no tiene sitios creados<br>When navego a la vista de sitios<br>Then el sistema muestra la tabla vacía con un mensaje indicando que no hay sitios registrados<br><br>Given estoy viendo la tabla de sitios<br>When cambio la organización seleccionada desde otra vista<br>Then la tabla se actualiza automáticamente para mostrar los sitios de la nueva organización | EP-02 |
+| HU-11 | Actualizar sitio | Como administrador, quiero editar el nombre y la descripción de un sitio existente directamente desde la tabla para corregir o actualizar su información. | Given estoy en la tabla de sitios con permisos de administración<br>When activo la edición en línea de un sitio, modifico su nombre o descripción y guardo los cambios<br>Then el sistema actualiza el sitio, devuelve HTTP 200 y los cambios se reflejan inmediatamente en la tabla<br><br>Given estoy editando un sitio en línea<br>When dejo el campo nombre vacío y guardo<br>Then el sistema devuelve HTTP 400 con el error de validación y la edición no se aplica<br><br>Given estoy editando un sitio en línea<br>When cancelo la edición sin guardar<br>Then los campos revierten a sus valores originales y no se realiza ninguna petición al servidor<br><br>Given soy administrador<br>When intento actualizar un sitio que fue eliminado por otro usuario concurrentemente<br>Then el sistema devuelve HTTP 404 y muestra un mensaje de error | EP-02 |
+| HU-12 | Eliminar sitio | Como administrador, quiero eliminar un sitio que ya no se utiliza para removerlo junto con todos sus dispositivos asociados. | Given estoy en la tabla de sitios con permisos de administración<br>When selecciono la opción eliminar en un sitio y confirmo la acción<br>Then el sistema elimina el sitio y todos sus dispositivos asociados en cascada y devuelve HTTP 204<br><br>Given se me muestra la confirmación de eliminación de un sitio<br>When cancelo la acción<br>Then el sitio no se elimina y permanece en la tabla<br><br>Given soy administrador<br>When intento eliminar un sitio que ya no existe<br>Then el sistema devuelve HTTP 404<br><br>Given no tengo permisos de administración<br>When intento eliminar un sitio<br>Then el sistema devuelve HTTP 403 | EP-02 |
+| HU-13 | Conectar dispositivo a sitio | Como administrador, quiero registrar un nuevo dispositivo smart lock en un sitio existente proporcionando su nombre y modo de operación para monitorearlo. | Given tengo una organización con sitios creados y permisos de administración<br>When completo el formulario con nombre del dispositivo, selecciono el sitio destino y elijo el modo de operación<br>Then el sistema registra el dispositivo, lo asocia al sitio seleccionado y devuelve HTTP 201<br><br>Given estoy en el formulario de creación de dispositivo<br>When envío el formulario con el campo nombre vacío<br>Then el sistema devuelve HTTP 400 indicando que el nombre es obligatorio<br><br>Given estoy en el formulario de creación de dispositivo<br>When selecciono un sitio que no existe o no pertenece a mi organización<br>Then el sistema devuelve HTTP 404 o 400 indicando que el sitio no es válido<br><br>Given estoy en el formulario de creación de dispositivo<br>When no selecciono ningún sitio del listado desplegable<br>Then el sistema devuelve HTTP 400 indicando que el sitio es obligatorio | EP-02 |
+| HU-14 | Listar dispositivos | Como administrador, quiero ver todos los dispositivos de la organización en una tabla con su identificador, nombre, sitio, estado y modo para monitorear su operación. | Given tengo una organización seleccionada con dispositivos registrados<br>When navego a la vista de dispositivos (/operations/devices)<br>Then el sistema muestra una tabla con columnas ID, Nombre, Sitio, Estado y Modo para cada dispositivo<br><br>Given tengo una organización sin dispositivos registrados<br>When navego a la vista de dispositivos<br>Then el sistema muestra la tabla vacía con un mensaje indicando que no hay dispositivos<br><br>Given estoy en la vista de dispositivos<br>When la tabla se carga<br>Then el estado de cada dispositivo se muestra con un badge de color (verde para activo, rojo para inactivo, amarillo para mantenimiento, gris para desconocido) | EP-02 |
+| HU-15 | Actualizar información de dispositivo | Como administrador, quiero editar el nombre, sitio, modo o estado de un dispositivo desde la tabla para mantener su configuración al día. | Given estoy en la tabla de dispositivos con permisos de administración<br>When activo la edición en línea de un dispositivo, modifico su nombre, sitio, estado o modo y guardo<br>Then el sistema actualiza el dispositivo, devuelve HTTP 200 y la tabla refleja los cambios<br><br>Given estoy editando un dispositivo<br>When intento guardar con el campo nombre vacío<br>Then el sistema devuelve HTTP 400 y la edición no se aplica<br><br>Given estoy editando un dispositivo<br>When intento asignarlo a un sitio que no pertenece a la organización activa<br>Then el sistema devuelve HTTP 400 o 404 indicando que el sitio no es válido<br><br>Given estoy editando un dispositivo<br>When cancelo la edición sin guardar<br>Then los campos revierten a sus valores originales | EP-02 |
+| HU-16 | Eliminar dispositivo | Como administrador, quiero eliminar un dispositivo que ya no está en uso para removerlo del sistema. | Given estoy en la tabla de dispositivos con permisos de administración<br>When selecciono eliminar en un dispositivo y confirmo<br>Then el sistema elimina el dispositivo y devuelve HTTP 204, desapareciendo de la tabla<br><br>Given se me muestra la confirmación para eliminar un dispositivo<br>When cancelo la acción<br>Then el dispositivo no se elimina y permanece en la tabla<br><br>Given soy administrador<br>When intento eliminar un dispositivo que ya fue eliminado<br>Then el sistema devuelve HTTP 404<br><br>Given no tengo permisos de administración<br>When intento eliminar un dispositivo<br>Then el sistema devuelve HTTP 403 | EP-02 |
+| HU-17 | Añadir persona a organización | Como administrador, quiero registrar una nueva persona en la organización proporcionando su nombre, apellido y documento de identidad para gestionar su acceso. | Given tengo una organización seleccionada y permisos de administración<br>When completo el formulario con nombre, apellido y documento de identidad de la persona y confirmo<br>Then el sistema registra la persona en la organización, dispara los eventos de creación de horario y acceso, y devuelve HTTP 201<br><br>Given estoy en el formulario de creación de persona<br>When envío con el campo nombre vacío<br>Then el sistema devuelve HTTP 400 indicando que el nombre es obligatorio<br><br>Given estoy en el formulario de creación de persona<br>When envío con el campo apellido vacío<br>Then el sistema devuelve HTTP 400 indicando que el apellido es obligatorio<br><br>Given estoy en el formulario de creación de persona<br>When envío un documento de identidad que ya existe en la organización<br>Then el sistema devuelve HTTP 409 indicando que la persona ya está registrada<br><br>Given estoy en el formulario de creación de persona<br>When envío el formulario con el campo documento de identidad vacío<br>Then el sistema devuelve HTTP 400 indicando que el documento es obligatorio | EP-02 |
+| HU-18 | Listar personas | Como administrador, quiero ver todas las personas registradas en la organización en una tabla con su identificador, nombre, apellido y documento para gestionarlas. | Given tengo una organización seleccionada con personas registradas<br>When navego a la vista de personas (/operations/people)<br>Then el sistema muestra una tabla con columnas ID, Nombre, Apellido y Documento de Identidad para cada persona<br><br>Given tengo una organización sin personas registradas<br>When navego a la vista de personas<br>Then el sistema muestra la tabla vacía con un mensaje indicando que no hay personas registradas<br><br>Given estoy en la vista de personas con datos cargados<br>When escribo en la barra de búsqueda parte del nombre o documento de una persona<br>Then la tabla filtra en tiempo real mostrando solo las filas que coinciden con el texto ingresado | EP-02 |
+| HU-19 | Actualizar persona | Como administrador, quiero editar el nombre, apellido o documento de identidad de una persona desde la tabla para corregir sus datos. | Given estoy en la tabla de personas con permisos de administración<br>When activo la edición en línea de una persona, modifico su nombre, apellido o documento y guardo<br>Then el sistema actualiza los datos, devuelve HTTP 200 y la tabla refleja los cambios<br><br>Given estoy editando una persona<br>When intento guardar con el campo nombre o apellido vacío<br>Then el sistema devuelve HTTP 400 y la edición no se aplica<br><br>Given estoy editando una persona<br>When cambio el documento de identidad a uno que ya pertenece a otra persona en la misma organización<br>Then el sistema devuelve HTTP 409 indicando duplicidad de documento<br><br>Given estoy editando una persona<br>When cancelo la edición sin guardar<br>Then los campos revierten a sus valores originales | EP-02 |
+| HU-20 | Eliminar persona | Como administrador, quiero eliminar una persona que ya no pertenece a la organización para revocar todo su acceso y horarios asociados. | Given estoy en la tabla de personas con permisos de administración<br>When selecciono eliminar en una persona y confirmo<br>Then el sistema elimina la persona junto con sus horarios (scheduleDays) y registro de acceso (personAccess), y devuelve HTTP 204<br><br>Given se me muestra la confirmación para eliminar una persona<br>When cancelo la acción<br>Then la persona no se elimina y permanece en la tabla<br><br>Given soy administrador<br>When intento eliminar una persona que ya fue eliminada<br>Then el sistema devuelve HTTP 404<br><br>Given elimino una persona que tenía asignado un grupo de acceso<br>When se completa la eliminación<br>Then su registro de acceso también se elimina y el grupo de acceso ya no la referencia | EP-02 |
+| HU-21 | Crear grupo de acceso | Como administrador, quiero crear un grupo de acceso con un nombre y descripción para clasificar y organizar los permisos de entrada a distintos espacios. | Given tengo una organización seleccionada y permisos de administración<br>When completo el formulario con nombre y descripción del grupo de acceso y confirmo<br>Then el sistema crea el grupo, lo asocia a la organización y devuelve HTTP 201<br><br>Given estoy en el formulario de creación de grupo de acceso<br>When envío el formulario con el campo nombre vacío<br>Then el sistema devuelve HTTP 400 indicando que el nombre es obligatorio<br><br>Given estoy en el formulario de creación de grupo de acceso<br>When intento crear un grupo con un nombre que ya existe en la misma organización<br>Then el sistema devuelve HTTP 409 indicando que el nombre ya está en uso<br><br>Given estoy en el formulario de creación de grupo de acceso<br>When envío un nombre que excede los 100 caracteres<br>Then el sistema devuelve HTTP 400 con error de validación de longitud | EP-03 |
+| HU-22 | Listar grupos de acceso | Como administrador, quiero ver todos los grupos de acceso de la organización en una tabla con su identificador, nombre y descripción para gestionarlos. | Given tengo una organización seleccionada con grupos de acceso creados<br>When navego a la vista de grupos de acceso (/operations/access-groups)<br>Then el sistema muestra una tabla con columnas ID, Nombre y Descripción para cada grupo<br><br>Given tengo una organización sin grupos de acceso<br>When navego a la vista de grupos de acceso<br>Then el sistema muestra la tabla vacía con un mensaje indicando que no hay grupos de acceso<br><br>Given cambio la organización seleccionada<br>When el sistema detecta el cambio<br>Then la tabla de grupos de acceso se actualiza automáticamente para mostrar los grupos correspondientes a la nueva organización | EP-03 |
+| HU-23 | Asignar persona a grupo de acceso | Como administrador, quiero asignar una persona registrada a un grupo de acceso específico para definir qué espacios puede acceder. | Given tengo una persona y un grupo de acceso en la misma organización<br>When vinculo la persona al grupo de acceso mediante el endpoint correspondiente<br>Then el sistema crea el registro PersonAccess con estado activo y devuelve HTTP 201<br><br>Given una persona ya está asignada a otro grupo de acceso<br>When intento asignarla a un nuevo grupo de acceso<br>Then el sistema devuelve HTTP 409 indicando que la persona ya tiene un grupo de acceso asignado<br><br>Given intento asignar una persona a un grupo de acceso<br>When la persona y el grupo pertenecen a organizaciones diferentes<br>Then el sistema devuelve HTTP 400 indicando que deben pertenecer a la misma organización<br><br>Given intento asignar una persona a un grupo de acceso<br>When la persona no existe en el sistema<br>Then el sistema devuelve HTTP 404 | EP-03 |
+| HU-24 | Cambiar estado de acceso de persona | Como administrador, quiero cambiar el estado de acceso de una persona (activo, suspendido, revocado) para controlar su capacidad de ingresar a los espacios protegidos. | Given una persona tiene un registro PersonAccess activo<br>When cambio su estado a suspendido<br>Then el sistema actualiza el estado y devuelve HTTP 200. Los dispositivos rechazarán el acceso de esta persona<br><br>Given una persona tiene un registro PersonAccess suspendido<br>When cambio su estado a revocado<br>Then el sistema actualiza el estado y devuelve HTTP 200. La persona no podrá acceder a ningún espacio<br><br>Given una persona tiene un registro PersonAccess activo<br>When intento cambiar su estado a un valor inválido no contemplado en el sistema<br>Then el sistema devuelve HTTP 400 indicando que el estado no es válido<br><br>Given intento cambiar el estado de acceso de una persona<br>When la persona no tiene ningún registro PersonAccess asignado<br>Then el sistema devuelve HTTP 404 indicando que no existe registro de acceso para esa persona<br><br>Given una persona con acceso revocado<br>When intenta acceder a un espacio protegido por un dispositivo smart lock<br>Then el dispositivo rechaza la entrada y registra un evento de acceso denegado | EP-03 |
+| HU-25 | Crear rol con permisos | Como administrador, quiero crear un rol personalizado con permisos específicos (crear sitios, crear personas, conectar dispositivos) para delegar responsabilidades a otros miembros. | Given tengo una organización seleccionada y permisos de administración<br>When completo el formulario con nombre del rol y activo los permisos deseados (canCreateSites, canCreatePeople, canConnectDevices) y confirmo<br>Then el sistema crea el rol con los permisos configurados y devuelve HTTP 201<br><br>Given estoy en el formulario de creación de rol<br>When envío el formulario con el campo nombre vacío<br>Then el sistema devuelve HTTP 400 indicando que el nombre es obligatorio<br><br>Given estoy en el formulario de creación de rol<br>When intento crear un rol con un nombre que ya existe en la misma organización<br>Then el sistema devuelve HTTP 409 indicando duplicidad de nombre<br><br>Given estoy en el formulario de creación de rol<br>When envío el formulario sin activar ningún permiso<br>Then el sistema crea el rol igualmente con todos los permisos en false y devuelve HTTP 201 | EP-04 |
+| HU-26 | Listar roles | Como administrador, quiero ver todos los roles definidos en la organización en una tabla con su identificador, nombre y permisos para gestionarlos. | Given tengo una organización seleccionada con roles creados<br>When navego a la vista de roles (/operations/roles)<br>Then el sistema muestra una tabla con columnas ID, Nombre y los tres permisos (Crear Sitios, Crear Personas, Conectar Dispositivos) para cada rol<br><br>Given tengo una organización recién creada<br>When navego a la vista de roles<br>Then el sistema muestra al menos el rol raíz (Root Role) creado automáticamente al fundar la organización<br><br>Given tengo una organización sin roles adicionales<br>When navego a la vista de roles<br>Then el rol raíz se marca como no eliminable (deletable=false) | EP-04 |
+| HU-27 | Actualizar rol | Como administrador, quiero modificar el nombre o los permisos de un rol existente desde la tabla para ajustar sus capacidades. | Given estoy en la tabla de roles con permisos de administración<br>When activo la edición en línea de un rol, modifico su nombre o activo/desactivo permisos y guardo<br>Then el sistema actualiza el rol, devuelve HTTP 200 y todos los usuarios con ese rol heredan los cambios de permisos<br><br>Given estoy editando un rol<br>When intento guardar con el campo nombre vacío<br>Then el sistema devuelve HTTP 400 y la edición no se aplica<br><br>Given estoy editando un rol<br>When intento modificar el rol raíz (deletable=false) eliminando todos sus permisos<br>Then el sistema permite la edición de permisos del rol raíz pero mantiene la restricción de no poder eliminarlo<br><br>Given estoy editando un rol<br>Cuando intento cambiar el nombre a uno que ya existe en la organización<br>Then el sistema devuelve HTTP 409 | EP-04 |
+| HU-28 | Listar usuarios de organización | Como administrador, quiero ver todos los usuarios que pertenecen a mi organización con su rol asignado para conocer quiénes tienen acceso y con qué permisos. | Given tengo una organización seleccionada con miembros<br>When navego a la vista de administradores (/operations/administrators)<br>Then el sistema muestra una tabla con columnas ID, Nombre, Email y Rol para cada usuario miembro de la organización<br><br>Given soy el único miembro de la organización<br>When navego a la vista de administradores<br>Then el sistema me muestra como el único administrador listado con mi rol asignado<br><br>Given cambio de organización seleccionada<br>When el sistema detecta el cambio<br>Then la tabla de administradores se actualiza para mostrar los miembros de la nueva organización | EP-04 |
+| HU-29 | Asignar rol a usuario | Como administrador, quiero cambiar el rol de un usuario dentro de la organización para otorgarle o revocarle permisos específicos. | Given hay usuarios registrados en mi organización<br>When selecciono un nuevo rol para un usuario desde la tabla de administradores y confirmo<br>Then el sistema actualiza la membresía del usuario con el nuevo rol y devuelve HTTP 200<br><br>Given estoy asignando un rol a un usuario<br>When el usuario no pertenece a la organización<br>Then el sistema devuelve HTTP 404 indicando que el usuario no es miembro<br><br>Given estoy asignando un rol a un usuario<br>When el rol seleccionado no pertenece a la organización<br>Then el sistema devuelve HTTP 404 indicando que el rol no existe en la organización<br><br>Given estoy en la tabla de administradores<br>When filtro por rol usando el control desplegable<br>Then la tabla muestra solo los usuarios que tienen el rol seleccionado | EP-04 |
+| HU-30 | Invitar administrador | Como administrador, quiero invitar a un nuevo usuario mediante su correo electrónico y asignarle un rol para incorporarlo a la organización. | Given tengo una organización seleccionada<br>When completo el formulario con el email de un usuario registrado y el rol que tendrá, y confirmo<br>Then el sistema crea la membresía del usuario en la organización y el usuario aparece en la lista de administradores<br><br>Given estoy en el formulario de invitación<br>When ingreso un email con formato inválido<br>Then el sistema devuelve HTTP 400 indicando formato de email incorrecto<br><br>Given estoy en el formulario de invitación<br>When intento invitar a un usuario que ya es miembro de la organización<br>Then el sistema devuelve HTTP 409 indicando que el usuario ya pertenece a la organización<br><br>Given estoy en el formulario de invitación<br>When el email ingresado no corresponde a ningún usuario registrado en la plataforma<br>Then el sistema devuelve HTTP 404 indicando que el usuario no existe y debe registrarse primero<br><br>Given completo la invitación exitosamente<br>When el usuario invitado inicia sesión<br>Then puede ver y seleccionar la nueva organización en su lista | EP-04 |
+| HU-31 | Ver dashboard de operaciones | Como administrador, quiero ver un panel de control con las métricas principales de la organización: intentos de acceso recientes, alertas activas, dispositivos fuera de línea y resúmenes informativos. | Given tengo una organización seleccionada<br>When navego al dashboard de operaciones (/operations/dashboard)<br>Then el sistema muestra cuatro secciones: intentos de acceso recientes, alertas activas, dispositivos fuera de línea y tarjetas de resumen informativo<br><br>Given mi organización no tiene actividad registrada<br>When navego al dashboard<br>Then las tarjetas de métricas muestran valores en cero y las tablas de actividad aparecen vacías con mensajes informativos<br><br>Given estoy en el dashboard<br>When cambia el estado de un dispositivo o se registra un nuevo evento en tiempo real<br>Then los contadores y tablas del dashboard se actualizan para reflejar la información más reciente<br><br>Given estoy en el dashboard<br>When hago clic en "Ver más" en cualquiera de las secciones de actividad<br>Then el sistema me redirige a la vista detallada correspondiente (eventos de acceso, alertas o dispositivos) | EP-05 |
+| HU-32 | Listar eventos de acceso | Como administrador, quiero ver el historial de eventos de acceso registrados por los dispositivos smart lock con su ubicación, persona, estado y fecha para auditar la actividad. | Given tengo eventos de acceso registrados en el sistema<br>When navego a la vista de eventos de acceso (/operations/access-events)<br>Then el sistema muestra una tabla con columnas ID, Ubicación, Persona, Estado y Fecha para cada evento<br><br>Given no existen eventos de acceso registrados<br>When navego a la vista de eventos de acceso<br>Then el sistema muestra la tabla vacía con un mensaje indicando que no hay eventos registrados<br><br>Given estoy en la vista de eventos de acceso con muchos registros<br>When la tabla se carga<br>Then los eventos se ordenan por fecha descendente (más recientes primero) y se aplica paginación si el volumen lo requiere | EP-05 |
+| HU-33 | Listar alertas del sistema | Como administrador, quiero ver las alertas generadas por el sistema (accesos no autorizados, dispositivos offline, intentos fallidos) con ubicación, persona, estado y fecha para tomar acciones correctivas. | Given existen alertas activas en el sistema<br>When navego a la vista de alertas (/operations/alerts)<br>Then el sistema muestra una tabla con columnas ID, Ubicación, Persona, Estado y Fecha para cada alerta<br><br>Given no existen alertas en el sistema<br>When navego a la vista de alertas<br>Then el sistema muestra la tabla vacía con un mensaje indicando que no hay alertas<br><br>Given estoy en la vista de alertas<br>When una alerta tiene estado "activa"<br>Then se muestra con un badge de color rojo para destacar su urgencia<br><br>Given estoy en la vista de alertas<br>When una alerta tiene estado "resuelta"<br>Then se muestra con un badge de color verde | EP-05 |
+| HU-34 | Filtrar eventos de acceso | Como administrador, quiero filtrar los eventos de acceso por tipo y por estado para encontrar rápidamente la información que necesito auditar. | Given estoy en la vista de eventos de acceso con datos cargados<br>When selecciono un filtro de tipo de evento en el control desplegable<br>Then la tabla muestra únicamente los eventos que coinciden con el tipo seleccionado<br><br>Given estoy en la vista de eventos de acceso<br>When selecciono un filtro de estado (exitoso, fallido) en el control desplegable<br>Then la tabla muestra solo los eventos con el estado elegido<br><br>Given tengo filtros activos de tipo y estado simultáneamente<br>When la tabla se filtra<br>Then solo se muestran los eventos que cumplen ambas condiciones (intersección AND)<br><br>Given tengo filtros aplicados y no hay eventos que coincidan<br>When la tabla se renderiza<br>Then el sistema muestra un mensaje indicando que no se encontraron resultados con los filtros actuales<br><br>Given tengo filtros aplicados<br>When limpio los filtros o selecciono la opción "Todos"<br>Then la tabla vuelve a mostrar todos los eventos sin filtrar | EP-05 |
+| HU-35 | Filtrar alertas | Como administrador, quiero filtrar las alertas por sitio de ocurrencia y por estado para priorizar la atención de incidentes. | Given estoy en la vista de alertas con datos cargados<br>When selecciono un filtro de sitio en el control desplegable<br>Then la tabla muestra únicamente las alertas ocurridas en el sitio seleccionado<br><br>Given estoy en la vista de alertas<br>When selecciono un filtro de estado (activa, resuelta) en el control desplegable<br>Then la tabla muestra solo las alertas con el estado elegido<br><br>Given tengo filtros de sitio y estado aplicados simultáneamente<br>When la tabla se filtra<br>Then solo se muestran las alertas que cumplen ambas condiciones<br><br>Given tengo filtros aplicados que no producen resultados<br>When la tabla se renderiza<br>Then el sistema muestra un mensaje de "sin resultados"<br><br>Given tengo filtros aplicados<br>When restablezco los filtros a sus valores por defecto<br>Then la tabla muestra nuevamente todas las alertas | EP-05 |
+| HU-36 | Asignar horario a persona | Como administrador, quiero configurar los días y bloques horarios en que una persona tiene permitido acceder para restringir su entrada a franjas específicas. | Given una persona está registrada en la organización<br>When asigno un día de la semana y un bloque horario (hora inicio y hora fin) a la persona<br>Then el sistema registra el horario (ScheduleDay) y devuelve HTTP 201. Los dispositivos solo permitirán el acceso de esa persona dentro de la franja definida<br><br>Given estoy asignando un horario a una persona<br>When la hora de fin es anterior o igual a la hora de inicio<br>Then el sistema devuelve HTTP 400 indicando que el rango horario no es válido<br><br>Given estoy asignando un horario a una persona<br>When intento asignar un día que no es válido (no es un día de la semana)<br>Then el sistema devuelve HTTP 400 con error de validación<br><br>Given una persona tiene un horario asignado para un día<br>When intento asignar un nuevo bloque horario que se solapa con uno existente para el mismo día<br>Then el sistema devuelve HTTP 409 indicando conflicto de horarios<br><br>Given una persona con horario restringido<br>When intenta acceder fuera de su franja horaria permitida<br>Then el dispositivo smart lock rechaza la entrada y registra un evento de acceso denegado por horario | EP-05 |
+
 
 ---
 
-### Historias de Usuario No Funcionales (30)
+### Historias de Usuario No Funcionales 
 
-| ID | Título | Descripción | Criterios de Aceptación (Gherkin) | Epic Relacionada |
-| :--- | :--- | :--- | :--- | :--- |
-| **HNF-01** | Latencia Dashboard | Actualización inmediata. | **Dado** que ocurre validación en puerta, **Cuando** la DB registra el evento, **Entonces** actualiza el dashboard en < 1 segundo. | **EPIC-08** |
-| **HNF-02** | Rendimiento carga | Carga de plataforma. | **Dado** que se ingresa a la URL, **Cuando** el navegador pide recursos, **Entonces** la página es interactiva en un máximo de 2 segundos. | **EPIC-08** |
-| **HNF-03** | Encriptación | Hashing de seguridad. | **Dado** que se crea/cambia clave, **Cuando** se guarda en DB, **Entonces** debe usarse bcrypt y nunca texto plano. | **EPIC-09** |
-| **HNF-04** | Datos en tránsito | Cifrado de red. | **Dado** que la web habla con la API, **Cuando** viajan datos sensibles, **Entonces** debe usarse HTTPS con TLS 1.2+. | **EPIC-09** |
-| **HNF-05** | Disponibilidad | Continuidad operativa. | **Dado** que el sistema está en producción, **Cuando** se mide el uptime mensual, **Entonces** debe ser >= 99.9%. | **EPIC-08** |
-| **HNF-06** | Diseño Responsivo | Adaptabilidad móvil. | **Dado** que se usa un móvil (320px), **Cuando** accede al panel, **Entonces** la interfaz adapta elementos sin pérdida de función. | **EPIC-10** |
-| **HNF-07** | Inmutabilidad logs | Integridad de auditoría. | **Dado** que un evento se escribió en DB, **Cuando** un admin intenta borrarlo, **Entonces** la API debe rechazar el UPDATE/DELETE. | **EPIC-06** |
-| **HNF-08** | Escalabilidad | Capacidad de carga. | **Dado** que es hora pico (9AM), **Cuando** hay 500 peticiones simultáneas, **Entonces** el servidor responde en < 500ms sin caídas. | **EPIC-08** |
-| **HNF-09** | Timeout sesión | Protección por olvido. | **Dado** que la sesión quedó abierta, **Cuando** pasan 15 min sin actividad, **Entonces** destruye sesión y redirige al login. | **EPIC-09** |
-| **HNF-10** | Compatibilidad | Multi-navegador. | **Dado** que se usa Chrome/Safari/Firefox, **Cuando** se abre la plataforma, **Entonces** debe renderizar sin fallos visuales ni de consola. | **EPIC-10** |
-| **HNF-11** | Tolerancia fallos | Aislamiento de errores. | **Dado** que el simulador tiene un crash, **Cuando** el usuario navega el resto, **Entonces** dashboard e historial siguen operando. | **EPIC-08** |
-| **HNF-12** | Velocidad 2FA/Email | Entrega de correos. | **Dado** que se pide 2FA, **Cuando** se dispara solicitud, **Entonces** el correo llega en < 5 segundos a la bandeja del usuario. | **EPIC-08** |
-| **HNF-13** | Accesibilidad | Normas WCAG. | **Dado** que se evalúan colores, **Cuando** se mide el contraste, **Entonces** debe cumplir nivel AA de WCAG 2.1. | **EPIC-10** |
-| **HNF-14** | Anti-Brute Force | Bloqueo de ataques. | **Dado** que hay ataque de clave, **Cuando** hay 5 fallos en mismo correo, **Entonces** bloquea IP/Cuenta por 30 minutos. | **EPIC-09** |
-| **HNF-15** | Data Isolation | Multi-tenancy real. | **Dado** que es un SaaS multi-empresa, **Cuando** un admin consulta, **Entonces** el esquema garantiza que no vea datos de otros clientes. | **EPIC-09** |
-| **HNF-16** | Backups diarios | Respaldo de datos. | **Dado** que la info es crítica, **Cuando** es la ventana de mantenimiento, **Entonces** genera backup automático en nube segregada. | **EPIC-09** |
-| **HNF-17** | Log de auditoría | Trazabilidad admin. | **Dado** que un admin cambia configuración, **Cuando** se ejecuta, **Entonces** registra quién, cuándo y qué cambió en log oculto. | **EPIC-06** |
-| **HNF-18** | Mensajes de error | UX de fallos. | **Dado** que hay fallo de base de datos, **Cuando** la API falla, **Entonces** el frontend muestra mensaje amigable sin detalles técnicos. | **EPIC-10** |
-| **HNF-19** | Rate Limiting | Protección de API. | **Dado** que un bot ataca la API, **Cuando** hay >100 req/min desde una IP, **Entonces** el Gateway bloquea con error 429. | **EPIC-09** |
-| **HNF-20** | Velocidad Export | Procesamiento masivo. | **Dado** que se exportan 10,000 registros, **Cuando** se procesa, **Entonces** entrega el archivo en < 10 segundos. | **EPIC-08** |
-| **HNF-21** | Complejidad clave | Validación de fortaleza. | **Dado** que se configura clave, **Cuando** es débil (1234), **Entonces** rechaza y exige 8 carac., número y símbolo. | **EPIC-09** |
-| **HNF-22** | Soporte i18n | Internacionalización. | **Dado** que se desarrolla el código, **Cuando** se implementan textos, **Entonces** se envuelven en i18n para futuras traducciones. | **EPIC-11** |
-| **HNF-23** | RTO | Recuperación desastres. | **Dado** que hay desastre total, **Cuando** se activa el DRP, **Entonces** el sistema opera en región secundaria en máximo 4 horas. | **EPIC-08** |
-| **HNF-24** | Archivado datos | Cold Storage. | **Dado** que hay millones de registros, **Cuando** un log cumple 2 años, **Entonces** se mueve automáticamente a almacenamiento en frío. | **EPIC-06** |
-| **HNF-25** | Consumo batería | Optimización móvil. | **Dado** que el dashboard corre 8h en tablet, **Cuando** se mide consumo, **Entonces** no debe causar drenaje excesivo ni calor. | **EPIC-08** |
-| **HNF-26** | Seguridad OWASP | Sanitización de inputs. | **Dado** que hay ataque XSS/SQLi, **Cuando** se envían datos, **Entonces** el backend sanitiza y usa consultas parametrizadas. | **EPIC-09** |
-| **HNF-27** | Sincronía NTP | Precisión temporal. | **Dado** que el log tiene valor legal, **Cuando** se registra evento, **Entonces** el servidor usa NTP para sincronía global exacta. | **EPIC-09** |
-| **HNF-28** | Regla 3 clics | Arquitectura intuitiva. | **Dado** que se busca una función, **Cuando** se navega desde dashboard, **Entonces** se debe completar en máximo 3 clics. | **EPIC-10** |
-| **HNF-29** | Design System | Consistencia UI. | **Dado** que hay nuevas pantallas, **Cuando** el usuario navega, **Entonces** los colores/espaciados deben ser uniformes. | **EPIC-10** |
-| **HNF-30** | Health Checks | Monitoreo de salud. | **Dado** que falla un microservicio, **Cuando** el monitor consulta /health, **Entonces** detecta y notifica antes del reporte del cliente. | **EPIC-08** |
+| ID | Título | Descripción | Criterios de Aceptación | Epic |
+|----|--------|-------------|--------------------------|------|
+| RNF-01 | Autenticación sin estado mediante JWT | El sistema debe autenticar cada petición mediante tokens JWT enviados en el header Authorization: Bearer. Las sesiones son stateless; el servidor no almacena estado de sesión. | Given un usuario tiene un token JWT válido y no expirado<br>When realiza una petición a cualquier endpoint protegido con el header Authorization: Bearer {token}<br>Then el sistema valida la firma del token, extrae la identidad del usuario y permite el acceso<br><br>Given un usuario envía un token JWT expirado<br>When realiza una petición a un endpoint protegido<br>Then el sistema devuelve HTTP 401 Unauthorized con un mensaje indicando que la sesión ha expirado<br><br>Given un usuario envía un token JWT con firma inválida o manipulado<br>When el sistema intenta validar el token<br>Then el sistema rechaza la petición con HTTP 401 y registra el intento fallido<br><br>Given un usuario envía una petición sin el header Authorization<br>When intenta acceder a un endpoint protegido<br>Then el sistema devuelve HTTP 401 indicando que se requiere autenticación<br><br>Given el backend se reinicia<br>When un usuario con token válido realiza una petición<br>Then el token sigue siendo válido porque el servidor no mantiene estado de sesión y la validación depende únicamente de la firma JWT (JwtBearer middleware de ASP.NET Core) | EP-06 |
+| RNF-02 | Encriptación de contraseñas con BCrypt | Todas las contraseñas de usuario deben almacenarse encriptadas con el algoritmo BCrypt (paquete BCrypt.Net-Next). El sistema nunca debe almacenar ni transmitir contraseñas en texto plano. | Given un usuario se registra con una contraseña<br>When el sistema almacena sus datos en la base de datos<br>Then la contraseña se guarda aplicando hash BCrypt con salt aleatorio mediante BCrypt.Net.BCrypt.HashPassword() y no puede recuperarse en texto plano<br><br>Given un usuario inicia sesión con su contraseña<br>When el sistema verifica la contraseña ingresada<br>Then utiliza BCrypt.Net.BCrypt.Verify() para comparar el hash almacenado sin necesidad de desencriptar<br><br>Given un administrador consulta la base de datos directamente<br>When revisa la tabla de usuarios<br>Then el campo PasswordHash contiene únicamente el hash BCrypt, nunca el texto plano<br><br>Given se transmiten datos de usuario por la red<br>When el sistema devuelve información de usuario en respuestas API (DTOs/Resources)<br>Then el campo de contraseña nunca se incluye en las respuestas JSON, ya que los Resource/DTO de salida no exponen esa propiedad | EP-06 |
+| RNF-03 | Protección de rutas en frontend | La aplicación web debe proteger todas las rutas de operación mediante un guard funcional que verifique la autenticación del usuario y redirija al login si no hay sesión activa. | Given un usuario no autenticado intenta acceder directamente a /home o /operations/dashboard<br>When el router evalúa la ruta solicitada<br>Then el authGuard detecta que no hay token válido y redirige al usuario a /auth/sign-in<br><br>Given un usuario autenticado con token válido<br>When navega a cualquier ruta dentro de /home u /operations<br>Then el authGuard permite la navegación sin interrupciones<br><br>Given un usuario autenticado cierra sesión<br>When intenta navegar a una ruta protegida usando el historial del navegador<br>Then el authGuard detecta que el token fue eliminado y redirige al login<br><br>Given un usuario malicioso intenta acceder a /operations inyectando un token falso en localStorage<br>When el authGuard y el interceptor HTTP procesan la petición<br>Then el backend (middleware de autenticación JWT de ASP.NET Core) rechaza el token inválido con 401 y el frontend redirige al login | EP-06 |
+| RNF-04 | Internacionalización en español e inglés | La interfaz de usuario debe soportar los idiomas español (es) e inglés (en) mediante archivos de traducción JSON cargados con ngx-translate. El usuario debe poder cambiar el idioma en cualquier momento desde la barra superior. | Given un usuario selecciona español en el selector de idioma de la barra superior<br>When la aplicación carga las traducciones desde /i18n/es.json<br>Then todos los textos de la interfaz (etiquetas, botones, mensajes, títulos de página) se muestran en español<br><br>Given un usuario selecciona inglés en el selector de idioma<br>When la aplicación carga las traducciones desde /i18n/en.json<br>Then todos los textos de la interfaz se muestran en inglés<br><br>Given un usuario cambia de idioma<br>When la traducción se aplica<br>Then todas las vistas activas se actualizan inmediatamente sin necesidad de recargar la página<br><br>Given se añade una nueva funcionalidad a la interfaz<br>When se implementa<br>Then se deben agregar las claves de traducción correspondientes en ambos archivos (en.json y es.json) para que ningún texto quede sin traducir<br><br>Given el backend está configurado con localización de ASP.NET Core (IStringLocalizer)<br>When el sistema determina el idioma de las respuestas de error<br>Then utiliza el header Accept-Language de la petición para devolver mensajes en el idioma solicitado (inglés por defecto, español como alternativa) | EP-06 |
+| RNF-05 | Documentación de API con Swagger/OpenAPI | La API REST debe documentarse automáticamente con Swashbuckle.AspNetCore, exponiendo Swagger UI para que los desarrolladores puedan explorar y probar los endpoints interactivamente. | Given el backend está en ejecución en el entorno de desarrollo<br>When un desarrollador accede a /swagger desde el navegador<br>Then se muestra la interfaz Swagger UI con todos los endpoints agrupados por controlador, esquemas de request/response documentados (vía XML comments o anotaciones) y el candado de seguridad JWT Bearer<br><br>Given un desarrollador quiere probar un endpoint protegido desde Swagger UI<br>When hace clic en el botón Authorize e ingresa un token JWT válido con el prefijo "Bearer "<br>Then Swagger UI adjunta el header Authorization automáticamente a todas las peticiones de prueba, mediante la configuración de AddSecurityDefinition y AddSecurityRequirement en Program.cs<br><br>Given se añade un nuevo endpoint al backend<br>When el código incluye comentarios XML de documentación (/// <summary>) y atributos como [ProducesResponseType]<br>Then el endpoint aparece automáticamente en Swagger UI sin configuración adicional<br><br>Given un desarrollador accede a /swagger/v1/swagger.json<br>Then el sistema devuelve el documento OpenAPI en formato JSON con la especificación completa de la API | EP-06 |
+| RNF-06 | Arquitectura DDD y Hexagonal | El código del backend debe seguir los principios de Domain-Driven Design con bounded contexts independientes y arquitectura hexagonal (puertos y adaptadores), implementado en C# sobre ASP.NET Core. El frontend debe reflejar los mismos bounded contexts en su estructura de carpetas. | Given se analiza la estructura del código backend<br>When se revisa cada bounded context (Iam, SpaceManagement, Access, Administration, Report)<br>Then cada contexto contiene sus propias capas de Domain (modelo, interfaces de repositorios), Application (servicios de comando/consulta, CQRS), Infrastructure (persistencia con Entity Framework Core, seguridad) e Interfaces (controladores REST de ASP.NET Core) sin dependencias directas a infraestructura de otros contextos<br><br>Given dos bounded contexts necesitan comunicarse<br>When uno necesita datos del otro<br>Then la comunicación se realiza a través de facades (ACL) definidas en la capa de Interfaces, nunca accediendo directamente a repositorios de otro contexto<br><br>Given un desarrollador quiere cambiar la base de datos de SQL Server a PostgreSQL<br>When modifica la capa de infraestructura (entidades de EF Core, DbContext, adaptadores de repositorio)<br>Then el dominio y la aplicación no requieren cambios porque dependen de interfaces (puertos como IRepository<T>), no de implementaciones concretas<br><br>Given se analiza la estructura del frontend<br>When se revisa src/app/<br>Then los mismos bounded contexts existen como carpetas independientes (iam, space-management, access, administration, report) con subcapas presentation, application, domain e infrastructure | EP-06 |
+| RNF-07 | Auditoría automática de entidades | Todas las entidades persistidas deben registrar automáticamente la fecha de creación (CreatedAt) y la fecha de última modificación (UpdatedAt) sin intervención manual del programador, mediante el SaveChanges interceptado de Entity Framework Core. | Given se crea cualquier entidad en el sistema (usuario, organización, sitio, dispositivo, persona, rol, membresía, grupo de acceso, horario)<br>When la entidad se persiste por primera vez en la base de datos<br>Then el campo CreatedAt se rellena automáticamente con la fecha y hora actual mediante la sobreescritura de SaveChanges()/SaveChangesAsync() en el DbContext (o un interceptor de EF Core)<br><br>Given se modifica cualquier campo de una entidad existente<br>When la entidad se actualiza y se persiste en la base de datos<br>Then el campo UpdatedAt se actualiza automáticamente con la fecha y hora de la modificación mediante la misma lógica centralizada en el DbContext<br><br>Given consulto una entidad desde la API<br>When examino la respuesta<br>Then los campos CreatedAt y UpdatedAt están disponibles para conocer cuándo fue creada y modificada por última vez<br><br>Given un programador crea una nueva entidad manualmente<br>When no establece explícitamente los campos CreatedAt y UpdatedAt<br>Then el DbContext los asigna automáticamente sin intervención manual del desarrollador | EP-06 |
+| RNF-08 | Interfaz de usuario responsiva con Angular Material | La aplicación web debe construirse exclusivamente con componentes de Angular Material y ser responsiva, adaptándose correctamente a diferentes tamaños de pantalla. | Given se analiza la composición de la interfaz<br>When se inspeccionan los componentes utilizados en las plantillas<br>Then todas las tablas, formularios, diálogos, botones, barras de herramientas, sidenav, badges y tarjetas están implementados con componentes mat-* de Angular Material (@angular/material y @angular/cdk)<br><br>Given un usuario accede desde un dispositivo de escritorio con pantalla grande<br>When la aplicación se renderiza<br>Then el layout muestra la barra lateral de navegación (sidenav) expandida y las tablas ocupan todo el ancho disponible<br><br>Given un usuario accede desde un dispositivo móvil o tableta con pantalla reducida<br>When la aplicación se renderiza<br>Then la barra lateral se colapsa en un menú tipo hamburguesa, las tablas permiten scroll horizontal y los formularios se apilan verticalmente<br><br>Given un usuario redimensiona la ventana del navegador<br>When la ventana cruza el punto de ruptura responsive<br>Then el layout se reconfigura dinámicamente sin perder funcionalidad ni datos ingresados | EP-06 |
+| RNF-09 | Manejo centralizado de errores | Tanto el backend como el frontend deben manejar los errores de forma centralizada, devolviendo respuestas estructuradas con código de error y mensaje descriptivo en todos los casos. En el backend esto se implementa mediante un middleware global de manejo de excepciones de ASP.NET Core. | Given ocurre un error de validación (Data Annotations o FluentValidation) en una petición al backend<br>When el middleware global de excepciones (ExceptionHandlingMiddleware) procesa la excepción de validación<br>Then el sistema devuelve HTTP 400 con un ErrorResource que contiene el código de estado, tipo de error y lista de mensajes de validación por campo<br><br>Given ocurre un error de lógica de negocio en el backend (excepción de dominio personalizada, ej. BusinessRuleException)<br>When el middleware global procesa la excepción<br>Then el sistema devuelve HTTP 400 con un ErrorResource conteniendo el mensaje descriptivo del error<br><br>Given ocurre un error inesperado en el backend (excepción no controlada)<br>When el middleware global procesa la excepción<br>Then el sistema devuelve HTTP 500 con un mensaje genérico sin exponer detalles internos del servidor (stack trace solo se loguea, no se expone en la respuesta)<br><br>Given el frontend recibe una respuesta de error del servidor<br>When el interceptor HTTP global procesa la respuesta<br>Then extrae el mensaje del ErrorResource y lo muestra al usuario en un formato comprensible, redirigiendo al login si el error es 401<br><br>Given ocurre un error de red o timeout en el frontend<br>When la petición HTTP falla sin respuesta del servidor<br>Then el sistema muestra un mensaje genérico de error de conexión al usuario | EP-06 |
+| RNF-10 | Configuración por entorno | El sistema debe separar la configuración de desarrollo y producción, utilizando variables de entorno para datos sensibles (credenciales de base de datos, secreto JWT) y archivos appsettings por entorno para configuraciones específicas de cada entorno. | Given el sistema se despliega en entorno de producción<br>When la aplicación ASP.NET Core se inicia con ASPNETCORE_ENVIRONMENT=Production<br>Then las credenciales de base de datos (SMARTLOCK_DATABASE, SMARTLOCK_USER, SMARTLOCK_PASSWORD) y el secreto JWT se obtienen exclusivamente de variables de entorno o de un proveedor de secretos (ej. Azure Key Vault), nunca de archivos en texto plano<br><br>Given el sistema se ejecuta en entorno de desarrollo<br>When la aplicación se inicia con ASPNETCORE_ENVIRONMENT=Development<br>Then se utiliza el archivo appsettings.Development.json con configuración de desarrollo (logging detallado, EnsureCreated/Migrate automático en EF Core) y las credenciales pueden referenciar variables de entorno o User Secrets<br><br>Given el frontend se compila para desarrollo con "ng serve"<br>When Angular sustituye los archivos de entorno<br>Then se utiliza environment.development.ts con production=false y todos los endpoint paths definidos explícitamente<br><br>Given el frontend se compila para producción con "ng build"<br>When Angular sustituye los archivos de entorno<br>Then se utiliza environment.ts con production=true y solo los endpoint paths esenciales configurados<br><br>Given se cambia la URL de la API entre entornos<br>When se actualiza el archivo de entorno correspondiente<br>Then toda la aplicación utiliza la nueva URL sin necesidad de modificar código en los servicios o componentes | EP-06 |
 
 ---
 
-### Technical Stories
+### Definición de Epics 
 
-| ID | Título | Descripción | Criterios de Aceptación (Gherkin) |
-| :--- | :--- | :--- | :--- |
-| **TS-01** | Documentación OpenAPI | Implementar Swagger/OpenAPI para la documentación automática de la API. | El endpoint `/api/docs` debe mostrar todos los recursos, métodos y esquemas de respuesta actualizados. |
-| **TS-02** | Estandarización de Respuestas | Crear un interceptor/formateador global para respuestas JSON consistentes. | Todas las respuestas deben seguir la estructura `{ "data": {}, "meta": {}, "errors": [] }`. |
-| **TS-03** | Autenticación JWT | Implementar autenticación basada en JSON Web Tokens con rotación de Refresh Tokens. | El sistema debe emitir un `access_token` de corta duración y un `refresh_token` seguro en `HttpOnly cookie`. |
-| **TS-04** | Paginación Global | Desarrollar un helper de paginación para endpoints de colecciones (Historial, Usuarios). | Los endpoints de lista deben aceptar parámetros `page` y `limit`, y devolver metadata de totalización. |
-| **TS-05** | Middleware de Roles (RBAC) | Crear decoradores o middlewares para validar permisos por rol en los controladores. | Si un usuario con rol "Staff" intenta un `DELETE` en `/doors`, la API debe retornar un error `403 Forbidden`. |
-| **TS-06** | Validación de DTOs | Implementar validación de esquemas de entrada (Data Transfer Objects) en cada request. | Cualquier payload que no cumpla con el tipo de dato o longitud debe ser rechazado con un error `400 Bad Request`. |
-| **TS-07** | Manejo de Excepciones | Crear un Global Exception Filter para capturar errores y evitar fugas de stack trace. | En modo producción, los errores `500` no deben revelar detalles de la base de datos o líneas de código. |
-| **TS-08** | CORS Policy | Configurar políticas de Cross-Origin Resource Sharing. | La API solo debe aceptar peticiones desde los dominios autorizados de la aplicación web y el simulador. |
+| ID | Título | Descripción |
+|----|--------|-------------|
+| EP-01 | Autenticación y Gestión de Identidad | Funcionalidades que permiten a los usuarios registrarse, iniciar sesión, mantener la sesión activa mediante tokens JWT y cerrar sesión en el sistema SmartLock. |
+| EP-02 | Gestión de Espacios | Módulo central que permite crear, listar, actualizar y eliminar organizaciones, sitios físicos, dispositivos smart lock y personas con acceso a las instalaciones. Establece la jerarquía organización → sitio → dispositivo → persona. |
+| EP-03 | Control de Acceso | Funcionalidades para definir grupos de acceso, asignar personas a dichos grupos y gestionar el estado de acceso de cada persona a los espacios protegidos por dispositivos smart lock. |
+| EP-04 | Administración de Roles y Usuarios | Gestión de roles con permisos específicos (crear sitios, crear personas, conectar dispositivos), membresías de usuarios en organizaciones, asignación de roles e invitación de administradores. |
+| EP-05 | Reportes, Monitoreo y Horarios | Visualización de dashboard con métricas clave, consulta de eventos de acceso, gestión de alertas del sistema y asignación de horarios de acceso por persona y día de la semana. |
+| EP-06 | Requisitos Transversales del Sistema | Requisitos no funcionales que abarcan seguridad, rendimiento, usabilidad, internacionalización, documentación técnica, arquitectura y estándares de calidad del sistema completo. |
 
 ---
-
-### Definición de Epics (Módulos Generales)
-
-| Epic ID | Nombre de la Epic | Descripción |
-| :--- | :--- | :--- |
-| **EPIC-01** | **Gestión de Identidad y Cuenta** | Todo lo relacionado con autenticación, seguridad de perfil y acceso inicial al sistema. |
-| **EPIC-02** | **Administración de Personal (RRHH)** | Gestión del ciclo de vida del usuario: creación, asignación de roles, desactivación e invitaciones. |
-| **EPIC-03** | **Configuración de Infraestructura y Reglas** | Definición de puertas físicas y las reglas de negocio (horarios, días, accesos temporales). |
-| **EPIC-04** | **Centro de Monitoreo y Alertas** | El "corazón" operativo: dashboard en tiempo real, gestión de alertas e indicadores de estado. |
-| **EPIC-05** | **Entorno de Simulación (Virtual Lock)** | Módulo para clientes sin hardware que permite probar la lógica de acceso digitalmente. |
-| **EPIC-06** | **Auditoría, Reportes e Integridad** | Registro histórico, exportación de datos, analítica avanzada y protección de la inmutabilidad de logs. |
-| **EPIC-07** | **Ecosistema Comercial y Suscripciones** | Manejo de tiers (Básico, Pro, Enterprise), límites de cuenta y gestión multi-sede. |
-| **EPIC-08** | **Rendimiento, Disponibilidad y Escalabilidad** | Calidad del sistema en términos de velocidad, estabilidad frente a carga y recuperación ante fallos. |
-| **EPIC-09** | **Capa de Seguridad y Ciberdefensa** | Normas técnicas de encriptación, protocolos de red, protección contra ataques y privacidad de datos. |
-| **EPIC-10** | **Experiencia de Usuario (UX/UI)** | Consistencia visual, accesibilidad, diseño responsivo y usabilidad general. |
-| **EPIC-11** | **Escalabilidad Global e i18n** | Preparación técnica del software para mercados internacionales y multi-idioma. |
 
 ## 3.2. Impact Mapping
 
 <div align="center">
-  <img src="/Resources/Chapter3/MapaImpacto.png" alt="Mapa de Impacto" width="700"/>
+  <img src="Resources/Chapter3/MapaImpacto.png" alt="Mapa de Impacto" width="700"/>
 </div>
 <br>
 
@@ -1078,13 +1045,13 @@ En esta sección se define el **Lenguaje Ubicuo (Ubiquitous Language)** del proy
 A continuación, se adjuntan las capturas del tablero de Jira utilizado para la gestión del Backlog y la estimación de Story Points del equipo de SmartLock.
 
 <div align="center">
-  <img src="/Resources/Chapter3/story_points.png" alt="Story Points" width="500"/><br>
+  <img src="Resources/Chapter3/story_points.png" alt="Story Points" width="500"/><br>
   <i>Story Points</i><br><br>
   
-  <img src="/Resources/Chapter3/formato.png" alt="Formato de HU" width="500"/><br>
+  <img src="Resources/Chapter3/formato.png" alt="Formato de HU" width="500"/><br>
   <i>Formato de Historias de Usuario</i><br><br>
   
-  <img src="/Resources/Chapter3/organizacion.png" alt="Estructura de prioridad" width="500"/><br>
+  <img src="Resources/Chapter3/organizacion.png" alt="Estructura de prioridad" width="500"/><br>
   <i>Estructura de Prioridad</i>
 </div>
 <br>
@@ -1106,12 +1073,12 @@ Elegimos una paleta que grite **seguridad y tecnología**, pero sin cansar la vi
 * **Gris Neutro (#E0E1DD):** Este va de fondo en las secciones. Es limpio y hace que los demás elementos resalten sin esfuerzo.
 * **Azul Eléctrico (#3E92CC):** Este es nuestro "call to action". Si hay algo que el usuario tiene que clickear sí o sí (como el botón de "Abrir Puerta" o "Guardar Configuración"), va en este color.
 
-<img src="/Resources/Chapter4/Style-Guidelines/Paleta-de-colores/Paleta-de-colores.PNG" alt="Paleta de Colores">
+<img src="Resources/Chapter4/Style-Guidelines/Paleta-de-colores/Paleta-de-colores.PNG" alt="Paleta de Colores">
 
 **Branding**<br>
 El logo de **SmartLock** es directo al grano: un **candado**. Elegimos este isotipo porque es el símbolo universal de la seguridad física; no necesitamos complicarlo con más adornos para que el usuario entienda qué hacemos. Lo que lo hace moderno es su diseño minimalista y limpio. Acompañando al candado, la tipografía del nombre es sólida y de cortes precisos. Queríamos que la identidad visual transmitiera esa firmeza y robustez que se espera de un sistema de seguridad confiable, alejándonos de cualquier estética que pudiera parecer "frágil" o improvisada.
 
-<img src="/Resources/Chapter4/Logo/SmartLock-Logo.png" alt="Logo SmartLock">
+<img src="Resources/Chapter4/Logo/SmartLock-Logo.png" alt="Logo SmartLock">
 
 **Typography** <br>
 Nos fuimos por **Inter**. ¿Por qué? Porque cuando tienes una lista gigante de registros de entrada y salida, necesitas una letra que se lea perfecto en pantallas de cualquier tamaño. Es una fuente *sans-serif* optimizada para entornos digitales.
@@ -1239,170 +1206,417 @@ Esta sección presenta los esquemas de baja fidelidad que definen la estructura 
 * **Diseño Inclusivo:** Los wireframes consideran espacios adecuados para elementos interactivos y una disposición clara que facilita el uso de tecnologías de asistencia como lectores de pantalla.
 
 ---
-
-#### A. Flujo de Acceso y Autenticación
-
-### Inicio de Sesión
+### 1. Inicio de Sesión (Login)
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Inicio sesion.png" width="800" alt="Inicio de Sesión Wireframe">
+  <img src="Resources/Chapter4/Web-Application/wireframes/Iniciosesion-wireframe.png" width="800" alt="Login Wireframe">
 </p>
 
-**Descripción:** Wireframe de la pantalla de acceso principal que define la estructura de los campos de autenticación, el botón de inicio de sesión y los elementos de recuperación de acceso.
+**Descripción:** Interfaz de autenticación para el acceso seguro de usuarios al sistema de gestión.
 
----
-
-### Registro de Sesión (Sign Up)
+### 2. Registro de Usuario (Sign Up)
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Registro Sesión.png" width="800" alt="Registro de Sesión Wireframe">
+  <img src="Resources/Chapter4/Web-Application/wireframes/RegistroSesión-wireframe.png" width="800" alt="Registro Wireframe">
 </p>
 
-**Descripción:** Esquema del formulario de registro orientado al alta de nuevos administradores dentro de la plataforma, mostrando la distribución lógica de los campos requeridos.
+**Descripción:** Formulario simplificado para la creación de nuevas cuentas de administrador.
 
----
-
-### Autenticación de Dos Factores (2FA)
+### 3. Autenticación de Dos Factores (2FA)
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Autenticacion 2FA.png" width="800" alt="Autenticación 2FA Wireframe">
+  <img src="Resources/Chapter4/Web-Application/wireframes/Autenticacion2FA-wireframe.png" width="800" alt="2FA Wireframe">
 </p>
 
-**Descripción:** Diseño estructural de la segunda capa de seguridad mediante verificación por código, enfocado en la simplicidad de interacción y validación segura del usuario.
+**Descripción:** Pantalla de verificación de seguridad adicional mediante código enviado a dispositivo móvil.
 
----
-
-#### B. Configuración de Infraestructura
-
-### Creación de Sedes (Plan Principiante)
+### 4. Creación de Organización
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/crear sedes -plan principiante.png" width="800" alt="Creación de Sedes Wireframe">
+  <img src="Resources/Chapter4/Web-Application/wireframes/crear-organizacion.png" width="800" alt="Creación de Organización">
 </p>
 
-**Descripción:** Wireframe del proceso inicial de configuración de sedes, donde se organizan los campos necesarios para el despliegue y administración básica del sistema.
+**Descripción:** Paso inicial para registrar tu nueva organización.
 
----
-
-### Dashboard de Puntos de Control
+### 5. Selección Plan de Suscripción
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Dashboard - Puntos de Control.png" width="800" alt="Dashboard Puntos de Control Wireframe">
+  <img src="Resources/Chapter4/Web-Application/wireframes/seleccionar-plan-suscripcion.png" width="800" alt="Plan de Suscripción Wireframe">
 </p>
 
-**Descripción:** Esquema de monitoreo de dispositivos físicos y puntos de acceso, utilizando una distribución visual en cuadrícula para facilitar el control operativo en tiempo real.
+**Descripción:** Pantalla de selección de plan de suscripción.
 
----
-
-#### C. Dashboards de Gestión por Niveles
-
-### Dashboard Corporativo
+### 6. Configuración Organización
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Dashboard -corportivo.png" width="800" alt="Dashboard Corporativo Wireframe">
+  <img src="Resources/Chapter4/Web-Application/wireframes/form-organizacion-plan principiante.png" width="800" alt="Configuración Organización Wireframe">
 </p>
 
-**Descripción:** Vista de alto nivel orientada a organizaciones empresariales, priorizando métricas globales, indicadores de seguridad y administración multisede.
+**Descripción:** Ajustes detallados de la organización.
 
----
-
-### Dashboard Principiante
+### 7. Confirmación de creación de organización                                      
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Dashboard- gratuito.png" width="800" alt="Dashboard Principiante Wireframe">
+  <img src="Resources/Chapter4/Web-Application/wireframes/confirm-plan-suscripcion.png" width="800" alt="Confirmación Organización Wireframe">
 </p>
 
-**Descripción:** Versión simplificada del panel principal, diseñada para usuarios del plan gratuito, manteniendo consistencia visual y acceso a funciones esenciales.
+**Descripción:** Mensaje de éxito al registrar la organización.
 
----
-
-#### D. Administración de Seguridad y Personal
-
-### Dashboard de Usuarios
+### 8. Crear Sedes
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Dashboard - usuarios.png" width="800" alt="Dashboard de Usuarios Wireframe">
+  <img src="Resources/Chapter4/Web-Application/wireframes/crear-sede.png" width="800" alt="Configuración de Sedes Wireframe">
 </p>
 
-**Descripción:** Distribución estructural del módulo de gestión de usuarios, incluyendo filtros, tabla de registros, búsqueda avanzada y administración de permisos.
+**Descripción:** Interfaz para añadir una nueva ubicación física.
 
----
-
-### Gestión de Eventos
+### 9. Configuración de Sedes
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Dashboard - eventos.png" width="800" alt="Gestión de Eventos Wireframe">
+  <img src="Resources/Chapter4/Web-Application/wireframes/crear-sede-info.png" width="800" alt="Configuración de Sedes Wireframe">
 </p>
 
-**Descripción:** Módulo orientado a la configuración de accesos temporales mediante eventos programados, permitiendo restricciones horarias y control de visitantes.
+**Descripción:** Ajuste de parámetros para cada sede creada.
 
----
-
-### Gestión de Credenciales
+### 10. Panel de Control 
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Dashboard - Credenciales.png" width="800" alt="Gestión de Credenciales Wireframe">
+  <img src="Resources/Chapter4/Web-Application/wireframes/panel-control.png" width="800" alt="Panel de Control Wireframe">
 </p>
 
-**Descripción:** Organización funcional del sistema de emisión y control de credenciales digitales, permitiendo el seguimiento de accesos autorizados.
+**Descripción:** Vista general del estado de las sedes.
 
----
-
-### Bitácora de Accesos
+### 11. Bitácora de accesos
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/Dashboard - Bitacora.png" width="800" alt="Bitácora de Accesos Wireframe">
+  <img src="Resources/Chapter4/Web-Application/wireframes/Dashboard-bitacora.png" width="800" alt="Bitácora Wireframe">
 </p>
 
-**Descripción:** Estructura diseñada para la visualización de logs históricos de acceso, facilitando auditorías de seguridad y trazabilidad de eventos.
+**Descripción:** Registro detallado del historial de los accesos.
+
+### 12. Control de Entidades(Accesos)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireframes/ControlEntidades-accesos.png" width="800" alt="Accesos Wireframe">
+</p>
+
+**Descripción:** Directorio completo de usuarios con acceso permitido.
+
+### 13. Control de Entidades(Personas)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireframes/ControlEntidades-personas.png" width="800" alt="Personas Wireframe">
+</p>
+
+**Descripción:** Asignación de roles y permisos por usuario.
+
+### 14. Control de Entidades(Grupos)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireframes/ControlEntidades-grupos.png" width="800" alt="Grupos Wireframe">
+</p>
+
+**Descripción:** Asignación de grupos de personas.
+
+### 15. Control de Entidades(Administradores)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireframes/ControlEntidades-admins.png" width="800" alt="Administradores Wireframe">
+</p>
+
+**Descripción:** Asignacion de permisos a administradores.
+
+### 16. Control de Entidades(Añadir Accesos)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireframes/ControlEntidades-añadir-accesos.png" width="800" alt="Añadir Accesos Wireframe">
+</p>
+
+### 17. Control de Entidades(Añadir Personas)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireframes/ControlEntidades-añadir-personas.png" width="800" alt="Añadir Personas Wireframe">
+</p>
+
+### 18. Control de Entidades(Añadir Grupos)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireframes/ControlEntidades-añadir-admins.png" width="800" alt="Añadir Grupos Wireframe">
+</p>
+
+### 19. Control de Entidades(Añadir Administradores)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireframes/ControlEntidades-añadir-admins.png" width="800" alt="Añadir Administradores Wireframe">
+</p>
+
+### 20. Confirmación de Cierre de Sesión
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireframes/CerrarSesion-wireframe.png" width="800" alt="Logout Wireframe">
+</p>
 
 ### 4.4.2. Web Applications Wireflow Diagrams.
-*[Sección en desarrollo]*
+
+User Goal 1: Como usuario nuevo, quiero poder registrarme.
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireflow/registrosesion-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 2: Como usuario registrado, quiero poder iniciar sesión .
+
+<p align="center">
+  <img src="/Resources/Chapter4/Web-Application/wireflow/iniciosesion-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 3: Como usuario registrado, quiero validar la identidad del usuario mediante un segundo factor de autenticación.
+
+<p align="center  ">
+  <img src="Resources/Chapter4/Web-Application/wireflow/2fa-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 4: Como usuario nuevo, quiero registrar una nueva organización con un plan a elección.
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireflow/crearorg-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 5: Como usuario nuevo, quiero registrar una nueva sede o existente a mi organización.
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireflow/crearsede-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 6: Como usuario ,quiero poder cerrar sesión.
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireflow/cerrar-sesion-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 7: Como usuario ,quiero poder acceder a la bitacora de accesos y alertas desde el panel de control.
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireflow/bitacora-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 8: Como usuario ,quiero añadir accesos desde control de entidades.
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireflow/accesos-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 9: Como usuario ,quiero añadir personas desde control de entidades.
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireflow/personas-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 10: Como usuario ,quiero añadir grupos de personas desde control de entidades.
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireflow/grupos-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
+
+User Goal 11: Como usuario ,quiero añadir administradores desde control de entidades.
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/wireflow/administrador-wireflow.png" width="800" alt="Logout Wireframe">
+</p>
 
 ### 4.4.3. Web Applications Mock-ups.
 Esta sección presenta los mock-ups de alta fidelidad de la plataforma web de SmartLock. Estos diseños representan la apariencia visual final del sistema, incluyendo identidad visual, paleta de colores, tipografía, distribución de componentes y experiencia de usuario orientada a la implementación real del producto.
 
----
+### 1. Inicio de Sesión (Login)
 
-#### A. Flujo de Acceso y Seguridad
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/InicioSesión-Mockup.png" width="800" alt="Login Mockup">
+</p>
 
-### Inicio de Sesión
+**Descripción:** Pantalla de acceso seguro al sistema principal.
 
-![Inicio de Sesión Mockup](/Resources/Chapter4/Web-Application/Inicio Sesión-Mockup.png)
+### 2. Registro de Usuario (Sign Up)
 
-**Descripción:** Mock-up de la pantalla principal de acceso al sistema, donde se visualiza la interfaz final de autenticación con diseño visual completo, jerarquía de botones y elementos de recuperación de acceso.
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/RegistroSesión-Mockup.png" width="800" alt="Registro Mockup">
+</p>
 
----
+**Descripción:** Formulario rápido para crear una cuenta nueva.
 
-### Registro de Sesión (Sign Up)
+### 3. Autenticación de Dos Factores (2FA)
 
-![Registro de Sesión Mockup](/Resources/Chapter4/Web-Application/Registro Sesión-Mockup.png)
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/Autenticacion2FA-mockup.png" width="800" alt="2FA Mockup">
+</p>
 
-**Descripción:** Representación visual del formulario de registro de nuevos administradores, mostrando el diseño definitivo de campos, validaciones visuales y estructura de navegación.
+**Descripción:** Capa extra de seguridad con código móvil.
 
----
+### 4. Creación de Organización
 
-### Autenticación de Dos Factores (2FA)
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/crear-organizacion-mockup.png" width="800" alt="Creación de Organización Mockup">
+</p>
 
-![Autenticación 2FA Mockup](/Resources/Chapter4/Web-Application/Autentificación de 2 Factores-Mockup.png)
+**Descripción:** Paso inicial para registrar tu nueva organización.
 
-**Descripción:** Diseño final de la segunda capa de seguridad mediante código de verificación, enfocado en claridad visual, seguridad y facilidad de uso para el usuario.
+### 5. Selección Plan de Suscripción
 
----
-#### B. Configuración de Infraestructura
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/seleccionar-plan-mockup.png" width="800" alt="Plan de Suscripción Mockup">
+</p>
 
-### Dashboard Plan Principiante
+**Descripción:** Pantalla de selección de plan de suscripción.
 
-![Dashboard Plan Principiante Mockup](/Resources/Chapter4/Web-Application/Dashboard- Plan Principiante-Mockup.png)
+### 6. Configuración Organización
 
-**Descripción:** Mock-up del panel principal para usuarios del plan principiante, presentando una interfaz simplificada con acceso rápido a funciones esenciales y monitoreo básico del sistema.
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/form-organizacion-mockup.png" width="800" alt="Configuración Organización Mockup">
+</p>
 
----
+**Descripción:** Ajustes detallados de la organización activa.
+
+### 7. Confirmación de creación de organización
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/confirm-plan-mockup.png" width="800" alt="Confirmación Organización Mockup">
+</p>
+
+**Descripción:** Mensaje de éxito al registrar la organización.
+
+### 8. Crear Sedes
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/crear-sede-Mockup.png" width="800" alt="Configuración de Sedes Mockup">
+</p>
+
+**Descripción:** Interfaz para añadir una nueva ubicación física.
+
+### 9. Configuración de Sedes
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/crear-sede-info-Mockup.png" width="800" alt="Configuración de Sedes Mockup">
+</p>
+
+**Descripción:** Ajuste de parámetros para cada sede creada.
+
+### 10. Panel de Control
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/panel-control-Mockup.png" width="800" alt="Panel de Control Mockup">
+</p>
+
+**Descripción:** Vista general del estado de las sedes.
+
+### 11. Bitácora de accesos
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/Dashboard-bitacora-Mockup.png" width="800" alt="Bitácora Mockup">
+</p>
+
+**Descripción:** Registro detallado del historial de los accesos.
+
+### 12. Control de Entidades (Accesos)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/ControlEntidades-accesos-mockup.png" width="800" alt="Accesos Mockup">
+</p>
+
+**Descripción:** Directorio completo de usuarios con acceso permitido.
+
+### 13. Control de Entidades (Personas)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/ControlEntidades-personas-mockup.png" width="800" alt="Personas Mockup">
+</p>
+
+**Descripción:** Asignación de roles y permisos por usuario.
+
+### 14. Control de Entidades (Grupos)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/ControlEntidades-grupos-mockup.png" width="800" alt="Grupos Mockup">
+</p>
+
+**Descripción:** Interfaz para la gestión de grupos operativos.
+
+### 15. Control de Entidades (Administradores)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/ControlEntidades-admins-mockup.png" width="800" alt="Administradores Mockup">
+</p>
+
+**Descripción:** Asignación de permisos a administradores del sistema.
+
+### 16. Control de Entidades (Añadir Accesos)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/ControlEntidades-añadir-accesos-mockup.png" width="800" alt="Añadir Accesos Mockup">
+</p>
+
+**Descripción:** Formulario para registrar nuevos permisos de entrada.
+
+### 17. Control de Entidades (Añadir Personas)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/ControlEntidades-añadir-personas-mockup.png" width="800" alt="Añadir Personas Mockup">
+</p>
+
+**Descripción:** Registro de nuevos integrantes a la plataforma.
+
+### 18. Control de Entidades (Añadir Grupos)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/ControlEntidades-añadir-grupo-mockup.png" width="800" alt="Añadir Grupos Mockup">
+</p>
+
+**Descripción:** Creación de nuevos grupos de trabajo específicos.
+
+### 19. Control de Entidades (Añadir Administradores)
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/ControlEntidades-admins-añadir-mockup.png" width="800" alt="Añadir Administradores Mockup">
+</p>
+
+**Descripción:** Alta de nuevos perfiles con privilegios administrativos.
+
+### 20. Confirmación de Cierre de Sesión
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/mockups/CerrarSesion-mockup.png" width="800" alt="Logout Mockup">
+</p>
+
+**Descripción:** Ventana segura para salir de la plataforma.
+
 ### 4.4.4. Web Applications User Flow Diagrams.
-*[Sección en desarrollo]*
+En la siguiente sección se puede observar de manera detallada el  diagrama Userflow.
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/userflow/userflow.png" width="800" alt="userflow">
+</p>
 
 ## 4.5. Web Applications Prototyping.
-*[Sección en desarrollo]*
+
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/figma prototype.jpg" width="900">
+</p>
+
+<br>
+
+**Link del Figma:**  
+[Ver enlace](https://www.figma.com/design/kVDoKtb6qnhzGb0kD1rCyR/Untitled?node-id=0-1&t=ZrgcAyr2GfzBtvf7-1)
+
+<br>
+
+**Link del video de explicación:**  
+[Ver enlace](https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241a860_upc_edu_pe/IQAoeufOBXR1Q4_QgHSUq5ZoAdnsC9hr3FJfDiVG26U60XM?e=5zpImg&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+
+<br>
+
+<p align="center">
+  <img src="Resources/Chapter4/Web-Application/Captura Prototype evidencia.jpg" width="900">
+</p>
+
 
 ## 4.6. Domain-Driven Software Architecture.
 
@@ -1410,42 +1624,37 @@ Esta sección presenta los mock-ups de alta fidelidad de la plataforma web de Sm
 En esta sección se detalla el diseño táctico del sistema, profundizando en la arquitectura y los componentes técnicos necesarios para implementar la solución. A diferencia del Big Picture, el DesignLevel Event Storming se enfoca en definir los límites de los agregados, los comandos que disparan cambios de estado y las políticas que gobiernan las reglas de negocio.
 
 <p align="center">
-  <img src="/Resources/Chapter4/eventStormin/design-level.jpeg" width="800" alt="Design Level Event Storming">
+  <img src="Resources/Evidencias/total-ddd.png" width="800" alt="Design Level Event Storming">
 </p>
 
-#### Authentication Context
-Actúa como la puerta de entrada digital al ecosistema de SmartLock, gestionando los procesos de registro y acceso de los usuarios administrativos. Este componente se encarga de validar las credenciales de identidad y de implementar medidas de seguridad reforzadas, como la verificación en dos pasos (2FA), para garantizar que solo las personas legítimas ingresen al sistema. Además, supervisa la integridad de las sesiones activas, aplicando reglas automáticas que protegen la cuenta global ante cualquier cambio de seguridad o intento de acceso no autorizado.
+### 1. Space Management (Gestión de Espacios)
+Es el contexto central encargado de la infraestructura física y lógica de la plataforma. Su responsabilidad principal es modelar la jerarquía operativa, gestionando entidades como **Organizations**, **Sites** (sedes) y **Zones**. Este contexto administra la relación entre los activos físicos y su ubicación, permitiendo que la plataforma identifique la posición de los dispositivos de bloqueo digital.
+<img src="Resources/Evidencias/space-management.png">
 
-<p align="center">
-  <img src="/Resources/Chapter4/eventStormin/authentication-context.png" width="800" alt="Authentication Context">
-</p>
+### 2. Access (Control de Acceso)
+Este contexto se enfoca estrictamente en la autorización y la seguridad física. Gestiona las identidades mediante la entidad **Subject** y su agrupación en **Groups** para facilitar la asignación masiva de permisos. Su lógica de negocio define quién tiene permitido ingresar a áreas específicas basándose en la validación de tokens y reglas de seguridad configuradas.
+<img src="Resources/Chapter4/eventStormin/Acces-Context.png">
 
-#### Organization Context
-Constituye el núcleo operativo del sistema, encargado de estructurar la jerarquía institucional y física de cada cliente. Este componente facilita la creación de entidades globales, la gestión de sedes o sitios específicos y el registro técnico de cada punto de acceso o puerta dentro de la plataforma. Al centralizar esta estructura, el sistema asegura que la administración de los espacios físicos sea coherente y escalable, sirviendo como la base informativa necesaria para que los demás módulos operen según la distribución administrativa de la organización.
+### 3. IAM (Autenticación e Identidad)
+Responsable de la seguridad a nivel de software y la validación de la identidad del usuario en el sistema. Administra las **Accounts**, los hashes de contraseñas y los roles de usuario. Asegura que el usuario sea quien dice ser antes de permitirle interactuar con la interfaz del frontend o las APIs de la aplicación.
+<img src="Resources/Evidencias/access.png">
 
-<p align="center">
-  <img src="/Resources/Chapter4/eventStormin/organization-context.png" width="800" alt="Organization Context">
-</p>
+### 4. Report (Reportes y Auditoría)
+Dedicado a la observabilidad y la persistencia de eventos históricos dentro del ecosistema SmartLock. Utiliza entidades como **Audit**, **AuditRecord** y **Alert** para registrar cada acción realizada por los usuarios y cada anomalía detectada por los dispositivos. Es fundamental para el cumplimiento normativo y la reconstrucción de líneas de tiempo ante incidentes de seguridad.
+<img src="Resources/Evidencias/report.png">
 
-#### Security Context
-Centraliza la gestión de identidades y la integridad del sistema SmartLock, asegurando que solo el personal autorizado interactúe con la infraestructura física. Este componente se encarga de validar el acceso en tiempo real y coordinar las respuestas automáticas ante situaciones críticas o intentos de intrusión. Al aislar estas funciones, se garantiza una capa de protección robusta que salvaguarda tanto la información digital como la seguridad de los espacios físicos administrados.
-<p align="center">
-  <img src="/Resources/Chapter4/eventStormin/security-context.png" height="600" alt="Security Context">
-</p>
+### 5. Billing (Facturación y Suscripciones)
+Gestiona el aspecto comercial y la viabilidad del servicio para cada organización. Se encarga de la entidad **Subscription**, controlando los planes activos, precios y fechas de renovación. Este contexto habilita o restringe funcionalidades avanzadas, como el control por franjas horarias o alertas automáticas, según el estado de pago del cliente.
+<img src="Resources/Evidencias/billing.png">
 
-#### Subscription Plan Context
-Administra los planes comerciales y el modelo de facturación para cada organización dentro de la plataforma. Este componente es responsable de definir los niveles de servicio, gestionar los ciclos de pago y establecer los límites operativos, como el número permitido de puertas o usuarios según el plan adquirido.
-<p align="center">
-  <img src="/Resources/Chapter4/eventStormin/subscription-plan-context.png" width="750" alt="Subscription Plan Context">
-</p>
+Descripción de los componentes identificados:
+- **Comandos (Azul):** Representan las intenciones de los usuarios o sistemas externos para realizar una acción específica (ej. "Generar Código QR", "Validar Acceso").
+- **Agregados (Amarillo):** Son las entidades o grupos de objetos que mantienen la consistencia de los datos y ejecutan la lógica de negocio ante un comando.
+- **Políticas (Lila):** Definen reacciones automáticas del sistema ante eventos específicos ("Siempre que ocurra el Evento X, ejecutar el Comando Y").
+- **Modelos de Lectura (Verde):** Representan la información que el usuario visualiza en la interfaz para poder tomar una decisión y ejecutar un comando.
+- **Eventos de Dominio (Naranja):** Indican que algo relevante para el negocio ha sucedido exitosamente (ej. "Código QR Generado", "Acceso Denegado").
 
-#### User Context
-Gestiona integralmente los perfiles y permisos de las personas que interactúan con la plataforma, distinguiendo claramente entre el personal administrativo y los usuarios de acceso físico. Este componente se encarga de dar de alta, actualizar o dar de baja a los miembros del sistema, asegurando que cada individuo cuente con las atribuciones necesarias según su rol dentro de la organización. Al centralizar esta administración, el sistema facilita un control preciso sobre quién puede operar el software y quién tiene permitido el ingreso a las instalaciones, manteniendo siempre un registro actualizado de todas las identidades activas.
-
-<p align="center">
-  <img src="/Resources/Chapter4/eventStormin/user-context.png" width="550" alt="User Context">
-</p>
-
+Este modelado permite al equipo de desarrollo tener una guía clara para la implementación de los servicios y la definición de la lógica en el código.
 Descripción de los componentes identificados:
 - **Comandos (Azul):** Representan las intenciones de los usuarios o sistemas externos para realizar una acción específica (ej. "Generar Código QR", "Validar Acceso"). 
 - **Agregados (Amarillo):** Son las entidades o grupos de objetos que mantienen la consistencia de los datos y ejecutan la lógica de negocio ante un comando. 
@@ -1456,10 +1665,9 @@ Descripción de los componentes identificados:
 Este modelado permite al equipo de desarrollo tener una guía clara para la implementación de los servicios y la definición de la lógica en el código.
 
 ### 4.6.2. Software Architecture Context Diagram.
-
 In this section, the team introduces the Software Architecture Context Diagram. This high-level overview illustrates the **SmartLock** software system as a central entity, surrounded by the key user personas and the external systems it interacts with to deliver its "Asset-Light" access control value proposition.
 
-![Software Architecture Context Diagram](/Resources/Chapter4/umlfiles/contextDiagram.png)
+<img src="Resources/Evidencias/contexto.png">
 
 **Explicación del diagrama:**
 
@@ -1471,7 +1679,8 @@ In this section, the team introduces the Software Architecture Context Diagram. 
 
 In this section, the team presents the **Container Diagram** for SmartLock. This diagram expands the system's context to reveal the software containers that compose it (web applications, mobile applications, APIs, and databases). It illustrates the high-level distribution of responsibilities, exposes key technology decisions—such as Angular for the frontend, Java Spring Boot for the backend, and MySQL for persistence—and details how these containers communicate through the AWS cloud infrastructure.
 
-![Software Architecture Container Diagram](/Resources/Chapter4/umlfiles/containerDiagram.png)
+<img src="Resources/Evidencias/contenedor.png">
+
 
 #### Diagram Explanation
 
@@ -1487,7 +1696,10 @@ The Container Diagram breaks down the internal architecture of SmartLock into th
 
 In this section, the team presents the **Component Diagram** for the Core Backend API container. This diagram zooms into the Java Spring Boot application to illustrate its internal structure based on Domain-Driven Design (DDD) and Layered Architecture. It shows how the system is divided into Controllers (Presentation), Services (Business Logic/Domain), and Repositories (Data Access), and how these components interact to execute the access control logic.
 
-![Software Architecture Component Diagram](/Resources/Chapter4/umlfiles/componentDiagram.png)
+
+<img src="Resources/Evidencias/componente.png">
+<img src="Resources/Evidencias/componente1.png">
+
 
 #### Diagram Explanation
 
@@ -1511,21 +1723,23 @@ The Component Diagram breaks down the **Core Backend API** into the following fu
 
 ## 4.7. Software Object-Oriented Design.
 
+
 En esta sección, el equipo presenta el diseño orientado a objetos del software, detallando la implementación interna y la estructura de componentes para cada *Bounded Context* de **SmartLock**. Los diagramas a continuación ilustran cómo se ha aplicado el enfoque de *Domain-Driven Design* (DDD) a nivel de código, definiendo claramente las responsabilidades, los límites de los agregados y los patrones de diseño utilizados tanto en la capa de presentación (Frontend) como en la lógica de negocio (Backend). Esta estructura garantiza un código modular, mantenible y altamente escalable.
 
 ### 4.7.1. Class Diagrams.
 
 #### Diagrama de clases (Frontend)
 
-<img src="/Resources/Chapter4/Diagram-Class/Frontend/Class-Diagram-Frontend-image.png" alt="Class Diagram Frontend">
+<img src="Resources/Evidencias/class-front.png">
 
 El diagrama organiza el frontend de SmartLock en cinco *Bounded Contexts* (Authentication, Organization, User, Security y Subscription), lo que permite aislar la lógica de negocio y asegurar que cada módulo evolucione de forma independiente. Dentro de estos contextos, se implementan los 8 Agregados definidos, donde entidades raíz como *Security* y *Organization* encapsulan a *Door* y *Office* respectivamente; esto garantiza la integridad del sistema, ya que cualquier cambio de estado físico o estructural debe ser validado por su respectiva raíz de agregado antes de impactar la interfaz.
 
 Bajo el enfoque DDD, la aplicación utiliza un *EventBus* en la capa Shared para comunicar eventos entre contextos de forma desacoplada y emplea el patrón *Assembler* para transformar los datos crudos de la API en objetos de dominio con comportamiento propio. Los *Stores* de la capa de aplicación gestionan estos agregados mediante Signals, permitiendo que la interfaz reaccione instantáneamente a cambios operativos —como la apertura de una puerta o la actualización de un perfil— sin comprometer la separación de responsabilidades ni la pureza del modelo de negocio.
 
+
 #### Diagrama de clases (Backend)
 
-<img src="/Resources/Chapter4/Diagram-Class/Backend/Class-Diagram-Backend-image.png" alt="Class Diagram Backend">
+<img src="Resources/Evidencias/class-back.png">
 
 El backend de SmartLock ha sido estructurado estrictamente bajo los principios de *Domain-Driven Design* (DDD) utilizando el framework Spring Boot. La arquitectura se divide en 5 *Bounded Contexts* y 8 agregados principales, derivados del *Event Storming*, garantizando un alto nivel de cohesión y un bajo acoplamiento. Se emplean *Aggregate Roots* (como Security y Organization) para orquestar entidades secundarias (Door y Office), asegurando el cumplimiento de las reglas de negocio en la capa de dominio antes de ejecutar cualquier cambio de estado. 
 
@@ -1535,7 +1749,7 @@ Adicionalmente, se implementaron patrones de diseño estratégico como *Assemble
 
 ### 4.8.1. Database Diagrams.
 
-<img src="/Resources/Chapter4/Data-Base-Diagram/Data-Base-Diagram-image.png" alt="Database Diagram">
+<img src="Resources/Chapter4/Data-Base-Diagram/db-diagram.png" alt="Database Diagram">
 
 El diagrama de base de datos para SmartLock se ha estructurado bajo un enfoque de normalización 3FN y *Domain-Driven Design* (DDD), organizando la información en *Bounded Contexts* que actúan como *Aggregate Roots* (como Users y Organization) para garantizar la integridad operativa y la escalabilidad mediante el uso de tipos de datos atómicos en MySQL. Desde la perspectiva de seguridad y persistencia, el diseño separa estrictamente las credenciales en la tabla *authentications* y los datos sensibles en *user_profiles* (con correos encriptados) para cumplir con las leyes de protección de datos, mientras que la tabla *access_logs* asegura una auditoría inmutable de cada evento físico. Finalmente, la arquitectura está totalmente optimizada para un ORM como Hibernate, facilitando el mapeo de relaciones uno-a-muchos y uno-a-uno mediante claves foráneas claras y tipos bigint, lo que permite un manejo eficiente de la carga perezosa (*Lazy Loading*) y una transición fluida del modelo relacional al código en Spring Boot.
 

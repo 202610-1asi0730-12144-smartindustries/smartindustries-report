@@ -451,7 +451,7 @@ Esta sección presenta los mock-ups de alta fidelidad de la plataforma web de Sm
 ### 11. Bitácora de accesos
 
 <p align="center">
-  <img src="/Resources/Chapter4/Web-Application/mockups/Dashboard-bitacora-Mockup.png" width="800" alt="Bitácora Mockup">
+  <img src="Resources/Chapter4/Web-Application/mockups/Dashboard-bitacora-Mockup.png" width="800" alt="Bitácora Mockup">
 </p>
 
 **Descripción:** Registro detallado del historial de los accesos.
@@ -559,34 +559,40 @@ En la siguiente sección se puede observar de manera detallada el  diagrama User
 </p>
 
 ## 4.6. Domain-Driven Software Architecture.
-
-### 4.6.1. Design-Level Event Storming.
 En esta sección se detalla el diseño táctico del sistema, profundizando en la arquitectura y los componentes técnicos necesarios para implementar la solución. A diferencia del Big Picture, el DesignLevel Event Storming se enfoca en definir los límites de los agregados, los comandos que disparan cambios de estado y las políticas que gobiernan las reglas de negocio.
 
 <p align="center">
-  <img src="/Resources/Chapter4/eventStormin/DesignLevel.png" width="800" alt="Design Level Event Storming">
+  <img src="Resources/Evidencias/total-ddd.png" width="800" alt="Design Level Event Storming">
 </p>
 
 ### 1. Space Management (Gestión de Espacios)
 Es el contexto central encargado de la infraestructura física y lógica de la plataforma. Su responsabilidad principal es modelar la jerarquía operativa, gestionando entidades como **Organizations**, **Sites** (sedes) y **Zones**. Este contexto administra la relación entre los activos físicos y su ubicación, permitiendo que la plataforma identifique la posición de los dispositivos de bloqueo digital.
-<img src="/Resources/Chapter4/eventStormin/space-management-Context.png">
+<img src="Resources/Evidencias/space-management.png">
 
-### 2. Access Control (Control de Acceso)
+### 2. Access (Control de Acceso)
 Este contexto se enfoca estrictamente en la autorización y la seguridad física. Gestiona las identidades mediante la entidad **Subject** y su agrupación en **Groups** para facilitar la asignación masiva de permisos. Su lógica de negocio define quién tiene permitido ingresar a áreas específicas basándose en la validación de tokens y reglas de seguridad configuradas.
-<img src="/Resources/Chapter4/eventStormin/Acces-Context.png">
+<img src="Resources/Chapter4/eventStormin/Acces-Context.png">
 
-### 3. Authentication (Autenticación e Identidad)
+### 3. IAM (Autenticación e Identidad)
 Responsable de la seguridad a nivel de software y la validación de la identidad del usuario en el sistema. Administra las **Accounts**, los hashes de contraseñas y los roles de usuario. Asegura que el usuario sea quien dice ser antes de permitirle interactuar con la interfaz del frontend o las APIs de la aplicación.
-<img src="/Resources/Chapter4/eventStormin/Authentication-Context.png">
+<img src="Resources/Evidencias/access.png">
 
-### 4. Report & Audit (Reportes y Auditoría)
+### 4. Report (Reportes y Auditoría)
 Dedicado a la observabilidad y la persistencia de eventos históricos dentro del ecosistema SmartLock. Utiliza entidades como **Audit**, **AuditRecord** y **Alert** para registrar cada acción realizada por los usuarios y cada anomalía detectada por los dispositivos. Es fundamental para el cumplimiento normativo y la reconstrucción de líneas de tiempo ante incidentes de seguridad.
-<img src="/Resources/Chapter4/eventStormin/Report-Context.png">
+<img src="Resources/Evidencias/report.png">
 
-### 5. Billing & Subscription (Facturación y Suscripciones)
+### 5. Billing (Facturación y Suscripciones)
 Gestiona el aspecto comercial y la viabilidad del servicio para cada organización. Se encarga de la entidad **Subscription**, controlando los planes activos, precios y fechas de renovación. Este contexto habilita o restringe funcionalidades avanzadas, como el control por franjas horarias o alertas automáticas, según el estado de pago del cliente.
-<img src="/Resources/Chapter4/eventStormin/Billing-Context.png">
+<img src="Resources/Evidencias/billing.png">
 
+Descripción de los componentes identificados:
+- **Comandos (Azul):** Representan las intenciones de los usuarios o sistemas externos para realizar una acción específica (ej. "Generar Código QR", "Validar Acceso").
+- **Agregados (Amarillo):** Son las entidades o grupos de objetos que mantienen la consistencia de los datos y ejecutan la lógica de negocio ante un comando.
+- **Políticas (Lila):** Definen reacciones automáticas del sistema ante eventos específicos ("Siempre que ocurra el Evento X, ejecutar el Comando Y").
+- **Modelos de Lectura (Verde):** Representan la información que el usuario visualiza en la interfaz para poder tomar una decisión y ejecutar un comando.
+- **Eventos de Dominio (Naranja):** Indican que algo relevante para el negocio ha sucedido exitosamente (ej. "Código QR Generado", "Acceso Denegado").
+
+Este modelado permite al equipo de desarrollo tener una guía clara para la implementación de los servicios y la definición de la lógica en el código.
 Descripción de los componentes identificados:
 - **Comandos (Azul):** Representan las intenciones de los usuarios o sistemas externos para realizar una acción específica (ej. "Generar Código QR", "Validar Acceso"). 
 - **Agregados (Amarillo):** Son las entidades o grupos de objetos que mantienen la consistencia de los datos y ejecutan la lógica de negocio ante un comando. 
@@ -595,6 +601,7 @@ Descripción de los componentes identificados:
 - **Eventos de Dominio (Naranja):** Indican que algo relevante para el negocio ha sucedido exitosamente (ej. "Código QR Generado", "Acceso Denegado"). 
 
 Este modelado permite al equipo de desarrollo tener una guía clara para la implementación de los servicios y la definición de la lógica en el código.
+
 
 ### 4.6.2. Software Architecture Context Diagram.
 
